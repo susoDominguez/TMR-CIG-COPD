@@ -1,0 +1,161 @@
+<div class="notebook">
+
+<div class="nb-cell markdown">
+# Clinical Guideline Interactions
+
+This notebook provides:
+
+(i) access to the SWI-Prolog implementation of the formal rules described in: V. Zamborlini, R. Hoekstra, M. Silveira, C. Pruski, A. Teije, Generalizing the Detection of Internal and External Interactions in Clinical Guidelines, in: Proceedings of the 9th International Conference on Health Informatics (HEALTHINF2016), Rome, Italy.
+
+(ii) acess to the setting-up of the case study presented in that paper on combining 3 guidelines for Osteoarthritis (OA), Diabetes (DB), and Hypertension (HT), in a step by step interactive presentation of the data acquired and inferred.
+
+The main formulas are defined in [guidelines.pl](guidelines.pl), [externalSources.pl](externalSources.pl) and [interactionRules.pl](interactionRules.pl).
+The visualization part is define in [interaction_graph](interaction_graph.pl).
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- include(interaction_graph).
+</div>
+
+<div class="nb-cell markdown">
+The following query returns graphical visualization of the interactions for the simplified case study as discussed in the (submitted) SWAT4LS paper:
+
+{_to see the results, click the right-most button in the box bellow_}
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+interaction_graph_SWAT4LScaseStudy(Guideline, Graph).
+</div>
+
+<div class="nb-cell markdown">
+The functions regarding the reasoning process are:
+
+:- loadExternalBeliefs.
+ _For creating the beliefs from the External Knowledge_
+
+:- inferInternalInteractions.
+ _For asserting the internal interactions, among the norms_
+
+:- inferExternalInteractions.
+ _For asserting the external interactions, among norms and external beliefs_
+
+However, those functions can only be fired by user logged in with permision to write in the database. In order to favor understanding the experiment, we provide queries in what follows.
+</div>
+
+<div class="nb-cell markdown">
+# Experiment
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- include(guidelines).
+</div>
+
+<div class="nb-cell markdown">
+*1st step*: Data for each CIG is manually inserted in the system.
+
+The recommendations within each guideline can be retrived by the following queries:
+</div>
+
+<div class="nb-cell query" data-chunk="5" data-tabled="true">
+rdf_global_id(data:'CIG-DB',Guideline),
+regulates(Guideline, Norm, ActionT, Strength, CBelief).
+</div>
+
+<div class="nb-cell query" data-chunk="5" data-tabled="true">
+rdf_global_id(data:'CIG-HT',Guideline),
+regulates(Guideline, Norm, ActionT, Strength, CBelief).
+</div>
+
+<div class="nb-cell query" data-chunk="5" data-tabled="true">
+rdf_global_id(data:'CIG-OA',Guideline),
+regulates(Guideline, Norm, ActionT, Strength, CBelief).
+</div>
+
+<div class="nb-cell markdown">
+*2nd step*: The 3 CIGs are merged into one CIG.
+
+The merged OA+HT+DB guideline can be retrieved by the following query:
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+regulates(Guideline, Norm, ActionT, Strength, CBelief).
+</div>
+
+<div class="nb-cell markdown">
+*3rd step*: Internal interactions are calculated by firing the function:
+
+:- inferInternalInteractions.
+
+The interactions can be visualided by running the following query:
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+interaction_graph_caseStudy_internal(Guideline, Graph).
+</div>
+
+<div class="nb-cell markdown">
+*4th step*: External knowledge are imported from _DrugBank_ and _Sider_ by firing the function:
+
+:- loadExternalBeliefs
+
+The following queries retrieve the causation beliefs imported from those datasets:
+
+{_if more than 10 results are available, the buttons 'next', '10', '100' and so appear at the bottom_}
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+rdf_global_id(data:'drugbank', Source),
+causes(EventT1, EventT2, Frequency, CBelief, Source).
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+rdf_global_id(data:'sider', Source),
+causes(EventT1, EventT2, Frequency, CBelief, Source).
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+instanceOf(IB, vocab:'IncompatibilityBelief'),
+rdf_global_id(data:'drugbank', Source),
+rdf(IB, prov:'wasDerivedFrom', Source).
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+instanceOf(IB, vocab:'IncompatibilityBelief'),
+rdf_global_id(data:'liddi', Source),
+rdf(IB, prov:'wasDerivedFrom', Source).
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+instanceOf(IB, vocab:'IncompatibilityBelief'),
+rdf_global_id(data:'aers', Source),
+rdf(IB, prov:'wasDerivedFrom', Source).
+</div>
+
+<div class="nb-cell markdown">
+*5th step*: External interactions are calculated by firing the function:
+
+:- inferExternalInteractions.
+
+The following query retrieves the interactions detected by using external datasets:
+</div>
+
+<div class="nb-cell markdown">
+In order to retrieve all the interactions, the following query can be used:
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+getExternallyInteractingRecommendations(Guideline, IntType, List).
+</div>
+
+<div class="nb-cell markdown">
+The full visualization for all the interactions is generated by the following query. However, since the number of interactions is too high, in future work we will provide means to filter what interactions are more relevant. The paper about theoretical work to this end is under review process.
+</div>
+
+<div class="nb-cell query">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+interaction_graph(Guideline, Graph).
+</div>
+
+</div>

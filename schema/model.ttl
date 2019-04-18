@@ -1,0 +1,204 @@
+@prefix : <http://anonymous.org/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://anonymous.org/vocab/> rdf:type owl:Ontology .
+
+#################################################################
+#
+#    Classes of TMR 3.0
+#
+#################################################################
+#   General & Event-related Classes
+#################################################################
+
+:Type rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+:Category rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
+:ObjectType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
+:SituationType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
+:EventType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
+:TransitionType rdf:type owl:Class ;
+    rdfs:subClassOf :EventType .
+
+:ActionType rdf:type owl:Class ;
+    rdfs:subClassOf :EventType .
+
+:CareActionType rdf:type owl:Class ;
+    rdfs:subClassOf :ActionType .
+
+:DrugAdministrationType rdf:type owl:Class ;
+    rdfs:subClassOf :CareActionType .
+
+:DrugType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
+:DrugCategory rdf:type owl:Class ;
+                rdfs:subClassOf :DrugType .
+
+:DrugEffectCategory rdf:type owl:Class ;
+                        rdfs:subClassOf :DrugCategory .
+
+#################################################################
+#   Belief-related Classes
+#################################################################
+
+:Belief rdf:type owl:Class ;
+rdfs:subClassOf owl:Thing .
+
+:Source rdf:type owl:Class ;
+rdfs:subClassOf owl:Thing .
+
+:CausationBelief rdf:type owl:Class ;
+    rdfs:subClassOf :Belief.
+
+:IncompatibilityBelief rdf:type owl:Class ;
+    rdfs:subClassOf :Belief.
+
+#################################################################
+#   Norm-related Classes
+#################################################################
+
+:Regulation rdf:type owl:Class .
+
+:Norm rdf:type owl:Class .
+
+:ClinicalGuideline rdf:type owl:Class;
+    rdfs:subClassOf :Regulation.
+
+:ClinicalRecommendation rdf:type owl:Class;
+    rdfs:subClassOf :Norm.
+
+:SingleDiseaseGuideline rdf:type owl:Class ;
+    rdfs:subClassOf :ClinicalGuideline .
+
+:ComposedGuideline rdf:type owl:Class ;
+    rdfs:subClassOf :ClinicalGuideline .
+
+
+#################################################################
+#
+#    Object Properties of TMR 2.0
+#
+#################################################################
+
+#################################################################
+#   General & EventType-related Properties
+#################################################################
+
+:subsumes a owl:ObjectProperty ,
+            owl:IrreflexiveProperty ,
+            owl:AsymmetricProperty,
+            owl:TransitiveProperty;
+    rdfs:domain :Type ;
+    rdfs:range :Type .
+
+:hasGroupingCriteria a owl:ObjectProperty;
+    rdfs:domain :Category ;
+    rdfs:range :GroupingCriteria .
+
+:participationOf a owl:ObjectProperty ;
+    rdfs:domain :EventType;
+    rdfs:range :ObjectType.
+
+:administrationOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participationOf ;
+    rdfs:domain :DrugAdministrationType;
+    rdfs:range :DrugType.
+
+:hasPreSituation rdf:type owl:ObjectProperty ;
+    rdfs:range :SituationType ;
+    rdfs:domain :TransitionType .
+
+:hasFilterCondition rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasPreSituation .
+
+:hasTransformableSituation rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasPreSituation .
+
+:hasExpectedSituation rdf:type owl:ObjectProperty ;
+    rdfs:range :SituationType ;
+    rdfs:domain :TransitionType .
+
+:inverseToTransition rdf:type owl:ObjectProperty ,
+                            owl:SymmetricProperty.
+
+:causes rdf:type owl:ObjectProperty ;
+    rdfs:range :EventType ;
+    rdfs:domain :EventType .
+
+:incompatibleWith rdf:type owl:ObjectProperty ;
+    rdfs:range :EventType ;
+    rdfs:domain :EventType .
+
+#################################################################
+#   Belief-related Properties
+#################################################################
+
+:about rdf:type owl:ObjectProperty ;
+    rdfs:range :Belief ;
+    rdfs:domain owl:Thing .
+
+:hasSource rdf:type owl:ObjectProperty ;
+    #rdfs:range :Belief or Norm;
+    rdfs:domain :Source .
+
+:hasAsCause rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :about ;
+    rdfs:range :CausationBelief ;
+    rdfs:domain :EventType .
+
+:hasAsEffect rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :about ;
+    rdfs:range :CausationBelief ;
+    rdfs:domain :EventType .
+
+:similarTo rdf:type owl:ObjectProperty ;
+    rdfs:range :CausationBelief ;
+    rdfs:domain :CausationBelief .
+
+:opposedTo rdf:type owl:ObjectProperty ;
+    rdfs:range :CausationBelief ;
+    rdfs:domain :CausationBelief .
+
+
+#################################################################
+#   Norm-related Properties
+#################################################################
+
+#:derivesFrom rdf:type owl:ObjectProperty .
+
+:partOf rdf:type owl:FunctionalProperty ,
+                    owl:ObjectProperty ;
+            rdfs:range :Regulation ;
+            rdfs:domain :Norm .
+
+:aboutExecutionOf rdf:type owl:ObjectProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range :ActionType .
+
+:basedOn rdf:type owl:ObjectProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range :CausationBelief .
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+:frequency rdf:type owl:DatatypeProperty ;
+    rdfs:domain :CausationBelief .
+
+:strength rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Norm .

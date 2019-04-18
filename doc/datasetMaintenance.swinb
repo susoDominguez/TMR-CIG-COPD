@@ -1,0 +1,276 @@
+<div class="notebook">
+
+<div class="nb-cell markdown">
+## DataSet Maintainance
+This notebook helps loading the schema and data, integrating with external data and checking step by step the results that can be observed on calculating the interactions.
+</div>
+
+<div class="nb-cell markdown">
+## Loading TMR Schema
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- use_module(library(semweb/turtle)).
+:- use_module(library(semweb/rdf_http_plugin)).
+:- use_module(library(semweb/rdf_db)).
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/33v1zze5fpbmnzh/model.ttl?raw=1', 
+         [format('turtle'), register_namespaces(false), 
+         base_uri('http://anonymous.org/vocab/'), graph('http://anonymous.org/vocab')]).
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/7mfhm6ohlon2yj0/model4I%203.0.ttl?raw=1', 
+         [format('turtle'), register_namespaces(false), 
+         base_uri('http://anonymous.org/vocab4i/'), graph('http://anonymous.org/vocab4i')]).
+</div>
+
+<div class="nb-cell markdown">
+## Loading Guidelines' Data
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/ad95snt663lcbvc/CareAction%26DrugTypes.ttl?raw=1', 
+         [format('turtle'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/CareAction&amp;DrugTypes')]).
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/ayt89to51dakjsw/Transition%26SituationTypes.ttl?raw=1', 
+         [format('turtle'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/Transition&amp;SituationTypes')]).
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/ofzeq00zrm1jy3h/CausationBeliefs-Nanopub.trig?raw=1 ', 
+         [format('trig'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/CausationBeliefs-Nanopub')]).
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/fn6j5wqg8clgjfl/Reg%26Norms-Nanopub.trig?raw=1', 
+         [format('trig'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/Reg&amp;Norms-Nanopub')]).
+</div>
+
+<div class="nb-cell markdown">
+TODO: create a funcion that merges a list of guidelines
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://www.dropbox.com/s/1ax2uerv5wzzrj5/MergedReg%26Norms-Nanopub.trig?raw=1', 
+         [format('trig'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/MergedReg&amp;Norms-Nanopub')]).
+</div>
+
+<div class="nb-cell markdown">
+## Calculating Internal Interactions
+
+Now that the guideline's data is loaded, we can run the function that calculates the internal interactions.
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- use_module(library(semweb/rdfs)).
+:- include(interactionRules).
+:- include(interaction_graph).
+</div>
+
+<div class="nb-cell query">
+inferInternalInteractions.
+</div>
+
+<div class="nb-cell query">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+interaction_graph_caseStudy_internal(Guideline, Graph).
+</div>
+
+<div class="nb-cell markdown">
+However, one can observe that the interactions calculated for the case study didn't consider the hierarchies (only a alternative interaction was found). This is because this information was not given.  Instead on inserting it manually, we can import it from external datasets, such as drugbank (see in following section).
+</div>
+
+<div class="nb-cell markdown">
+## Loading External data and Calculating External interactions
+
+### First: how do we "import action-hierarchy" from Drugbank?
+
+The most commonly used hierarchy considered among drug types is due to effect (e.g. drug types that are expected to have anti-inflammatory effect are grouped into a drug catergory with that name). We do manually link our drug categories with the corresponding transition/effect via _hasGroupingCriteria_ property. The first step is to propagate this criteria from the drug types to the corresponting action types by running the following function:
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- include(guidelines).
+</div>
+
+<div class="nb-cell query">
+propagGroupingCriteriaDrugToEventType.
+</div>
+
+<div class="nb-cell markdown">
+In order to integrate with drugbank, we also (manually) link the local drug types with the corresponding drugbank URIs. This and other links to URI's commonly used in LOD (which will help with integrating with external datasets) can be loaded by running the following command:
+</div>
+
+<div class="nb-cell query">
+rdf_load('https://raw.githubusercontent.com/veruskacz/CG-RDF/master/instance/LODmapping.ttl', 
+         [format('trig'), register_namespaces(false), 
+         base_uri('http://anonymous.org/data/'), graph('http://anonymous.org/LODmapping')]).
+</div>
+
+<div class="nb-cell markdown">
+The following command loads a small RDF version of drugbank dataset, which is enough for the purpose of this work.
+</div>
+
+<div class="nb-cell query">
+rdf_load('data/drugbank_small.nt.gz')
+</div>
+
+<div class="nb-cell markdown">
+Once the original data is loaded, we need to reinterpret them according to the TMR model. This is done by in function in the sequel. It asserts causation for each action type that are administration of drug types within a category associated with a transition/effect as grouping criteria.
+</div>
+
+<div class="nb-cell program" data-background="true">
+:- include(externalSources).
+</div>
+
+<div class="nb-cell query">
+drugbankAssertCausationFromCategory.
+</div>
+
+<div class="nb-cell markdown">
+In other words, the hiearchy due to effects is not dierectly stated in our approach, but is inferred through matching the causation beliefs and grouping criteria. This is because we assume that causation is not a immutable and indiputable fact, but it can diverge among different sources and also change in time. The following function is used to calculate hierarchy (subsumption) due to effect.
+</div>
+
+<div class="nb-cell markdown">
+TODO: take into account a list of trustable sources when calculating the subsumption due to effect
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+subsumesDueToEffect(EventType1, EventType2, CBelief).
+</div>
+
+<div class="nb-cell markdown">
+### Recalculating Internal Interactions enhanced by imported hierarchy
+</div>
+
+<div class="nb-cell query">
+inferInternalInteractions.
+</div>
+
+<div class="nb-cell query">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+interaction_graph_caseStudy_internal(Guideline, Graph).
+</div>
+
+<div class="nb-cell markdown">
+### Loading other external data and calculating External Interacions
+
+In order to avoid time limit error when loading the data, temporarily set the time limit up to 3000.
+</div>
+
+<div class="nb-cell query">
+set_setting(swish:time_limit, 3000).
+</div>
+
+<div class="nb-cell markdown">
+TODO: Fix syntax errors when loading external datasets. The data can be loaded and used as it is, but ideally the errors could be addressed. Maybe use LODLaundromat to clean it? 
+
+_Examples:
+/home/swish/src/ClioPatria/guidelines4/sider_dump.nt.gz:182503:151: Syntax error: Illegal control character in uriref_
+_/home/swish/src/ClioPatria/data/drug_mappings.nt.gz:2256:68: Syntax error: Illegal character in uriref_
+</div>
+
+<div class="nb-cell query">
+rdf_load('sider_dump.nt.gz').
+</div>
+
+<div class="nb-cell query">
+rdf_load('dikb.ttl').
+</div>
+
+<div class="nb-cell query">
+rdf_load('liddi-v1-02.trig.gz').
+</div>
+
+<div class="nb-cell query">
+% AERS datasets
+rdf_load('../data/diag_mappings.nt.gz'),
+rdf_load('../data/drug_mappings.nt.gz'),
+rdf_load('../data/dump-of-2012-generated-on-2012-07-09.nt.gz').
+</div>
+
+<div class="nb-cell markdown">
+If you get a _time limit exceeded_ error, you can proceed like follows:
+(ii) increase the time limit
+(iii) unload the file/graph that gave the error
+(iv) load it again
+
+_Obs: in case of LIDDI, which load a lot of named graphs, one need to unload all the named_graphs too (see in the end of this notebook)_
+</div>
+
+<div class="nb-cell query">
+set_setting(swish:time_limit, 3500).
+</div>
+
+<div class="nb-cell query">
+rdf_unload('../data/dump-of-2012-generated-on-2012-07-09.nt.gz').
+</div>
+
+<div class="nb-cell query">
+rdf_load('../data/dump-of-2012-generated-on-2012-07-09.nt.gz').
+</div>
+
+<div class="nb-cell markdown">
+When the loading is finished, reduce the time limit back to 300 (good practice).
+</div>
+
+<div class="nb-cell query">
+set_setting(swish:time_limit, 300).
+</div>
+
+<div class="nb-cell markdown">
+Now that the external data is loaded, it needs to be reinterpreted, i.e. imported according to the TMR model so that it can be uniformelly used by the interaction rules.
+</div>
+
+<div class="nb-cell query">
+loadExternalBeliefs.
+</div>
+
+<div class="nb-cell markdown">
+Finally the external interactions can be caculated. The results can be observed for the case study.
+</div>
+
+<div class="nb-cell query">
+inferExternalInteractions.
+</div>
+
+<div class="nb-cell query">
+rdf_global_id(data:'CIG-OA-HT-DB',Guideline),
+interaction_graph(Guideline, Graph).
+</div>
+
+<div class="nb-cell markdown">
+## Remove all graphs
+</div>
+
+<div class="nb-cell query">
+forall((rdf_graph(G), atom_concat('http://liddi.stanford.edu/',_, G)),
+       rdf_unload_graph(G)).
+</div>
+
+<div class="nb-cell query">
+rdf_unload('liddi-v1-02.trig.gz').
+</div>
+
+<div class="nb-cell markdown">
+## Manage settings
+</div>
+
+<div class="nb-cell query">
+set_setting(swish:time_limit, 900).
+</div>
+
+<div class="nb-cell query" data-chunk="10" data-tabled="true">
+current_setting(swish:Setting), setting(swish:Setting, V)
+</div>
+
+</div>

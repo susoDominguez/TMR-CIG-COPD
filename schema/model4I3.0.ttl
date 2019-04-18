@@ -1,0 +1,210 @@
+@prefix : <http://anonymous.org/vocab4i/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vocab: <http://anonymous.org/vocab/> .
+@base <http://anonymous.org/vocab4i/> .
+
+<http://anonymous.org/vocab4i/> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    TMR4I 3.0 - Interactions
+#
+#################################################################
+
+:Interaction rdf:type owl:Class .
+
+:InternalInteraction rdf:type owl:Class ;
+    rdfs:subClassOf :Interaction .
+
+:ExternalInteraction rdf:type owl:Class ;
+    rdfs:subClassOf :Interaction .
+
+:RepeatedAction rdf:type owl:Class ;
+    rdfs:label "Repeated Action"@en;
+    rdfs:subClassOf :InternalInteraction .
+
+:AlternativeActions rdf:type owl:Class ;
+    rdfs:label "Alternative Actions"@en;
+    rdfs:subClassOf :InternalInteraction .
+
+:Contradiction rdf:type owl:Class ;
+    rdfs:label "Contradictory Norms"@en;
+    rdfs:subClassOf :InternalInteraction .
+
+:ReparableTransition rdf:type owl:Class ;
+    rdfs:label "Reparable Transition"@en;
+    rdfs:subClassOf :InternalInteraction .
+
+:ExternalAlternativeAction rdf:type owl:Class ;
+    rdfs:label "External-Alternative Action"@en;
+    rdfs:subClassOf :ExternalInteraction .
+
+:ExternalIncompatibleActions rdf:type owl:Class ;
+    rdfs:label "External-Incompatible Actions"@en;
+    rdfs:subClassOf :ExternalInteraction .
+
+:ExternalIncompatibleEffects rdf:type owl:Class ;
+    rdfs:label "External-Incompatible Effects"@en;
+    rdfs:subClassOf :ExternalInteraction .
+
+
+#:RecommendationInteraction rdf:type owl:Class ;
+#        owl:equivalentClass [ rdf:type owl:Class ;
+#                             owl:intersectionOf ( :RecommendationInteraction
+#                                             [ rdf:type owl:Restriction ;
+#                                              owl:onProperty  :relates ;
+#                                              owl:someValuesFrom vocab:Recommendation
+#                                              ]
+#                                             )
+#                         ] .
+
+
+#:InternalRecommendationInteraction rdf:type owl:Class ;
+#        rdfs:subClassOf :RecommendationInteraction .
+#
+#
+#:ExternalRecommendationInteraction rdf:type owl:Class ;
+#        owl:equivalentClass [ rdf:type owl:Class ;
+#                         owl:intersectionOf ( :RecommendationInteraction
+#                                             [ rdf:type owl:Restriction ;
+#                                              owl:onProperty  :relates ;
+#                                              owl:someValuesFrom :ExternalInformation
+#                                              ]
+#                                             )
+#                         ] ;
+#        rdfs:subClassOf :RecommendationInteraction .
+
+
+###########
+# CompliantRecommendations
+###########
+#:CompliantRecommendations rdf:type owl:Class ;
+#    rdfs:label "Compliant Recommendations"@en;
+#    rdfs:subClassOf :InternalRecommendationInteraction .
+#
+#:ReparableTransition rdf:type owl:Class ;
+#    rdfs:label "Reparable Transition"@en;
+#    rdfs:subClassOf :CompliantRecommendations .
+#
+#:NeutralIntentions rdf:type owl:Class ;
+#    rdfs:label "Neutral Transition"@en;
+#    rdfs:subClassOf :CompliantRecommendations .
+#
+############
+## RedundantRecommendations
+############
+#:RedundantRecommendations rdf:type owl:Class ;
+#    rdfs:label "Redundant Recommendations"@en;
+#    rdfs:subClassOf :InternalRecommendationInteraction .
+#
+#:RedundantPositRecommendations rdf:type owl:Class ;
+#    rdfs:label "Redundant Positive Recommendations"@en;
+#    rdfs:subClassOf :RedundantRecommendations .
+#
+#:RedundantNegatRecommendations rdf:type owl:Class ;
+#    rdfs:label "Redundant Negative Recommendations"@en;
+#    rdfs:subClassOf :RedundantRecommendations .
+#
+#:RepeatedAction rdf:type owl:Class ;
+#    rdfs:label "Repeated Action"@en;
+#    rdfs:subClassOf :RedundantPositRecommendations .
+#
+#:AlternativeActions rdf:type owl:Class ;
+#    rdfs:label "Alternative Actions"@en;
+#    rdfs:subClassOf :RedundantPositRecommendations .
+#
+#:RepeatedSideEffect rdf:type owl:Class ;
+#    rdfs:label "Repeated Side Effect"@en;
+#    rdfs:subClassOf :RedundantPositRecommendations .
+#
+############
+## ContradictoryRecommendations
+############
+#:ContradictoryRecommendations rdf:type owl:Class ;
+#    rdfs:label "Contradictory Recommendations"@en;
+#    rdfs:subClassOf :InternalRecommendationInteraction .
+#
+#:Contradiction-Action rdf:type owl:Class ;
+#    rdfs:label "Contradiction due to same Action"@en;
+#    rdfs:subClassOf :ContradictoryRecommendations .
+#
+#:Contradiction-Transition rdf:type owl:Class ;
+#    rdfs:label "Contradition due to Transition"@en;
+#    rdfs:subClassOf :ContradictoryRecommendations .
+#
+#
+############
+## DoxasticInteraction
+############
+#:DoxasticInteraction rdf:type owl:Class ;
+#    rdfs:label "Doxastic Interaction"@en;
+#    rdfs:subClassOf :InternalRecommendationInteraction .
+#
+#:RelyingOpposedBeliefs rdf:type owl:Class ;
+#    rdfs:label "Relying on Opposed Beliefs"@en;
+#    rdfs:subClassOf :DoxasticInteraction .
+#
+#:RelyingCompliantBeliefs rdf:type owl:Class ;
+#    rdfs:label "Relying on Compliant Beliefs"@en;
+#    rdfs:subClassOf :DoxasticInteraction .
+#
+#:RelyingSimilarBeliefs rdf:type owl:Class ;
+#    rdfs:label "Relying on Similar Beliefs"@en;
+#    rdfs:subClassOf :DoxasticInteraction .
+
+
+###########
+# ExternalRecommendationInteraction
+###########
+#:DrugRelatedExtInteraction rdf:type owl:Class ;
+#    rdfs:label "Drug-related External Interaction"@en;
+#    rdfs:subClassOf :ExternalRecommendationInteraction .
+#
+#:AlternativeDrugs rdf:type owl:Class ;
+#    rdfs:label "Alternative Drugs"@en;
+#    rdfs:subClassOf :DrugRelatedExtInteraction .
+#
+#:IncompatibleDrugs rdf:type owl:Class ;
+#    rdfs:label "Incompatible Drugs"@en;
+#    rdfs:subClassOf :DrugRelatedExtInteraction .
+#
+#:IncompatibleDrugSideEffectInteraction rdf:type owl:Class ;
+#    rdfs:label "Incompatible Side-Effect of Drug"@en;
+#    rdfs:subClassOf :DrugRelatedExtInteraction .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+:relates a owl:ObjectProperty ;
+    rdfs:domain :Interaction.
+
+#:about a owl:ObjectProperty ;
+#    rdfs:domain :ExternalInteraction;
+#    rdfs:range :ExternalInformation.
+#
+#:aboutDrug a owl:ObjectProperty ;
+#    #    rdfs:subpropertyOf :about
+#    rdfs:domain :ExternalInteraction.
+#    #rdfs:range :ExternalDrugType.
+#
+#:aboutAlternativeDrug a owl:ObjectProperty ;
+#    #    rdfs:subpropertyOf :about
+#    rdfs:domain :ExternalInteraction.
+#    #rdfs:range :ExternalDrugType.
+#
+#:aboutSideEffect a owl:ObjectProperty ;
+#    #    rdfs:subpropertyOf :about
+#    rdfs:domain :ExternalInteraction.
+#    #rdfs:range :ExternalEffectType.
+
+
+
+
