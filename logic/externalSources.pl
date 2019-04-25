@@ -31,11 +31,11 @@ loadExternalBeliefs :-
 
 %****** Unload Data From source ************
 unloadExternalBeliefs(Source) :-
-    rdf_global_id(data:Source, SourceURI),
-    forall((
-       rdf(AssertionURI, prov:'wasDerivedFrom', SourceURI),
-       rdf(NanopubURI, nanopub:'hasAssertion', AssertionURI)
-    ), deleteNanopublication(NanopubURI)).
+        rdf_global_id(data:Source, SourceURI),
+        forall((
+            rdf(AssertionURI, prov:'wasDerivedFrom', SourceURI),
+            rdf(NanopubURI, nanopub:'hasAssertion', AssertionURI)
+         ),  deleteNanopublication(NanopubURI)).
 
 %*******************************************
 %****** Importing from Drugbank ************

@@ -12,7 +12,7 @@
 %% temporary
 typeOf(Inst, Type) :-
 	rdf_global_id(Type, TypeURI),
-    rdf(Inst, rdf:type, TypeURI).
+        rdf(Inst, rdf:type, TypeURI).
 
 %%% replace by 
 % :- use_module(library(semweb/rdfs)).
@@ -65,6 +65,7 @@ reachable(X, Y, Visited) :-
 /* *********************************** */
 %  FUNCTIONS FOR OUTPUT
 /* *********************************** */
+
 getLabel(Resource, Label) :-   
     (   instanceOf(Resource, vocab:'Norm'),
     rdf(Resource, rdfs:label, literal(lang(en, Label1))),
