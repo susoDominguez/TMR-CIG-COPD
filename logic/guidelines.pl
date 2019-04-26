@@ -12,7 +12,7 @@ Osteoarthritis (OA), Diabetes (DB), and Hypertension (HT)
 :- rdf_prefix(data, 'http://anonymous.org/data/').
 :- rdf_prefix(vocab, 'http://anonymous.org/vocab/').
 :- rdf_prefix(vocab4i, 'http://anonymous.org/vocab4i/').
-:- rdf_prefix(oa, 'http://www.w3.org/ns/oa#').
+:- rdf_prefix(oa, 'http,//www.w3.org/ns/oa#').
 :- rdf_prefix(prov, 'http://www.w3.org/ns/prov#').
 :- rdf_prefix(nanopub, 'http://www.nanopub.org/nschema#').
 
@@ -26,11 +26,11 @@ Osteoarthritis (OA), Diabetes (DB), and Hypertension (HT)
 inverseTo(TransitionT1, TransitionT2) :-
 	rdfs_individual_of(TransitionT1, vocab:'TransitionType'),
 	rdfs_individual_of(TransitionT2, vocab:'TransitionType'),
-        rdf(TransitionT1, vocab:'hasTransformableSituation', S1),
-        rdf(TransitionT1, vocab:'hasExpectedSituation', S2),
-        rdf(TransitionT2, vocab:'hasTransformableSituation', S2),
-        rdf(TransitionT2, vocab:'hasExpectedSituation', S1),
-        different(TransitionT1, TransitionT2).
+    rdf(TransitionT1, vocab:'hasTransformableSituation', S1),
+    rdf(TransitionT1, vocab:'hasExpectedSituation', S2),
+    rdf(TransitionT2, vocab:'hasTransformableSituation', S2),
+    rdf(TransitionT2, vocab:'hasExpectedSituation', S1),
+    different(TransitionT1, TransitionT2).
 
 /* *********************************** */
 % relatedTypes(Type1, Type2)
