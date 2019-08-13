@@ -37,6 +37,13 @@
 :CareActionType rdf:type owl:Class ;
     rdfs:subClassOf :ActionType .
 
+#special case for non drug therapies
+:NonDrugExecutionType rdf:type owl:Class ;
+    rdfs:subClassOf :CareActionType .
+
+:NonDrugType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
 :DrugAdministrationType rdf:type owl:Class ;
     rdfs:subClassOf :CareActionType .
 
