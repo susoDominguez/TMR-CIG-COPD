@@ -40,6 +40,13 @@
 :CareActionType rdf:type owl:Class ;
     rdfs:subClassOf :ActionType .
 
+#special case for non drug therapies
+:NonDrugExecutionType rdf:type owl:Class ;
+    rdfs:subClassOf :CareActionType .
+
+:NonDrugType rdf:type owl:Class;
+    rdfs:subClassOf :Type .
+
 :DrugAdministrationType rdf:type owl:Class ;
     rdfs:subClassOf :CareActionType .
 
@@ -118,6 +125,12 @@ rdfs:subClassOf owl:Thing .
     rdfs:subPropertyOf :participationOf ;
     rdfs:domain :DrugAdministrationType;
     rdfs:range :DrugType.
+
+#same as administratioOf but for nonDrug types
+:executionOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participationOf ;
+    rdfs:domain :NonDrugExecutionType;
+    rdfs:range :NonDrugType.
 
 :hasPreSituation rdf:type owl:ObjectProperty ;
     rdfs:range :SituationType ;
@@ -204,4 +217,8 @@ rdfs:subClassOf owl:Thing .
     rdfs:domain :CausationBelief .
 
 :strength rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Norm .
+
+#Motivation on applying a particular recommendation; also, explanation.
+:motivation rdf:type owl:DatatypeProperty ;
     rdfs:domain :Norm .
