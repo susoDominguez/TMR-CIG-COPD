@@ -116,6 +116,12 @@ rdfs:subClassOf owl:Thing .
     rdfs:domain :DrugAdministrationType;
     rdfs:range :DrugType.
 
+#same as administratioOf but for nonDrug types
+:executionOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participationOf ;
+    rdfs:domain :NonDrugExecutionType;
+    rdfs:range :NonDrugType.
+
 :hasPreSituation rdf:type owl:ObjectProperty ;
     rdfs:range :SituationType ;
     rdfs:domain :TransitionType .
