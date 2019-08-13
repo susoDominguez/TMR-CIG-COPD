@@ -202,3 +202,7 @@ rdfs:subClassOf owl:Thing .
 
 :strength rdf:type owl:DatatypeProperty ;
     rdfs:domain :Norm .
+
+#Motivation on applying a particular recommendation; also, explanation.
+:motivation rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Norm .
