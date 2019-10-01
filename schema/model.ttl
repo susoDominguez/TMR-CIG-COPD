@@ -92,6 +92,10 @@ rdfs:subClassOf owl:Thing .
 :ComposedGuideline rdf:type owl:Class ;
     rdfs:subClassOf :ClinicalGuideline .
 
+#Guideline that is part of a strictly larger guideline
+:SubGuideline rdf:type owl:Class ;
+    rdfs:subClassOf :ClinicalGuideline .
+
 
 #################################################################
 #
@@ -184,6 +188,15 @@ rdfs:subClassOf owl:Thing .
     rdfs:range :CausationBelief ;
     rdfs:domain :CausationBelief .
 
+#################################################################
+#   Regulation-related Properties
+#################################################################
+
+#is a subguideline of a particular clinical guideline
+:isSubGuidelineOf rdf:type owl:FunctionalProperty ,
+                    owl:ObjectProperty ;
+            rdfs:range :Regulation ;
+            rdfs:domain :SubGuideline .
 
 #################################################################
 #   Norm-related Properties
