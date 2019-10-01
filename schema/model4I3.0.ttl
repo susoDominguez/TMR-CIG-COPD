@@ -36,7 +36,7 @@
     rdfs:subClassOf :InternalInteraction .
 
 :ReparableTransition rdf:type owl:Class ;
-    rdfs:label "Reparable Transition"@en;
+    rdfs:label "Repairable Transition"@en;
     rdfs:subClassOf :InternalInteraction .
 
 :ExternalAlternativeAction rdf:type owl:Class ;
