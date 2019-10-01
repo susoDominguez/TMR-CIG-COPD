@@ -190,6 +190,15 @@ rdfs:subClassOf owl:Thing .
     rdfs:range :CausationBelief ;
     rdfs:domain :CausationBelief .
 
+#################################################################
+#   Regulation-related Properties
+#################################################################
+
+#is a subguideline of a particular clinical guideline
+:isSubGuidelineOf rdf:type owl:FunctionalProperty ,
+                    owl:ObjectProperty ;
+            rdfs:range :Regulation ;
+            rdfs:domain :SubGuideline .
 
 #################################################################
 #   Norm-related Properties
