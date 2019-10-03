@@ -36,6 +36,10 @@
 :TransitionType rdf:type owl:Class ;
     rdfs:subClassOf :EventType .
 
+#syntactic sugar for completion purposes when building JSON for DSS
+:TropeType rdf:type owl:Class ;
+    rdfs:subClassOf :ObjectType .
+
 :ActionType rdf:type owl:Class ;
     rdfs:subClassOf :EventType .
 
@@ -141,6 +145,11 @@ rdfs:subClassOf owl:Thing .
     rdfs:range :SituationType ;
     rdfs:domain :TransitionType .
 
+#syntactic sugar for dss
+:affects rdf:type owl:ObjectProperty ;
+    rdfs:range :TransitionType ;
+    rdfs:domain :TropeType .
+
 :hasFilterCondition rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :hasPreSituation .
 
@@ -150,6 +159,7 @@ rdfs:subClassOf owl:Thing .
 :hasExpectedSituation rdf:type owl:ObjectProperty ;
     rdfs:range :SituationType ;
     rdfs:domain :TransitionType .
+
 
 :inverseToTransition rdf:type owl:ObjectProperty ,
                             owl:SymmetricProperty.
@@ -241,3 +251,15 @@ rdfs:subClassOf owl:Thing .
 #Motivation on applying a particular recommendation; also, explanation.
 :motivation rdf:type owl:DatatypeProperty ;
     rdfs:domain :Norm .
+
+#derivative of a transition -syntactic sugar for DSS [Maintain | Increase | Decrease]
+:derivative rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TransitionType .
+
+#contribution of this causation belief to the recommendation [positive | negative]
+:contribution rdf:type owl:DatatypeProperty ;
+    rdfs:domain :CausationBelief .
+
+#state of the situation with respect to the affected property. E.g., severe, mild, low risk, etc
+:stateOf rdf:type owl:DatatypeProperty ;
+    rdfs:domain :SituationType .
