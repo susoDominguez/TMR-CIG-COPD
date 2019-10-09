@@ -44,7 +44,7 @@
     rdfs:subClassOf :ActionType .
 
 #special case for non drug therapies
-:NonDrugExecutionType rdf:type owl:Class ;
+:NonDrugAdministrationType rdf:type owl:Class ;
     rdfs:subClassOf :CareActionType .
 
 :NonDrugType rdf:type owl:Class;
@@ -134,9 +134,9 @@ rdfs:subClassOf owl:Thing .
     rdfs:range :DrugType.
 
 #same as administratioOf but for nonDrug types
-:executionOf a owl:ObjectProperty ;
+:applicationOf a owl:ObjectProperty ;
     rdfs:subPropertyOf :participationOf ;
-    rdfs:domain :NonDrugExecutionType;
+    rdfs:domain :NonDrugAdministrationType;
     rdfs:range :NonDrugType.
 
 :hasPreSituation rdf:type owl:ObjectProperty ;
