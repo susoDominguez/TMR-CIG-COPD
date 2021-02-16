@@ -1,0 +1,2662 @@
+<http://anonymous.org/data/CIG-COPD>
+        a       <http://anonymous.org/vocab/ClinicalGuideline> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "GOLD 2017 COPD guideline"@en .
+
+<http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A> .
+
+<http://anonymous.org/data/subCIG-Group_A>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A> .
+
+<http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A> .
+
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAls>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.Laba> .
+
+<http://anonymous.org/data/subCIG-Group_A.Laba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A taking LABA from previous treatment"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAls>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.Lama> .
+
+<http://anonymous.org/data/subCIG-Group_A.Lama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A taking LAMA from previous treatment"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAls>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.LabaLama> .
+
+<http://anonymous.org/data/subCIG-Group_A.LabaLama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A taking LABA + LAMA from previous treatment"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.LabaIcs> .
+
+<http://anonymous.org/data/subCIG-Group_A.LabaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A taking LABA + ICS  from previous treatment"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAls>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.LabaLamaIcs> .
+
+<http://anonymous.org/data/subCIG-Group_A.LabaLamaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group A taking LABA + LAMA + ICS  from previous treatment"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B> .
+
+<http://anonymous.org/data/subCIG-Group_B>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B> .
+
+<http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B.Saba> .
+
+<http://anonymous.org/data/subCIG-Group_B.Saba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B  where clinician has deemed SABA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B.Sama> .
+
+<http://anonymous.org/data/subCIG-Group_B.Sama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B  where clinician has deemed SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B.SabaSama> .
+
+<http://anonymous.org/data/subCIG-Group_B.SabaSama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B where clinician has deemed SABA + SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B.LabaIcs> .
+
+<http://anonymous.org/data/subCIG-Group_B.LabaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B that were taking LABA + ICS"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_B.LabaLamaIcs> .
+
+<http://anonymous.org/data/subCIG-Group_B.LabaLamaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group B that were taking LABA + LAMA + ICS"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Ckd> .
+
+<http://anonymous.org/data/subCIG-Ckd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "warning for patients with renal disease"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-ServMrcDScale> .
+
+<http://anonymous.org/data/subCIG-ServMrcDScale>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "mMRC Dyspnea scale score"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-ServCatRslt> .
+
+<http://anonymous.org/data/subCIG-ServCatRslt>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "COPD assesment test"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Smoker> .
+
+<http://anonymous.org/data/subCIG-Smoker>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment recommendation for patients with COPD that smoke"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-FluVac> .
+
+<http://anonymous.org/data/subCIG-FluVac>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "annual treatment recommendation to avoid contracting Influenza on COPD patients"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-PneumnVac> .
+
+<http://anonymous.org/data/subCIG-PneumnVac>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment recommendation to avoid contracting Pneumococcal Pneumonia on COPD patients"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Core> .
+
+<http://anonymous.org/data/subCIG-Core>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "COPD subGuideline with treatment to provide pulmonary rehabilitation"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-ServLngTst> .
+
+<http://anonymous.org/data/subCIG-ServLngTst>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "further COPD lung function tests"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-ServXrayScn> .
+
+<http://anonymous.org/data/RecCOPD-CtScnIncPropServCtScnShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-ServCtScn> .
+
+<http://anonymous.org/data/subCIG-ServCtScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CAT scan"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Cvd> .
+
+<http://anonymous.org/data/subCIG-Cvd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "warning for COPD patient with cardiovascular disease comorbidity"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C> .
+
+<http://anonymous.org/data/subCIG-Group_C>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C> .
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C> .
+
+<http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C.Saba> .
+
+<http://anonymous.org/data/subCIG-Group_C.Saba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C where clinician has deemed SABA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C.Sama> .
+
+<http://anonymous.org/data/subCIG-Group_C.Sama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C where clinician has deemed SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C.SabaSama> .
+
+<http://anonymous.org/data/subCIG-Group_C.SabaSama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C where clinician has deemed SABA + SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C.LabaLamaIcs> .
+
+<http://anonymous.org/data/subCIG-Group_C.LabaLamaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C that were already taking Laba + Lama + Ics"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D> .
+
+<http://anonymous.org/data/subCIG-Group_D>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group D"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D> .
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D> .
+
+<http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.Laba> , <http://anonymous.org/data/subCIG-Group_A.Lama> , <http://anonymous.org/data/subCIG-Group_A.LabaLama> , <http://anonymous.org/data/subCIG-Group_A.LabaIcs> , <http://anonymous.org/data/subCIG-Group_A.LabaLamaIcs> , <http://anonymous.org/data/subCIG-Group_B> , <http://anonymous.org/data/subCIG-Group_C> , <http://anonymous.org/data/subCIG-Group_D> .
+
+<http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_C.Laba> .
+
+<http://anonymous.org/data/subCIG-Group_C.Laba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group C that were already taking Laba"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D.Laba> .
+
+<http://anonymous.org/data/subCIG-Group_D.Laba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group D where clinician has deemed LABA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D.Saba> .
+
+<http://anonymous.org/data/subCIG-Group_D.Saba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group D where clinician has deemed SABA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D.Sama> .
+
+<http://anonymous.org/data/subCIG-Group_D.Sama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group D where clinician has deemed SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_D.SabaSama> .
+
+<http://anonymous.org/data/subCIG-Group_D.SabaSama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "treatment pathways for patients in COPD group D where clinician has deemed SABA + SAMA suitable"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypo>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Ckd> .
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShould>
+        <http://anonymous.org/vocab/isPartOf>
+                <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Cvd> .
+
+<http://anonymous.org/data/subCIG-ServXraysScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/subGuideline> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "X-rays scan"@en ;
+        <http://anonymous.org/vocab/isSubGuidelineOf>
+                <http://anonymous.org/data/CIG-COPD> .
+
+<http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SAMA to maintain COPD stage 1"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSamaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSamaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA to maintain COPD stage 1"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA + SAMA to maintain COPD stage 1"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSabaSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaSamaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaIcsMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLamaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLamaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSamaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSamaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA + SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSabaSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaSamaDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaIcsDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLamaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should NOT recommend administering LABA or LAMA when nephrotic or renal disease is present"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLamaCkd> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should-not" .
+    
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo>
+            <http://anonymous.org/vocab/contribution>
+                    "negative" .
+}
+
+<http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould> {
+    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerMrcDScale> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould> {
+    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerCatRslt> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould> {
+    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should encourage patient to quit smoking suggesting smoking cessation therapies"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSmokeThrpy> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSmokeThrpyIncPropQol> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould> {
+    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering annual influenza vaccine"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerFluVac> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBFluVacDecPropRskFlu> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould> {
+    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering pneumococcal vaccine"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerPneumnVac> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould> {
+    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should promote performing pulmonary rehabilitation"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLngRehab> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLngRehabIncPropLngHlth> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould> {
+    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should conduct a cardiovascular health assesment if the patient has had a recent exacerbation"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLngTst> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLngTstIncPropServLngTst> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould> {
+    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend a chest X-Ray scan"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerXraysScn> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot> {
+    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should NOT recommend  administering any Beta Agonist when cardiovascular disease is present"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerBetaAgonist> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should-not" .
+    
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd>
+            <http://anonymous.org/vocab/contribution>
+                    "negative" .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLamaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLamaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaIcsDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSamaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSamaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA + SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSabaSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaSamaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLamaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLamaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLamaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot> {
+    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should be aware that regular treatment with ICS increases the risk of pneumonia"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBIcsIncPropRskPneumn> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should-not" .
+    
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn>
+            <http://anonymous.org/vocab/contribution>
+                    "negative" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaDecSevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaDecSevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSamaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering SABA+SAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerSabaSama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIncPropRskHypoShouldnot_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head> {
+    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-MrcDScaleIncPropServMrcDScaleShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_head> {
+    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-CatRsltIncPropServCatRsltShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_head> {
+    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SmokeThrpyIncPropQolShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_head> {
+    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-FluVacDecPropRskFluShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_head> {
+    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-PneumnVacDecPropRskPneumocShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_head> {
+    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LngRehabIncPropLngHlthShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_head> {
+    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LngTstIncPropServLngTstShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/Jesus> .
+}
+
+<http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_head> {
+    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-XraysScnIncPropServXrayScnShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/Jesus> .
+}
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head> {
+    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance> {
+    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-BetaAgonistIncPropRskCrdShouldnot_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SamaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should recommend administering LABA + LAMA + ICS"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLabaLamaIcs> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LamaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SamaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/Jesus> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecModPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LamaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SamaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LamaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaIcsDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/Jesus> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_head> {
+    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_provenance> {
+    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-IcsIncPropRskPneumnShouldnot_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaDecSevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SamaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-SabaSamaDecVerySevPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should continue to recommend administering Laba since treatment was effective to decrease COPD stage"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLaba> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLabaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLabaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_head> {
+    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_publicationinfo> .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould> {
+    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould>
+            a       <http://anonymous.org/vocab/ClinicalRecommendation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Clinician should continue to recommend administering Lama since treatment was effective to decrease COPD stage"@en ;
+            <http://anonymous.org/vocab/aboutExecutionOf>
+                    <http://anonymous.org/data/ActAdministerLama> ;
+            <http://anonymous.org/vocab/basedOn>
+                    <http://anonymous.org/data/CBLamaMainMildPropAls> ;
+            <http://anonymous.org/vocab/partOf>
+                    <http://anonymous.org/data/CIG-COPD> ;
+            <http://anonymous.org/vocab/strength>
+                    "should" .
+    
+    <http://anonymous.org/data/CBLamaMainMildPropAls>
+            <http://anonymous.org/vocab/contribution>
+                    "positive" .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_provenance> {
+    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_publicationinfo> {
+    <http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould_nanopub>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2020-03-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}

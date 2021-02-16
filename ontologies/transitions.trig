@@ -1,0 +1,647 @@
+<http://anonymous.org/data/SitPrLngHlth>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a poor pulmonary health"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "poor" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitNrmLngHlth>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a standard pulmonary health"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "standard" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitLwRskHypo>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a low risk of hypokalaemia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "1223" ;
+        <http://anonymous.org/vocab/stateOf>
+                "low risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitHghRskHypo>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a high risk of hypokalaemia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "123" ;
+        <http://anonymous.org/vocab/stateOf>
+                "high risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitUnkLngTst>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "being in disagreement with lung function test results"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "null" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "1234" ;
+        <http://anonymous.org/vocab/stateOf>
+                "disagreement" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitKnwLngTst>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "in agreement with lung function test results"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "agreement" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitUnkCvHlth>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having an unknown or invalid cardiovascular health assessment"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitKnwCvHlth>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid cardiovascular health assessment"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "h36.00" .
+
+<http://anonymous.org/data/SitMildAls>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a mild airflow limitation severity"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "mild" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitModAls>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a moderate airflow limitation severity"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/snomedCode>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "moderate" .
+
+<http://anonymous.org/data/SitSevAls>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a severe airflow limitation severity"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "severe" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitVerySevAls>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a very severe airflow limitation severity"@en ;
+        <http://anonymous.org/vocab/snomedCode>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "very severe" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitUnkImgng>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having an unknown or invalid CAT or X-rays scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown or invalid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitKnwImgng>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid CAT or X-rays scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitUnkCtScn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having an unknown or invalid CAT  scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown or invalid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitUnkXrayScn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having an unknown or invalid X-rays scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown or invalid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitKnwCtScn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid CAT scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitKnwXrayScn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid X-rays scan"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitUnkCatRslt>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "unknown or invalid CAT score"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown or invalid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitKnwCatRslt>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid CAT score"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitUnkMrcDScale>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having an unknown or invalid mMRC dyspnoea scale"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "unknown or invalid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitKnwMrcDScale>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a known and valid mMRC dyspnoea scale"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "known and valid" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitLwRskCrd>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "low risk of having cardiac rhythm disturbances"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "low risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitHghRskCrd>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "high risk of having cardiac rhythm disturbances"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "high risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitLwRskFlu>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a low risk of contracting influenza disease"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "low risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitHghRskFlu>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a high risk of contracting influenza disease"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "high risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitLwRskPneumoc>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a low risk of contracting pneumococcal pneumonia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "n0000ull" ;
+        <http://anonymous.org/vocab/stateOf>
+                "low risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitHghRskPneumoc>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a high risk of  contracting pneumococcal pneumonia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "high risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitLwRskPneumn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a low risk of contracting pneumonia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "low risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitHghRskPneumn>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a high risk of contracting pneumonia"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "high risk" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitPrQol>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a poor quality of life"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "poor" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/SitNrmQol>
+        a       <http://anonymous.org/vocab/SituationType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "having a standard quality of life"@en ;
+        <http://anonymous.org/vocab/icd10Code>
+                "0000" ;
+        <http://anonymous.org/vocab/stateOf>
+                "standard" ;
+        <http://anonymous.org/vocab/umlsCode>
+                "0000" .
+
+<http://anonymous.org/data/PropServImgng>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medical imaging including CT and X-rays scan"@en .
+
+<http://anonymous.org/data/PropRskFlu>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "risk of contracting influenza disease"@en .
+
+<http://anonymous.org/data/PropRskPneumoc>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "risk of pneumococcal pneumonia"@en .
+
+<http://anonymous.org/data/PropRskPneumn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "risk of pneumonia"@en .
+
+<http://anonymous.org/data/PropRskCrd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "risk of cardiac rhythm disturbances"@en .
+
+<http://anonymous.org/data/PropQol>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "quality of life"@en .
+
+<http://anonymous.org/data/PropAls>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "airflow limitation severity"@en .
+
+<http://anonymous.org/data/PropServCatRslt>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CAT score"@en .
+
+<http://anonymous.org/data/PropServMrcDScale>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "mMRC Dyspnoea scale score"@en .
+
+<http://anonymous.org/data/PropServCtScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CAT scan"@en .
+
+<http://anonymous.org/data/PropServXrayScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "X-rays scan"@en .
+
+<http://anonymous.org/data/PropRskHypo>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "risk of hypokalaemia"@en .
+
+<http://anonymous.org/data/PropServLngTst>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "lung function tests"@en .
+
+<http://anonymous.org/data/PropLngHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "pulmonary health"@en .
+
+<http://anonymous.org/data/PropServCvHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TropeType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "cardiovascular health assessment"@en .
+
+<http://anonymous.org/data/TrIncPropRskHypo>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskHypo> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitHghRskHypo> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitLwRskHypo> .
+
+<http://anonymous.org/data/TrIncPropLngHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropLngHlth> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitNrmLngHlth> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitPrLngHlth> .
+
+<http://anonymous.org/data/TrIncPropServCvHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServCvHlth> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwCvHlth> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkCvHlth> .
+
+<http://anonymous.org/data/TrIncPropServLngTst>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServLngTst> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwLngTst> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkLngTst> .
+
+<http://anonymous.org/data/TrMainMildPropAls>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropAls> ;
+        <http://anonymous.org/vocab/derivative>
+                "maintain" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitMildAls> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitMildAls> .
+
+<http://anonymous.org/data/TrDecModPropAls>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropAls> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitMildAls> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitModAls> .
+
+<http://anonymous.org/data/TrDecSevPropAls>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropAls> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitModAls> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitSevAls> .
+
+<http://anonymous.org/data/TrDecVerySevPropAls>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropAls> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitSevAls> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitVerySevAls> .
+
+<http://anonymous.org/data/TrDecPropRskFlu>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskFlu> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitLwRskFlu> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitHghRskFlu> .
+
+<http://anonymous.org/data/TrDecPropRskPneumoc>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskPneumoc> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitLwRskPneumoc> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitHghRskPneumoc> .
+
+<http://anonymous.org/data/TrIncPropRskPneumoc>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropPropRskPneumoc> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitHghRskPneumoc> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitLwRskPneumoc> .
+
+<http://anonymous.org/data/TrIncPropRskPneumn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskPneumn> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitHghRskPneumn> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitLwRskPneumn> .
+
+<http://anonymous.org/data/TrDecPropRskPneumn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskPneumn> ;
+        <http://anonymous.org/vocab/derivative>
+                "decrease" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitLwRskPneumn> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitHghRskPneumn> .
+
+<http://anonymous.org/data/TrIncPropRskCrd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropRskCrd> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitHghRskCrd> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitLwRskCrd> .
+
+<http://anonymous.org/data/TrIncPropQol>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropQol> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitNrmQol> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitPrQol> .
+
+<http://anonymous.org/data/TrIncPropServCtScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServCtScn> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwCtScn> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkCtScn> .
+
+<http://anonymous.org/data/TrIncPropServXrayScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServXrayScn> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwXrayScn> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkXrayScn> .
+
+<http://anonymous.org/data/TrIncPropServCatRslt>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServCatRslt> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwCatRslt> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkCatRslt> .
+
+<http://anonymous.org/data/TrIncPropServMrcDScale>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/TransitionType> ;
+        <http://anonymous.org/vocab/affects>
+                <http://anonymous.org/data/PropServMrcDScale> ;
+        <http://anonymous.org/vocab/derivative>
+                "increase" ;
+        <http://anonymous.org/vocab/hasExpectedSituation>
+                <http://anonymous.org/data/SitKnwMrcDScale> ;
+        <http://anonymous.org/vocab/hasTransformableSituation>
+                <http://anonymous.org/data/SitUnkMrcDScale> .

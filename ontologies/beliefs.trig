@@ -1,0 +1,2035 @@
+<http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecVerySevPropAls> {
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLabaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+}
+
+<http://anonymous.org/data/CBLabaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBLabaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaMainMildPropAls> {
+    <http://anonymous.org/data/CBLabaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+}
+
+<http://anonymous.org/data/CBLabaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBIcsIncPropRskPneumn_provenance> {
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBIcsIncPropRskPneumn> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBIcsIncPropRskPneumn> {
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropRskPneumn> .
+}
+
+<http://anonymous.org/data/CBCtScnIncPropServCtScn_provenance> {
+    <http://anonymous.org/data/CBCtScnIncPropServCtScn_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBCtScnIncPropServCtScn> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBCtScnIncPropServCtScn>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBCtScnIncPropServCtScn> {
+    <http://anonymous.org/data/CBCtScnIncPropServCtScn>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerCtScn>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropServCtScn> .
+}
+
+<http://anonymous.org/data/CBLabaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaDecModPropAls_head> {
+    <http://anonymous.org/data/CBLabaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaDecModPropAls> {
+    <http://anonymous.org/data/CBLabaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+}
+
+<http://anonymous.org/data/CBLabaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale> {
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerMrcDScale>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropServMrcDScale> .
+}
+
+<http://anonymous.org/data/CBLngTstIncPropServLngTst> {
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLngTst>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropServLngTst> .
+}
+
+<http://anonymous.org/data/CBLabaIcsMainMildPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+    
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLamaDecSevPropAls> {
+    <http://anonymous.org/data/CBLamaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecModPropAls_head> {
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaIcsDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaIcsDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaIcsDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaIcsDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaIcsDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBXraysScnIncPropServXrayScn_head> {
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBXraysScnIncPropServXrayScn> {
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerXraysScn>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropServXrayScn> .
+}
+
+<http://anonymous.org/data/CBXraysScnIncPropServXrayScn_provenance> {
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBXraysScnIncPropServXrayScn_publicationinfo> {
+    <http://anonymous.org/data/CBXraysScnIncPropServXrayScn_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSamaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBSamaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSamaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSamaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSamaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSamaMainMildPropAls> {
+    <http://anonymous.org/data/CBSamaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+}
+
+<http://anonymous.org/data/CBSamaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBSamaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBSamaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSamaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBSamaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSamaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecModPropAls> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLabaLamaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+}
+
+<http://anonymous.org/data/CBCatRsltIncPropServCatRslt_head> {
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBCatRsltIncPropServCatRslt> {
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerCatRslt>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropServCatRslt> .
+}
+
+<http://anonymous.org/data/CBCatRsltIncPropServCatRslt_provenance> {
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBCatRsltIncPropServCatRslt_publicationinfo> {
+    <http://anonymous.org/data/CBCatRsltIncPropServCatRslt_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBLamaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLamaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBLamaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBLamaDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBLamaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLamaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLamaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBLamaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLamaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLamaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLamaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLamaMainMildPropAls> {
+    <http://anonymous.org/data/ActAdministerLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+    
+    <http://anonymous.org/data/CBLamaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLamaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBLamaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLamaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLamaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLamaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBFluVacDecPropRskFlu_publicationinfo> {
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBFluVacDecPropRskFlu_head> {
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBFluVacDecPropRskFlu> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBFluVacDecPropRskFlu_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBFluVacDecPropRskFlu_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBFluVacDecPropRskFlu> {
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerFluVac>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecPropRskFlu> .
+}
+
+<http://anonymous.org/data/CBFluVacDecPropRskFlu_provenance> {
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBFluVacDecPropRskFlu_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBFluVacDecPropRskFlu> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaMainMildPropAls> {
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLabaLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+}
+
+<http://anonymous.org/data/CBLabaLamaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaIcsMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaIcsMainMildPropAls_head> {
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaIcsMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaIcsMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaIcsMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaIcsMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaIcsMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaIcsMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLamaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaIcsMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecModPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLamaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBCtScnIncPropServCtScn_publicationinfo> {
+    <http://anonymous.org/data/CBCtScnIncPropServCtScn_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBCtScnIncPropServCtScn_head> {
+    <http://anonymous.org/data/CBCtScnIncPropServCtScn_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBCtScnIncPropServCtScn> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBCtScnIncPropServCtScn_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBCtScnIncPropServCtScn_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc> {
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerPneumnVac>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecPropRskPneumoc> .
+}
+
+<http://anonymous.org/data/CBSabaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBSabaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaMainMildPropAls> {
+    <http://anonymous.org/data/CBSabaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerSaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+}
+
+<http://anonymous.org/data/CBSabaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBSabaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBSabaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLngTstIncPropServLngTst_publicationinfo> {
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLngTstIncPropServLngTst_head> {
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLngTstIncPropServLngTst> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLngTstIncPropServLngTst_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLngTstIncPropServLngTst_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLngTstIncPropServLngTst_provenance> {
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLngTstIncPropServLngTst_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLngTstIncPropServLngTst> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecSevPropAls_head> {
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaIcsDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaIcsDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaIcsDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaIcs>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaIcsDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaIcsDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLngRehabIncPropLngHlth_provenance> {
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLngRehabIncPropLngHlth> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBLngRehabIncPropLngHlth> {
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLngRehab>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropLngHlth> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerLabaLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLabaLamaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBSmokeThrpyIncPropQol_publicationinfo> {
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSmokeThrpyIncPropQol_head> {
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSmokeThrpyIncPropQol> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSmokeThrpyIncPropQol_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSmokeThrpyIncPropQol_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSmokeThrpyIncPropQol> {
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerSmokeThrpy>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropQol> .
+}
+
+<http://anonymous.org/data/CBSmokeThrpyIncPropQol_provenance> {
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBSmokeThrpyIncPropQol_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSmokeThrpyIncPropQol> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaIcsDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLngRehabIncPropLngHlth_publicationinfo> {
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLngRehabIncPropLngHlth_head> {
+    <http://anonymous.org/data/CBLngRehabIncPropLngHlth_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLngRehabIncPropLngHlth> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLngRehabIncPropLngHlth_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLngRehabIncPropLngHlth_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBSabaSamaMainMildPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaSamaMainMildPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+<http://anonymous.org/data/CBSabaSamaMainMildPropAls> {
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerSabaSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrMainMildPropAls> .
+}
+
+<http://anonymous.org/data/CBSabaSamaMainMildPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaSamaMainMildPropAls_head> {
+    <http://anonymous.org/data/CBSabaSamaMainMildPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaSamaMainMildPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaSamaMainMildPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaSamaMainMildPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBBetaAgonistIncPropRskCrd> {
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerBetaAgonist>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropRskCrd> .
+}
+
+<http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_provenance> {
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_head> {
+    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaIcsDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_head> {
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_provenance> {
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_publicationinfo> {
+    <http://anonymous.org/data/CBPneumnVacDecPropRskPneumoc_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_head> {
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_publicationinfo> {
+    <http://anonymous.org/data/CBMrcDScaleIncPropServMrcDScale_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLamaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLamaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLamaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLamaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerLama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+}
+
+<http://anonymous.org/data/CBLamaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLamaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLamaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBIcsIncPropRskPneumn_head> {
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBIcsIncPropRskPneumn> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBIcsIncPropRskPneumn_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBIcsIncPropRskPneumn_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBIcsIncPropRskPneumn_publicationinfo> {
+    <http://anonymous.org/data/CBIcsIncPropRskPneumn_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecModPropAls_head> {
+    <http://anonymous.org/data/CBLamaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLamaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLamaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLamaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLamaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLamaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBLamaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBLamaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLamaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_publicationinfo> {
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_head> {
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_provenance> {
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBBetaAgonistIncPropRskCrd> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+<http://anonymous.org/data/CBLamaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLamaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLamaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBLamaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLamaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLamaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLamaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSamaDecModPropAls_head> {
+    <http://anonymous.org/data/CBSamaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSamaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSamaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSamaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSamaDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBSamaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSamaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBSamaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSamaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSamaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSamaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSamaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaDecModPropAls_head> {
+    <http://anonymous.org/data/CBSabaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerSaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBSabaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecModPropAls_head> {
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaSamaDecModPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaSamaDecModPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaSamaDecModPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecModPropAls> {
+    <http://anonymous.org/data/ActAdministerSabaSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecModPropAls> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecModPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaSamaDecModPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecModPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaSamaDecModPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSamaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBSamaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSamaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSamaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSamaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSamaDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBSamaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSamaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBSamaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSamaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSamaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSamaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSamaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBSabaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerSaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBSabaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaSamaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaSamaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaSamaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerSabaSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaSamaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaSamaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaDecSevPropAls_head> {
+    <http://anonymous.org/data/CBLabaDecSevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaDecSevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaDecSevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaDecSevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaDecSevPropAls> {
+    <http://anonymous.org/data/ActAdministerLaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecSevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaDecSevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBLabaDecSevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaDecSevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBLabaDecSevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaDecSevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBLabaDecSevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaDecSevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerLaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBLabaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBLabaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBLabaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerSaba>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSamaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSamaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSamaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSamaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSamaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSamaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSamaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSamaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSamaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_head> {
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecVerySevPropAls> {
+    <http://anonymous.org/data/ActAdministerSabaSama>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrDecVerySevPropAls> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "never" ;
+            <http://anonymous.org/vocab/strength>
+                    "low" .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_provenance> {
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_publicationinfo> {
+    <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIncPropRskHypo_head> {
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo_head>
+            a       <http://www.nanopub.org/nschema#Nanopublication> ;
+            <http://www.nanopub.org/nschema#hasAssertion>
+                    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo> ;
+            <http://www.nanopub.org/nschema#hasProvenance>
+                    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo_provenance> ;
+            <http://www.nanopub.org/nschema#hasPublicationInfo>
+                    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo_publicationinfo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIncPropRskHypo> {
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo>
+            a       <http://anonymous.org/vocab/CausationBelief> ;
+            <http://anonymous.org/vocab/frequency>
+                    "always" ;
+            <http://anonymous.org/vocab/strength>
+                    "high" .
+    
+    <http://anonymous.org/data/ActAdministerLabaLamaCkd>
+            <http://anonymous.org/vocab/causes>
+                    <http://anonymous.org/data/TrIncPropRskHypo> .
+}
+
+<http://anonymous.org/data/CBLabaLamaIncPropRskHypo_provenance> {
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo>
+            <http://www.w3.org/ns/prov#wasDerivedFrom>
+                    <http://hdl.handle.net/10222/43703> .
+    
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo_provenance>
+            a       <http://www.w3.org/ns/oa#Annotation> ;
+            <http://www.w3.org/ns/oa#hasBody>
+                    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo> ;
+            <http://www.w3.org/ns/oa#hasTarget>
+                    [ <http://www.w3.org/ns/oa#hasSource>
+                              <http://hdl.handle.net/10222/43703> ] .
+}
+
+<http://anonymous.org/data/CBLabaLamaIncPropRskHypo_publicationinfo> {
+    <http://anonymous.org/data/CBLabaLamaIncPropRskHypo_head>
+            <http://www.w3.org/ns/prov#generatedAtTime>
+                    "2019-01-01T13:14:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <http://www.w3.org/ns/prov#wasAttributedTo>
+                    <http://anonymous.org/data/JDA> .
+}
