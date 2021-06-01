@@ -58,7 +58,8 @@ subsumes(SType, Type) :-
     ;   % or it satisfies the grouping criterias of SType
     	% of which at least one is effect
     	subsumesDueToEffect(SType, Type, _)
-    	% subsumesViaGroupingCriterias(SType, Type, _)
+    ;
+        subsumesViaGroupingCriterias(SType, Type, _)
     ).
 
 propagGroupingCriteriaDrugToEventType :-

@@ -1,0 +1,172 @@
+@prefix :      <http://anonymous.org/data/> .
+@prefix np:    <http://www.nanopub.org/nschema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix vocab: <http://anonymous.org/vocab/> .
+@prefix nanopub: <http://www.nanopub.org/nschema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+:DrugCatNSAID  a                   vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label                 "NSAID"@en ;
+        #                vocab:subsumes :DrugTAspirin ,
+#                            :DrugTIbuprofen .
+        vocab:hasGroupingCriteria  :TrAntinflammatory , :SitNonSteroidalDrug .
+
+:DrugTTramadol  a   vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Tramadol"@en .
+
+:DrugCatAnalgesic  a               vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label                 "Analgesic"@en ;
+        vocab:hasGroupingCriteria  :TrPainkiller .
+
+:ActAdministerPlateletAggregationInhibitor
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Platelet Aggregation Inhibitor"@en ;
+        vocab:administrationOf  :DrugCatPlateletAggregationInhibitor .
+
+:DrugTDipyridamole  a  vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Dipyridamole"@en .
+
+:ActAdministerTramadol
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Tramadol"@en ;
+        vocab:administrationOf  :DrugTTramadol .
+
+:ActAdministerAnalgesic
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Analgesic"@en ;
+        vocab:administrationOf  :DrugCatAnalgesic .
+
+:DrugCatAntiBacterialAgent
+        a                vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label       "Anti-Bacterial Agent"@en  .
+
+:DrugTInsulin  a    vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Insulin"@en .
+
+:ActAdministerAspirin
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Aspirin"@en ;
+        vocab:administrationOf  :DrugTAspirin .
+
+:ActAdministerDipyridamole
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Dipyridamole"@en ;
+        vocab:administrationOf  :DrugTDipyridamole .
+
+:DrugCatNonSteroidal  a            vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label                 "Non-Steroidal Drug Type"@en ;
+        vocab:hasGroupingCriteria  :SitNonSteroidalDrug .
+
+:ActAdministerAntiBacterialAgent
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Anti-Bacterial Agent"@en ;
+        vocab:administrationOf  :DrugCatAntiBacterialAgent .
+
+:ActAdministerNonSteroidal
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer NonSteroidal"@en ;
+        vocab:administrationOf  :DrugCatNonSteroidal .
+
+:ActAdministerPPI  a            owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer PPI"@en ;
+        vocab:administrationOf  :DrugCatPPI .
+
+:ActAdministerIbuprofen
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Ibuprofen"@en ;
+        vocab:administrationOf  :DrugTIbuprofen .
+
+:ActAdministerClopidogrel
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Clopidogrel"@en ;
+        vocab:administrationOf  :DrugTClopidogrel .
+
+:ActAdministerAntiHypertensiveAgent
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Anti Hypertensive"@en ;
+        vocab:administrationOf  :DrugCatAntiHypertensiveAgent .
+
+:ActAdministerInsulin
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Insulin"@en ;
+        vocab:administrationOf  :DrugTInsulin .
+
+:ActAdministerNSAID  a          owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer NSAID"@en ;
+        vocab:administrationOf  :DrugCatNSAID .
+
+:ActAdministerThiazide
+        a                       owl:NamedIndividual , vocab:DrugAdministrationType ;
+        rdfs:label              "administer Thiazide"@en ;
+        vocab:administrationOf  :DrugCatThiazide ;
+        vocab:subsumes :ActAdministerBendroflumethiazide .
+
+:ActAdministerBendroflumethiazide a vocab:DrugAdministrationType, owl:NamedIndividual ;
+                    rdfs:label "Administer Bendroflumethiazide"@en ;
+                    vocab:administrationOf :DrugTBendroflumethiazide .
+
+:DrugTBendroflumethiazide rdf:type vocab:DrugType, owl:NamedIndividual ;
+                rdfs:label "Bendroflumethiazide"@en .
+
+:DrugTIbuprofen  a  vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Ibuprofen"@en .
+
+:DrugTAspirin  a    vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Aspirin"@en .
+
+:DrugTClopidogrel  a  vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label  "Clopidogrel"@en .
+
+:DrugCatPPI  a           vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label       "PPI"@en  .
+
+:DrugCatThiazide  a      vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label       "Thiazide"@en  .
+
+:DrugCatPlateletAggregationInhibitor
+        a                          vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label                 "Platelet Aggregation Inhibitor"@en ;
+        vocab:hasGroupingCriteria  :TrDecreaseBC .
+
+:DrugCatAntiHypertensiveAgent
+        a                          vocab:DrugType , owl:NamedIndividual ;
+        rdfs:label                 "Anti Hypertensive"@en ;
+        vocab:hasGroupingCriteria  :TrDecreaseBP  .
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :ActAdministerAspirin
+                        :ActAdministerClopidogrel
+                        :ActAdministerDipyridamole
+                        :ActAdministerThiazide
+                        :ActAdministerTramadol
+                        :ActAdministerPPI
+                        :ActAdministerIbuprofen
+                        :ActAdministerInsulin
+                        :ActAdministerNSAID
+                        :ActEradicationTherapy
+                      )
+] .
+[ rdf:type owl:AllDifferent ;
+owl:distinctMembers ( :DrugTAspirin
+                      :DrugTClopidogrel
+                      :DrugTDipyridamole
+                      :DrugCatThiazide
+                      :DrugTTramadol
+                      :DrugCatPPI
+                      :DrugCatNSAID
+                      :DrugTIbuprofen
+                      :DrugTnsulin
+                      :DrugCatDiuretic
+                      :DrugCatAntiBacterialAgent
+                      :DrugCatPlateletAggregationInhibitor
+                      :DrugCatAnalgesic
+                      :DrugCatAntiHypertensiveAgent
+)
+] .
