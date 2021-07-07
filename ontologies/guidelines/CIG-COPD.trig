@@ -36,7 +36,7 @@
         <http://anonymous.org/vocab/isPartOf>
                 <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A> .
 
-<http://anonymous.org/data/RecCOPD-LabaMainMildPropAls>
+<http://anonymous.org/data/RecCOPD-LabaMainMildPropAlsShould>
         <http://anonymous.org/vocab/isPartOf>
                 <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.Laba> .
 
@@ -47,7 +47,7 @@
         <http://anonymous.org/vocab/isSubGuidelineOf>
                 <http://anonymous.org/data/CIG-COPD> .
 
-<http://anonymous.org/data/RecCOPD-LamaMainMildPropAls>
+<http://anonymous.org/data/RecCOPD-LamaMainMildPropAlsShould>
         <http://anonymous.org/vocab/isPartOf>
                 <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.Lama> .
 
@@ -58,7 +58,7 @@
         <http://anonymous.org/vocab/isSubGuidelineOf>
                 <http://anonymous.org/data/CIG-COPD> .
 
-<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAls>
+<http://anonymous.org/data/RecCOPD-LabaLamaMainMildPropAlsShould>
         <http://anonymous.org/vocab/isPartOf>
                 <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.LabaLama> .
 
@@ -80,7 +80,7 @@
         <http://anonymous.org/vocab/isSubGuidelineOf>
                 <http://anonymous.org/data/CIG-COPD> .
 
-<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAls>
+<http://anonymous.org/data/RecCOPD-LabaLamaIcsMainMildPropAlsShould>
         <http://anonymous.org/vocab/isPartOf>
                 <http://anonymous.org/data/CIG-COPD> , <http://anonymous.org/data/subCIG-Group_A.LabaLamaIcs> .
 

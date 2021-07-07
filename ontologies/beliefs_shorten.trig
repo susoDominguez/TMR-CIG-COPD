@@ -32,7 +32,6 @@
     :CBLamaMainMildPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLamaMainMildPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLamaMainMildPropAls
@@ -140,8 +139,8 @@
 :CBSamaDecVerySevPropAls {
     :CBSamaDecVerySevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
     
     :ActAdministerSama
             vocab:causes  :TrDecVerySevPropAls .
@@ -175,10 +174,10 @@
     :CBLabaLamaIncPropRskHypo_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaLamaIncPropRskHypo ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLabaLamaIncPropRskHypo
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBLabaIcsDecVerySevPropAls {
@@ -207,12 +206,12 @@
 
 :CBSamaDecVerySevPropAls_provenance {
     :CBSamaDecVerySevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
     :CBSamaDecVerySevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSamaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
 :CBSamaMainMildPropAls_head {
@@ -233,10 +232,10 @@
     :CBLabaDecVerySevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLabaDecVerySevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBLabaLamaIcsDecModPropAls {
@@ -253,10 +252,10 @@
     :CBSabaSamaDecModPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaSamaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBSabaSamaDecModPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBCatRsltIncPropServCatRslt_head {
@@ -291,7 +290,6 @@
     :CBLabaMainMildPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaMainMildPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLabaMainMildPropAls
@@ -418,10 +416,10 @@
     :CBSabaDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBSabaDecSevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBSabaSamaDecModPropAls_head {
@@ -452,10 +450,10 @@
     :CBSamaDecModPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSamaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBSamaDecModPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBLabaLamaIcsDecSevPropAls_provenance {
@@ -688,7 +686,6 @@
     :CBLabaLamaDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaLamaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLabaLamaDecSevPropAls
@@ -743,28 +740,28 @@
     
     :CBSabaSamaDecSevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBSabaDecModPropAls_provenance {
     :CBSabaDecModPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBSabaDecModPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBSabaSamaDecSevPropAls_provenance {
     :CBSabaSamaDecSevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
     :CBSabaSamaDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaSamaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
 :CBLamaMainMildPropAls {
@@ -812,8 +809,8 @@
 :CBSamaDecModPropAls {
     :CBSamaDecModPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
     
     :ActAdministerSama
             vocab:causes  :TrDecModPropAls .
@@ -823,10 +820,10 @@
     :CBSabaDecVerySevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBSabaDecVerySevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBSabaSamaMainMildPropAls_provenance {
@@ -842,8 +839,8 @@
 :CBSamaDecSevPropAls {
     :CBSamaDecSevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
     
     :ActAdministerSama
             vocab:causes  :TrDecSevPropAls .
@@ -939,8 +936,8 @@
     
     :CBLabaDecVerySevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBLabaLamaIcsMainMildPropAls_provenance {
@@ -955,12 +952,12 @@
 
 :CBSamaDecSevPropAls_provenance {
     :CBSamaDecSevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
     :CBSamaDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSamaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
 :CBCtScnIncPropServCtScn_head {
@@ -1021,8 +1018,8 @@
     
     :CBSabaDecSevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBFluVacDecPropRskFlu {
@@ -1221,8 +1218,8 @@
     
     :CBSabaSamaDecVerySevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBSamaDecVerySevPropAls_publicationinfo {
@@ -1287,12 +1284,12 @@
 
 :CBSabaSamaDecVerySevPropAls_provenance {
     :CBSabaSamaDecVerySevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
     :CBSabaSamaDecVerySevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBSabaSamaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
 :CBLabaDecModPropAls {
@@ -1311,8 +1308,8 @@
     
     :CBSabaDecVerySevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBSamaDecSevPropAls_head {
@@ -1349,10 +1346,10 @@
     :CBLabaDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
     :CBLabaDecSevPropAls
-            prov:wasDerivedFrom  <http://hdl.handle.net/10222/43703> .
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
 :CBLabaDecSevPropAls {
@@ -1361,8 +1358,8 @@
     
     :CBLabaDecSevPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBLabaLamaIcsDecVerySevPropAls_provenance {
@@ -1397,8 +1394,8 @@
     
     :CBSabaDecModPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBLabaLamaIcsDecSevPropAls {
@@ -1417,8 +1414,8 @@
     
     :CBSabaSamaDecModPropAls
             a                vocab:CausationBelief ;
-            vocab:frequency  "never" ;
-            vocab:strength   "low" .
+            vocab:frequency  "always" ;
+            vocab:strength   "high" .
 }
 
 :CBSabaSamaDecVerySevPropAls_publicationinfo {
@@ -1470,7 +1467,6 @@
     :CBLabaIcsDecSevPropAls_provenance
             a             oa:Annotation ;
             oa:hasBody    :CBLabaIcsDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 

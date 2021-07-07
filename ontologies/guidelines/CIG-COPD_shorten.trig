@@ -28,21 +28,22 @@
 :RecCOPD-SabaSamaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
-:RecCOPD-LabaMainMildPropAls
+
+:RecCOPD-LabaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba .
 
 :subCIG-Group_A.Laba  a         owl:NamedIndividual , vocab:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA from previous treatment"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
-:RecCOPD-LamaMainMildPropAls
+:RecCOPD-LamaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Lama .
 
 :subCIG-Group_A.Lama  a         owl:NamedIndividual , vocab:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LAMA from previous treatment"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
-:RecCOPD-LabaLamaMainMildPropAls
+:RecCOPD-LabaLamaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLama .
 
 :subCIG-Group_A.LabaLama
@@ -58,7 +59,7 @@
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + ICS  from previous treatment"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
-:RecCOPD-LabaLamaIcsMainMildPropAls
+:RecCOPD-LabaLamaIcsMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLamaIcs .
 
 :subCIG-Group_A.LabaLamaIcs

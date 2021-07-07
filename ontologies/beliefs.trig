@@ -1515,9 +1515,9 @@
     <http://anonymous.org/data/CBSamaDecModPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSamaDecModPropAls_provenance> {
@@ -1561,9 +1561,9 @@
     <http://anonymous.org/data/CBSabaDecModPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaDecModPropAls_provenance> {
@@ -1607,9 +1607,9 @@
     <http://anonymous.org/data/CBSabaSamaDecModPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaSamaDecModPropAls_provenance> {
@@ -1653,9 +1653,9 @@
     <http://anonymous.org/data/CBSamaDecSevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSamaDecSevPropAls_provenance> {
@@ -1699,9 +1699,9 @@
     <http://anonymous.org/data/CBSabaDecSevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaDecSevPropAls_provenance> {
@@ -1745,9 +1745,9 @@
     <http://anonymous.org/data/CBSabaSamaDecSevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaSamaDecSevPropAls_provenance> {
@@ -1791,9 +1791,9 @@
     <http://anonymous.org/data/CBLabaDecSevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBLabaDecSevPropAls_provenance> {
@@ -1837,9 +1837,9 @@
     <http://anonymous.org/data/CBLabaDecVerySevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBLabaDecVerySevPropAls_provenance> {
@@ -1883,9 +1883,9 @@
     <http://anonymous.org/data/CBSabaDecVerySevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaDecVerySevPropAls_provenance> {
@@ -1929,9 +1929,9 @@
     <http://anonymous.org/data/CBSamaDecVerySevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSamaDecVerySevPropAls_provenance> {
@@ -1975,9 +1975,9 @@
     <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls>
             a       <http://anonymous.org/vocab/CausationBelief> ;
             <http://anonymous.org/vocab/frequency>
-                    "never" ;
+                    "always" ;
             <http://anonymous.org/vocab/strength>
-                    "low" .
+                    "high" .
 }
 
 <http://anonymous.org/data/CBSabaSamaDecVerySevPropAls_provenance> {
