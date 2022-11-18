@@ -238,21 +238,37 @@
         <http://anonymous.org/vocab/subsumes>
                 <http://anonymous.org/data/ActAdministerSaba> , <http://anonymous.org/data/ActAdministerSama> .
 
-<http://anonymous.org/data/DrugCatBetaAgonist>
+<http://anonymous.org/data/DrugCatLabaCvd>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "BetaAgonist"@en ;
+                "LabaCvd"@en ;
         <http://anonymous.org/vocab/hasGroupingCriteria>
                 <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerBetaAgonist>
+<http://anonymous.org/data/DrugCatSabaCvd>
+        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SabaCvd"@en ;
+        <http://anonymous.org/vocab/hasGroupingCriteria>
+                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+
+<http://anonymous.org/data/ActAdministerSabaCvd>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer Beta Agonists when cardiovascular disease is present"@en ;
+                "administer SABA when cardiovascular disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatBetaAgonist> ;
+                <http://anonymous.org/data/DrugCatSabaCvd> ;
         <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerSaba> .
+                         <http://anonymous.org/data/ActAdministerSaba> .
+
+<http://anonymous.org/data/ActAdministerLabaCvd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "administer LABA when cardiovascular disease is present"@en ;
+        <http://anonymous.org/vocab/administrationOf>
+                <http://anonymous.org/data/DrugCatLabaCvd> ;
+        <http://anonymous.org/vocab/subsumes>
+                <http://anonymous.org/data/ActAdministerLaba> .
 
 <http://anonymous.org/data/DrugCatLabaIcs>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -286,18 +302,34 @@
         <http://anonymous.org/vocab/subsumes>
                 <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLama> , <http://anonymous.org/data/ActAdministerIcs> .
 
-<http://anonymous.org/data/DrugCatLabaLamaCkd>
+<http://anonymous.org/data/DrugCatLabaCkd>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "LabaLamaCkd"@en ;
+                "LabaCkd"@en ;
         <http://anonymous.org/vocab/hasGroupingCriteria>
                 <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> , <http://anonymous.org/data/TrIncPropRskHypo> .
 
-<http://anonymous.org/data/ActAdministerLabaLamaCkd>
+<http://anonymous.org/data/DrugCatLamaCkd>
+        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "LamaCkd"@en ;
+        <http://anonymous.org/vocab/hasGroupingCriteria>
+                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> , <http://anonymous.org/data/TrIncPropRskHypo> .
+
+<http://anonymous.org/data/ActAdministerLabaCkd>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer LABA or LAMA when renal or nephrotic disease is present"@en ;
+                "administer LABA when renal or nephrotic disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaLamaCkd> ;
+                <http://anonymous.org/data/DrugCatLabaCkd> ;
         <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLama> .
+                <http://anonymous.org/data/ActAdministerLaba> .
+
+<http://anonymous.org/data/ActAdministerLamaCkd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "administer LAMA when renal or nephrotic disease is present"@en ;
+        <http://anonymous.org/vocab/administrationOf>
+                <http://anonymous.org/data/DrugCatLamaCkd> ;
+        <http://anonymous.org/vocab/subsumes>
+                                 <http://anonymous.org/data/ActAdministerLama> .

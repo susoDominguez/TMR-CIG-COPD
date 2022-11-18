@@ -18,16 +18,15 @@
 :RecCOPD-SamaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
-:subCIG-Group_A  a              owl:NamedIndividual , vocab:subGuideline ;
-        rdfs:label              "treatment pathways for patients in COPD group A"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
-
 :RecCOPD-SabaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
 :RecCOPD-SabaSamaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
+:subCIG-Group_A  a              owl:NamedIndividual , vocab:subGuideline ;
+        rdfs:label              "treatment pathways for patients in COPD group A"@en ;
+        vocab:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaMainMildPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba .
@@ -118,11 +117,18 @@
         rdfs:label              "treatment pathways for patients in COPD group B that were taking LABA + LAMA + ICS"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd .
+:RecCOPD-LamaIncPropRskHypoShouldnot
+        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd-Lama .
 
-:subCIG-Ckd  a                  owl:NamedIndividual , vocab:subGuideline ;
-        rdfs:label              "warning for patients with renal disease"@en ;
+:RecCOPD-LabaIncPropRskHypoShouldnot
+        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd-Laba .
+
+:subCIG-Ckd-Lama  a                  owl:NamedIndividual , vocab:subGuideline ;
+        rdfs:label              "warning for COPD patients with renal disease which are currently taking LAMA-based bronchodilators"@en ;
+        vocab:isSubGuidelineOf  :CIG-COPD .
+
+:subCIG-Ckd-Laba  a                  owl:NamedIndividual , vocab:subGuideline ;
+        rdfs:label              "warning for COPD patients with renal disease which are currently taking LABA-based bronchodilators"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-MrcDScaleIncPropServMrcDScaleShould
@@ -185,11 +191,18 @@
         rdfs:label              "CAT scan"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd .
+:RecCOPD-LabaIncPropRskCrdShouldnot
+        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Laba .
 
-:subCIG-Cvd  a                  owl:NamedIndividual , vocab:subGuideline ;
-        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity"@en ;
+:RecCOPD-SabaAgonistIncPropRskCrdShouldnot
+        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Saba .
+
+:subCIG-Cvd-Laba  a                  owl:NamedIndividual , vocab:subGuideline ;
+        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking LABA-based bronchodilators"@en ;
+        vocab:isSubGuidelineOf  :CIG-COPD .
+
+:subCIG-Cvd-Saba  a                  owl:NamedIndividual , vocab:subGuideline ;
+        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking SABA-based bronchodilators"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LamaDecSevPropAlsShould
@@ -252,7 +265,7 @@
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_D .
 
 :RecCOPD-IcsIncPropRskPneumnShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba , :subCIG-Group_A.Lama , :subCIG-Group_A.LabaLama , :subCIG-Group_A.LabaIcs , :subCIG-Group_A.LabaLamaIcs , :subCIG-Group_B , :subCIG-Group_C , :subCIG-Group_D .
+        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs , :subCIG-Group_A.LabaLamaIcs , :subCIG-Group_B , :subCIG-Group_B.LabaIcs , :subCIG-Group_B.LabaLamaIcs,  :subCIG-Group_C , :subCIG-Group_C.LabaLamaIcs, :subCIG-Group_D .
 
 :RecCOPD-LabaDecSevPropAlsShould
         vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.Laba .
@@ -289,12 +302,6 @@
         a                       owl:NamedIndividual , vocab:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SABA + SAMA suitable"@en ;
         vocab:isSubGuidelineOf  :CIG-COPD .
-
-:RecCOPD-LabaLamaIncPropRskHypo
-        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd .
-
-:RecCOPD-BetaAgonistIncPropRskCrdShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd .
 
 :subCIG-ServXraysScn  a         owl:NamedIndividual , vocab:subGuideline ;
         rdfs:label              "X-rays scan"@en ;
@@ -456,16 +463,31 @@
             vocab:contribution  "positive" .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot
+
+
+:RecCOPD-LabaIncPropRskHypoShouldnot {
+    :RecCOPD-LabaIncPropRskHypoShouldnot
             a                       vocab:ClinicalRecommendation ;
-            rdfs:label              "Clinician should NOT recommend administering LABA or LAMA when nephrotic or renal disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaCkd ;
-            vocab:basedOn           :CBLabaLamaIncPropRskHypo ;
+            rdfs:label              "Clinician should NOT recommend administering LABA when nephrotic or renal disease is present"@en ;
+            vocab:aboutExecutionOf  :ActAdministerLabaCkd ;
+            vocab:basedOn           :CBLabaIncPropRskHypo ;
             vocab:partOf            :CIG-COPD ;
             vocab:strength          "should-not" .
     
-    :CBLabaLamaIncPropRskHypo
+    :CBLabaIncPropRskHypo
+            vocab:contribution  "negative" .
+}
+
+:RecCOPD-LamaIncPropRskHypoShouldnot {
+    :RecCOPD-LamaIncPropRskHypoShouldnot
+            a                       vocab:ClinicalRecommendation ;
+            rdfs:label              "Clinician should NOT recommend administering LAMA when nephrotic or renal disease is present"@en ;
+            vocab:aboutExecutionOf  :ActAdministerLamaCkd ;
+            vocab:basedOn           :CBLamaIncPropRskHypo ;
+            vocab:partOf            :CIG-COPD ;
+            vocab:strength          "should-not" .
+    
+    :CBLamaIncPropRskHypo
             vocab:contribution  "negative" .
 }
 
@@ -573,16 +595,29 @@
             vocab:contribution  "positive" .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
+:RecCOPD-SabaIncPropRskCrdShouldnot {
+    :RecCOPD-SabaIncPropRskCrdShouldnot
             a                       vocab:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering any Beta Agonist when cardiovascular disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerBetaAgonist ;
-            vocab:basedOn           :CBBetaAgonistIncPropRskCrd ;
+            vocab:aboutExecutionOf  :ActAdministerSabaCvd ;
+            vocab:basedOn           :CBSabaIncPropRskCrd ;
             vocab:partOf            :CIG-COPD ;
             vocab:strength          "should-not" .
     
-    :CBBetaAgonistIncPropRskCrd
+    :CBSabaIncPropRskCrd
+            vocab:contribution  "negative" .
+}
+
+:RecCOPD-LabaIncPropRskCrdShouldnot {
+    :RecCOPD-LabaIncPropRskCrdShouldnot
+            a                       vocab:ClinicalRecommendation ;
+            rdfs:label              "Clinician should NOT recommend  administering any Beta Agonist when cardiovascular disease is present"@en ;
+            vocab:aboutExecutionOf  :ActAdministerLabaCvd ;
+            vocab:basedOn           :CBLabaIncPropRskCrd ;
+            vocab:partOf            :CIG-COPD ;
+            vocab:strength          "should-not" .
+    
+    :CBLabaIncPropRskCrd
             vocab:contribution  "negative" .
 }
 
@@ -807,26 +842,50 @@
             vocab:contribution  "positive" .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_head {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_head
+:RecCOPD-LabaIncPropRskHypoShouldnot_head {
+    :RecCOPD-LabaIncPropRskHypoShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo .
+            nanopub:hasAssertion        :RecCOPD-LabaIncPropRskHypoShouldnot ;
+            nanopub:hasProvenance       :RecCOPD-LabaIncPropRskHypoShouldnot_provenance ;
+            nanopub:hasPublicationInfo  :RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot
+:RecCOPD-LamaIncPropRskHypoShouldnot_head {
+    :RecCOPD-LamaIncPropRskHypoShouldnot_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        :RecCOPD-LamaIncPropRskHypoShouldnot ;
+            nanopub:hasProvenance       :RecCOPD-LamaIncPropRskHypoShouldnot_provenance ;
+            nanopub:hasPublicationInfo  :RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo .
+}
+
+:RecCOPD-LabaIncPropRskHypoShouldnot_provenance {
+    :RecCOPD-LabaIncPropRskHypoShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance
+    :RecCOPD-LabaIncPropRskHypoShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
+            oa:hasBody    :RecCOPD-LabaIncPropRskHypoShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_nanopub
+:RecCOPD-LamaIncPropRskHypoShouldnot_provenance {
+    :RecCOPD-LamaIncPropRskHypoShouldnot
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    :RecCOPD-LamaIncPropRskHypoShouldnot_provenance
+            a             oa:Annotation ;
+            oa:hasBody    :RecCOPD-LamaIncPropRskHypoShouldnot ;
+            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+}
+
+:RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo {
+    :RecCOPD-LabaIncPropRskHypoShouldnot_nanopub
+            prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
+            prov:wasAttributedTo  :JDA .
+}
+
+:RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo {
+    :RecCOPD-LamaIncPropRskHypoShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
             prov:wasAttributedTo  :JDA .
 }
@@ -1023,26 +1082,50 @@
             prov:wasAttributedTo  :Jesus .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head
+:RecCOPD-SabaIncPropRskCrdShouldnot_head {
+    :RecCOPD-SabaIncPropRskCrdShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo .
+            nanopub:hasAssertion        :RecCOPD-SabaIncPropRskCrdShouldnot ;
+            nanopub:hasProvenance       :RecCOPD-SabaIncPropRskCrdShouldnot_provenance ;
+            nanopub:hasPublicationInfo  :RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
+:RecCOPD-LabaIncPropRskCrdShouldnot_head {
+    :RecCOPD-LabaIncPropRskCrdShouldnot_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        :RecCOPD-LabaIncPropRskCrdShouldnot ;
+            nanopub:hasProvenance       :RecCOPD-LabaIncPropRskCrdShouldnot_provenance ;
+            nanopub:hasPublicationInfo  :RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo .
+}
+
+:RecCOPD-LabaIncPropRskCrdShouldnot_provenance {
+    :RecCOPD-LabaIncPropRskCrdShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance
+    :RecCOPD-LabaIncPropRskCrdShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
+            oa:hasBody    :RecCOPD-LabaIncPropRskCrdShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_nanopub
+:RecCOPD-SabaIncPropRskCrdShouldnot_provenance {
+    :RecCOPD-SabaIncPropRskCrdShouldnot
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    :RecCOPD-SabaIncPropRskCrdShouldnot_provenance
+            a             oa:Annotation ;
+            oa:hasBody    :RecCOPD-SabaIncPropRskCrdShouldnot ;
+            oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
+}
+
+:RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo {
+    :RecCOPD-LabaIncPropRskCrdShouldnot_nanopub
+            prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
+            prov:wasAttributedTo  :JDA .
+}
+
+:RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo {
+    :RecCOPD-SabaIncPropRskCrdShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
             prov:wasAttributedTo  :JDA .
 }
