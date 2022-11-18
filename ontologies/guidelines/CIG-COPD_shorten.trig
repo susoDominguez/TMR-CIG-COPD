@@ -194,7 +194,7 @@
 :RecCOPD-LabaIncPropRskCrdShouldnot
         vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Laba .
 
-:RecCOPD-SabaAgonistIncPropRskCrdShouldnot
+:RecCOPD-SabaIncPropRskCrdShouldnot
         vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Saba .
 
 :subCIG-Cvd-Laba  a                  owl:NamedIndividual , vocab:subGuideline ;
