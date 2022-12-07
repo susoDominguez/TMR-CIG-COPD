@@ -302,48 +302,64 @@
         <http://anonymous.org/vocab/subsumes>
                 <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLama> , <http://anonymous.org/data/ActAdministerIcs> .
 
-<http://anonymous.org/data/ActAdministerLabaCkd>
+<http://anonymous.org/data/ActAdministerLabaLamaCkd>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a LABA bronchodilator when renal or nephrotic disease is present"@en ;
+                "administer a LABA or LAMA bronchodilator when renal or nephrotic disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
-                                         <http://anonymous.org/data/DrugCatLabaCkd> ;
+                                         <http://anonymous.org/data/DrugCatLabaLamaCkd> ;
         <http://anonymous.org/vocab/subsumes>
-                                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLabaIcs> , <http://anonymous.org/data/ActAdministerLabaLamaComorbid> , <http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid> .
+                                <http://anonymous.org/data/ActAdministerLama>, <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLabaIcs> , <http://anonymous.org/data/ActAdministerLabaLama> , <http://anonymous.org/data/ActAdministerLabaLamaIcs> .
 
-<http://anonymous.org/data/ActAdministerLamaCkd>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a LAMA bronchodilator when renal or nephrotic disease is present"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                                                <http://anonymous.org/data/DrugCatLamaCkd> ;
-        <http://anonymous.org/vocab/subsumes>
-                 <http://anonymous.org/data/ActAdministerLama> ,  <http://anonymous.org/data/ActAdministerLabaLamaComorbid> ,  <http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid> .
-
-<http://anonymous.org/data/DrugCatLabaCkd>
+<http://anonymous.org/data/DrugCatLabaLamaCkd>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "LabaCkd"@en ;
+                "LabaLamaCkd"@en ;
         <http://anonymous.org/vocab/hasGroupingCriteria>
                 <http://anonymous.org/data/TrIncPropRskHypo> .
 
-<http://anonymous.org/data/DrugCatLamaCkd>
+<http://anonymous.org/data/DrugCatBetaAgonist>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "LamaCkd"@en ;
+                "BetaAgonist"@en ;
         <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrIncPropRskHypo> .
+                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerLabaLamaComorbid>
+<http://anonymous.org/data/ActAdministerBetaAgonist>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a combination of LABA, LAMA bronchodilators"@en ;
+                "administer Beta Agonists when cardiovascular disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaLama> .
+                <http://anonymous.org/data/DrugCatBetaAgonist> ;
+        <http://anonymous.org/vocab/subsumes>
+                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerSaba>, <http://anonymous.org/data/ActAdministerLabaIcs>, <http://anonymous.org/data/ActAdministerLabaLama>, <http://anonymous.org/data/ActAdministerLabaLamaIcs>, <http://anonymous.org/data/ActAdministerSabaSama> .
 
-<http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a combination of LABA, LAMA and ICS bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaLamaIcs> .
+#<http://anonymous.org/data/ActAdministerLamaCkd>
+#        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+#        <http://www.w3.org/2000/01/rdf-schema#label>
+#                "administer a LAMA bronchodilator when renal or nephrotic disease is present"@en ;
+#        <http://anonymous.org/vocab/administrationOf>
+#                                                <http://anonymous.org/data/DrugCatLabaLamaCkd> ;
+#        <http://anonymous.org/vocab/subsumes>
+#                 <http://anonymous.org/data/ActAdministerLama> ,  <http://anonymous.org/data/ActAdministerLabaLama> ,  <http://anonymous.org/data/ActAdministerLabaLamaIcs> .
+
+#<http://anonymous.org/data/DrugCatLamaCkd>
+ #       a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+  #      <http://www.w3.org/2000/01/rdf-schema#label>
+  #              "LamaCkd"@en ;
+   #     <http://anonymous.org/vocab/hasGroupingCriteria>
+    #            <http://anonymous.org/data/TrIncPropRskHypo> .
+
+#<http://anonymous.org/data/ActAdministerLabaLamaComorbid>
+ #       a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+ #       <http://www.w3.org/2000/01/rdf-schema#label>
+  #              "administer a combination of LABA, LAMA bronchodilators"@en ;
+   #     <http://anonymous.org/vocab/administrationOf>
+    #            <http://anonymous.org/data/DrugCatLabaLama> .
+
+#<http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid>
+     #   a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+      #  <http://www.w3.org/2000/01/rdf-schema#label>
+       #         "administer a combination of LABA, LAMA and ICS bronchodilators"@en ;
+        #<http://anonymous.org/vocab/administrationOf>
+         #       <http://anonymous.org/data/DrugCatLabaLamaIcs> .
