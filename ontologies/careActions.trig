@@ -220,7 +220,23 @@
         <http://anonymous.org/vocab/administrationOf>
                 <http://anonymous.org/data/DrugCatLabaLama> ;
         <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLama> .
+                <http://anonymous.org/data/ActAdministerLama> , <http://anonymous.org/data/ActAdministerLaba> .
+
+<http://anonymous.org/data/DrugCatLabaIcs>
+        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "LabaIcs"@en ;
+        <http://anonymous.org/vocab/hasGroupingCriteria>
+                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+
+<http://anonymous.org/data/ActAdministerLabaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "administer a combination of LABA and ICS bronchodilators"@en ;
+        <http://anonymous.org/vocab/administrationOf>
+                <http://anonymous.org/data/DrugCatLabaIcs> ;
+        <http://anonymous.org/vocab/subsumes>
+                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerIcs> .
 
 <http://anonymous.org/data/DrugCatSabaSama>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -269,22 +285,6 @@
                 "LabaCvd"@en ;
         <http://anonymous.org/vocab/hasGroupingCriteria>
                 <http://anonymous.org/data/TrIncPropRskCrd> .
-
-<http://anonymous.org/data/DrugCatLabaIcs>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "LabaIcs"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
-
-<http://anonymous.org/data/ActAdministerLabaIcs>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a combination of LABA and ICS bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaIcs> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerIcs> .
 
 <http://anonymous.org/data/DrugCatLabaLamaIcs>
         a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
