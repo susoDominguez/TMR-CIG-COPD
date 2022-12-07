@@ -241,7 +241,7 @@
 <http://anonymous.org/data/ActAdministerSabaCvd>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a beta-agonist bronchodilator when cardiovascular disease is present"@en ;
+                "administer a beta agonist bronchodilator when cardiovascular disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
                                          <http://anonymous.org/data/DrugCatSabaCvd> ;
         <http://anonymous.org/vocab/subsumes>
@@ -250,7 +250,7 @@
 <http://anonymous.org/data/ActAdministerLabaCvd>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "administer a beta-agonist bronchodilator when cardiovascular disease is present"@en ;
+                "administer a beta agonist bronchodilator when cardiovascular disease is present"@en ;
         <http://anonymous.org/vocab/administrationOf>
                                  <http://anonymous.org/data/DrugCatLabaCvd> ;
         <http://anonymous.org/vocab/subsumes>
