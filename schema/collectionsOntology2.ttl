@@ -1,0 +1,34 @@
+@prefix co: <http://purl.org/co/> .
+@prefix : <http://anonymous.org/tmr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@base <http://purl.org/co/> .
+
+<http://purl.org/co/> a owl:Ontology .
+
+######
+# Taken from research paper:
+# The Collections Ontology: creating and handling collections  in OWL 2 DL frameworks 
+# by Paolo Ciccaresea and Silvio Peronic (2013)
+# Semantic Web – Interoperability, Usability, Applicability an IOS Press Journal
+######
+
+
+Class: co:Collection  
+        SubClassOf:  
+                co:element only owl:Thing, 
+                co:size exactly 1  
+        DisjointWith: co:Item 
+ObjectProperty: co:element 
+    Domain: co:Collection  
+    SubPropertyChain: co:item o co:itemContent
+    InverseOf: co:elementOf 
+DataProperty: co:size  
+    Domain: co:Collection  
+    Range: xsd:nonNegativeInteger 
+    

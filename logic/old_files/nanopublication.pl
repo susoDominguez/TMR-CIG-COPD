@@ -1,7 +1,7 @@
 /* *********************************** */
 % ** Assert a Nanopublication
 % check how/where to assert the Method
-assert_Nanopublication(Label, AgentURI, Method, NanopubURI) :-
+assert_Nanopublication(Label, AgentURI, Method, _NanopubURI) :-
     	% define URI for the main/head named_graph
         concat_atom([Label, '_head'], HeadID),
         rdf_global_id(data:HeadID, HeadURI),

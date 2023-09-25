@@ -1,4 +1,4 @@
-@prefix :      <http://anonymous.org/data/> .
+@prefix :      <http://anonymous.org/tmr/data/> .
 @prefix np:    <http://www.nanopub.org/nschema#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
@@ -8,878 +8,878 @@
 @prefix oa:    <http://www.w3.org/ns/oa#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix vocab: <http://anonymous.org/vocab/> .
+@prefix tmr: <http://anonymous.org/tmr/> .
 @prefix nanopub: <http://www.nanopub.org/nschema#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 
-:CIG-COPD  a        vocab:ClinicalGuideline , owl:NamedIndividual ;
-        rdfs:label  "GOLD 2017 COPD guideline"@en .
+:CIG-COPD  a        tmr:ClinicalGuideline , owl:NamedIndividual ;
+        rdfs:label  "GOLD COPD guideline (2017)"@en .
 
 :RecCOPD-SamaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
 :RecCOPD-SabaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
 :RecCOPD-SabaSamaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
 
-:subCIG-Group_A  a              owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_A  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba .
 
-:subCIG-Group_A.Laba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_A.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA from previous treatment"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LamaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.Lama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.Lama .
 
-:subCIG-Group_A.Lama  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_A.Lama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LAMA from previous treatment"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLama .
 
 :subCIG-Group_A.LabaLama
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + LAMA from previous treatment"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaIcsMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs .
 
 :subCIG-Group_A.LabaIcs
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + ICS  from previous treatment"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaIcsMainMildPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLamaIcs .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLamaIcs .
 
 :subCIG-Group_A.LabaLamaIcs
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + LAMA + ICS  from previous treatment"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
 
-:subCIG-Group_B  a              owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_B  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LamaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
 
 :RecCOPD-LabaLamaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
 
 :RecCOPD-SabaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B.Saba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.Saba .
 
-:subCIG-Group_B.Saba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_B.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B  where clinician has deemed SABA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SamaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B.Sama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.Sama .
 
-:subCIG-Group_B.Sama  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_B.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B  where clinician has deemed SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SabaSamaDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B.SabaSama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.SabaSama .
 
 :subCIG-Group_B.SabaSama
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B where clinician has deemed SABA + SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaIcsDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaIcs .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaIcs .
 
 :subCIG-Group_B.LabaIcs
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B that were taking LABA + ICS"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaIcsDecModPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaLamaIcs .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaLamaIcs .
 
 :subCIG-Group_B.LabaLamaIcs
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B that were taking LABA + LAMA + ICS"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
-#:subCIG-Ckd-Lama  a                  owl:NamedIndividual , vocab:subGuideline ;
+#:subCIG-Ckd-Lama  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patients with renal disease which are currently taking LAMA-based bronchodilators"@en ;
-#        vocab:isSubGuidelineOf  :CIG-COPD .
+#        tmr:isSubGuidelineOf  :CIG-COPD .
 
-#:subCIG-Ckd-Laba  a                  owl:NamedIndividual , vocab:subGuideline ;
+#:subCIG-Ckd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patients with renal disease which are currently taking LABA-based bronchodilators"@en ;
-#        vocab:isSubGuidelineOf  :CIG-COPD .
+#        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaIncPropRskHypoShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Ckd .
 
-:subCIG-Ckd  a                  owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Ckd  a                  owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "warning for COPD patients with renal disease which are currently taking LABA- or LAMA-based bronchodilators"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 #:RecCOPD-LamaIncPropRskHypoShouldnot
-#        vocab:isPartOf  :CIG-COPD , :subCIG-Ckd-Lama .
+#        tmr:isPartOf  :CIG-COPD , :subCIG-Ckd-Lama .
 
 #:RecCOPD-LabaIncPropRskHypoShouldnot
- #       vocab:isPartOf  :CIG-COPD , :subCIG-Ckd-Laba .
+ #       tmr:isPartOf  :CIG-COPD , :subCIG-Ckd-Laba .
 
 :RecCOPD-MrcDScaleIncPropServMrcDScaleShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-ServMrcDScale .
+        tmr:isPartOf  :CIG-COPD , :subCIG-ServMrcDScale .
 
 :subCIG-ServMrcDScale
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "mMRC Dyspnea scale score"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-CatRsltIncPropServCatRsltShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-ServCatRslt .
+        tmr:isPartOf  :CIG-COPD , :subCIG-ServCatRslt .
 
-:subCIG-ServCatRslt  a          owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-ServCatRslt  a          owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "COPD assesment test"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SmokeThrpyIncPropQolShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Smoker .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Smoker .
 
-:subCIG-Smoker  a               owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Smoker  a               owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment recommendation for patients with COPD that smoke"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-FluVacDecPropRskFluShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-FluVac .
+        tmr:isPartOf  :CIG-COPD , :subCIG-FluVac .
 
-:subCIG-FluVac  a               owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-FluVac  a               owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "annual treatment recommendation to avoid contracting Influenza on COPD patients"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-PneumnVacDecPropRskPneumocShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-PneumnVac .
+        tmr:isPartOf  :CIG-COPD , :subCIG-PneumnVac .
 
-:subCIG-PneumnVac  a            owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-PneumnVac  a            owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment recommendation to avoid contracting Pneumococcal Pneumonia on COPD patients"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LngRehabIncPropLngHlthShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Core .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Core .
 
-:subCIG-Core  a                 owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Core  a                 owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "COPD subGuideline with treatment to provide pulmonary rehabilitation"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LngTstIncPropServLngTstShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-ServLngTst .
+        tmr:isPartOf  :CIG-COPD , :subCIG-ServLngTst .
 
-:subCIG-ServLngTst  a           owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-ServLngTst  a           owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "further COPD lung function tests"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-XraysScnIncPropServXrayScnShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-ServXrayScn .
+        tmr:isPartOf  :CIG-COPD , :subCIG-ServXrayScn .
 
 :RecCOPD-CtScnIncPropServCtScnShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-ServCtScn .
+        tmr:isPartOf  :CIG-COPD , :subCIG-ServCtScn .
 
-:subCIG-ServCtScn  a            owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-ServCtScn  a            owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "CAT scan"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
-#:subCIG-Cvd-Laba  a                  owl:NamedIndividual , vocab:subGuideline ;
+#:subCIG-Cvd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking LABA-based bronchodilators"@en ;
- #       vocab:isSubGuidelineOf  :CIG-COPD .
+ #       tmr:isSubGuidelineOf  :CIG-COPD .
 
-#:subCIG-Cvd-Saba  a                  owl:NamedIndividual , vocab:subGuideline ;
+#:subCIG-Cvd-Saba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking SABA-based bronchodilators"@en ;
- #       vocab:isSubGuidelineOf  :CIG-COPD .
+ #       tmr:isSubGuidelineOf  :CIG-COPD .
 
-:subCIG-Cvd  a                  owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Cvd  a                  owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking beta-agonist bronchodilators"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd .
 
 #:RecCOPD-LabaIncPropRskCrdShouldnot
-#        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Laba .
+#        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd-Laba .
 
 #:RecCOPD-SabaIncPropRskCrdShouldnot
-#        vocab:isPartOf  :CIG-COPD , :subCIG-Cvd-Saba .
+#        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd-Saba .
 
 :RecCOPD-LamaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
 
-:subCIG-Group_C  a              owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_C  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
 
 :RecCOPD-LabaIcsDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
 
 :RecCOPD-SabaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.Saba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Saba .
 
-:subCIG-Group_C.Saba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_C.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SABA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SamaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.Sama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Sama .
 
-:subCIG-Group_C.Sama  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_C.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SabaSamaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.SabaSama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.SabaSama .
 
 :subCIG-Group_C.SabaSama
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SABA + SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaIcsDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.LabaLamaIcs .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.LabaLamaIcs .
 
 :subCIG-Group_C.LabaLamaIcs
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C that were already taking Laba + Lama + Ics"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LamaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
 
-:subCIG-Group_D  a              owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_D  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaLamaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
 
 :RecCOPD-LabaIcsDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
 
 :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
 
 :RecCOPD-IcsIncPropRskPneumnShouldnot
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs , :subCIG-Group_A.LabaLamaIcs , :subCIG-Group_B.LabaIcs , :subCIG-Group_B.LabaLamaIcs,  :subCIG-Group_C , :subCIG-Group_D .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs , :subCIG-Group_A.LabaLamaIcs , :subCIG-Group_B.LabaIcs , :subCIG-Group_B.LabaLamaIcs,  :subCIG-Group_C , :subCIG-Group_D .
 
 :RecCOPD-LabaDecSevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_C.Laba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Laba .
 
-:subCIG-Group_C.Laba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_C.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C that were already taking Laba"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-LabaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D.Laba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Laba .
 
-:subCIG-Group_D.Laba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_D.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed LABA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SabaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D.Saba .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Saba .
 
-:subCIG-Group_D.Saba  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_D.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SABA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SamaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D.Sama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Sama .
 
-:subCIG-Group_D.Sama  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-Group_D.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SabaSamaDecVerySevPropAlsShould
-        vocab:isPartOf  :CIG-COPD , :subCIG-Group_D.SabaSama .
+        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.SabaSama .
 
 :subCIG-Group_D.SabaSama
-        a                       owl:NamedIndividual , vocab:subGuideline ;
+        a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SABA + SAMA suitable"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
-:subCIG-ServXraysScn  a         owl:NamedIndividual , vocab:subGuideline ;
+:subCIG-ServXraysScn  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "X-rays scan"@en ;
-        vocab:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  :CIG-COPD .
 
 :RecCOPD-SamaMainMildPropAlsShould {
     :RecCOPD-SamaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA to maintain COPD stage 1"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSama ;
-            vocab:basedOn           :CBSamaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSama ;
+            tmr:basedOn           :CBSamaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSamaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaMainMildPropAlsShould {
     :RecCOPD-SabaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA to maintain COPD stage 1"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSaba ;
-            vocab:basedOn           :CBSabaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSaba ;
+            tmr:basedOn           :CBSabaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaSamaMainMildPropAlsShould {
     :RecCOPD-SabaSamaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA to maintain COPD stage 1"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSabaSama ;
-            vocab:basedOn           :CBSabaSamaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
+            tmr:basedOn           :CBSabaSamaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaSamaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaIcsMainMildPropAlsShould {
     :RecCOPD-LabaIcsMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaIcs ;
-            vocab:basedOn           :CBLabaIcsMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
+            tmr:basedOn           :CBLabaIcsMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaIcsMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaDecModPropAlsShould {
     :RecCOPD-LabaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLaba ;
-            vocab:basedOn           :CBLabaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLaba ;
+            tmr:basedOn           :CBLabaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LamaDecModPropAlsShould {
     :RecCOPD-LamaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLama ;
-            vocab:basedOn           :CBLamaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLama ;
+            tmr:basedOn           :CBLamaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLamaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaDecModPropAlsShould {
     :RecCOPD-LabaLamaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLama ;
-            vocab:basedOn           :CBLabaLamaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
+            tmr:basedOn           :CBLabaLamaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaDecModPropAlsShould {
     :RecCOPD-SabaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSaba ;
-            vocab:basedOn           :CBSabaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSaba ;
+            tmr:basedOn           :CBSabaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SamaDecModPropAlsShould {
     :RecCOPD-SamaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSama ;
-            vocab:basedOn           :CBSamaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSama ;
+            tmr:basedOn           :CBSamaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSamaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaSamaDecModPropAlsShould {
     :RecCOPD-SabaSamaDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSabaSama ;
-            vocab:basedOn           :CBSabaSamaDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
+            tmr:basedOn           :CBSabaSamaDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaSamaDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaIcsDecModPropAlsShould {
     :RecCOPD-LabaIcsDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaIcs ;
-            vocab:basedOn           :CBLabaIcsDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
+            tmr:basedOn           :CBLabaIcsDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaIcsDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaIcsDecModPropAlsShould {
     :RecCOPD-LabaLamaIcsDecModPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            vocab:basedOn           :CBLabaLamaIcsDecModPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
+            tmr:basedOn           :CBLabaLamaIcsDecModPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaIcsDecModPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 
 
 :RecCOPD-LabaIncPropRskHypoShouldnot {
     :RecCOPD-LabaIncPropRskHypoShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LABA when nephrotic or renal disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaCkd ;
-            vocab:basedOn           :CBLabaIncPropRskHypo ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerLabaCkd ;
+            tmr:basedOn           :CBLabaIncPropRskHypo ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBLabaIncPropRskHypo
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-LabaLamaIncPropRskHypoShouldnot {
     :RecCOPD-LabaLamaIncPropRskHypoShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LABA or LAMA when nephrotic or renal disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaCkd ;
-            vocab:basedOn           :CBLabaLamaIncPropRskHypo ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLamaCkd ;
+            tmr:basedOn           :CBLabaLamaIncPropRskHypo ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBLabaLamaIncPropRskHypo
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-LamaIncPropRskHypoShouldnot {
     :RecCOPD-LamaIncPropRskHypoShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LAMA when nephrotic or renal disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLamaCkd ;
-            vocab:basedOn           :CBLamaIncPropRskHypo ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerLamaCkd ;
+            tmr:basedOn           :CBLamaIncPropRskHypo ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBLamaIncPropRskHypo
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-MrcDScaleIncPropServMrcDScaleShould {
     :RecCOPD-MrcDScaleIncPropServMrcDScaleShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
-            vocab:aboutExecutionOf  :ActAdministerMrcDScale ;
-            vocab:basedOn           :CBMrcDScaleIncPropServMrcDScale ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerMrcDScale ;
+            tmr:basedOn           :CBMrcDScaleIncPropServMrcDScale ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBMrcDScaleIncPropServMrcDScale
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-CatRsltIncPropServCatRsltShould {
     :RecCOPD-CatRsltIncPropServCatRsltShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
-            vocab:aboutExecutionOf  :ActAdministerCatRslt ;
-            vocab:basedOn           :CBCatRsltIncPropServCatRslt ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerCatRslt ;
+            tmr:basedOn           :CBCatRsltIncPropServCatRslt ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBCatRsltIncPropServCatRslt
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SmokeThrpyIncPropQolShould {
     :RecCOPD-SmokeThrpyIncPropQolShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should encourage patient to quit smoking suggesting smoking cessation therapies"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSmokeThrpy ;
-            vocab:basedOn           :CBSmokeThrpyIncPropQol ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSmokeThrpy ;
+            tmr:basedOn           :CBSmokeThrpyIncPropQol ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSmokeThrpyIncPropQol
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-FluVacDecPropRskFluShould {
     :RecCOPD-FluVacDecPropRskFluShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering annual influenza vaccine"@en ;
-            vocab:aboutExecutionOf  :ActAdministerFluVac ;
-            vocab:basedOn           :CBFluVacDecPropRskFlu ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerFluVac ;
+            tmr:basedOn           :CBFluVacDecPropRskFlu ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBFluVacDecPropRskFlu
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-PneumnVacDecPropRskPneumocShould {
     :RecCOPD-PneumnVacDecPropRskPneumocShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering pneumococcal vaccine"@en ;
-            vocab:aboutExecutionOf  :ActAdministerPneumnVac ;
-            vocab:basedOn           :CBPneumnVacDecPropRskPneumoc ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerPneumnVac ;
+            tmr:basedOn           :CBPneumnVacDecPropRskPneumoc ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBPneumnVacDecPropRskPneumoc
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LngRehabIncPropLngHlthShould {
     :RecCOPD-LngRehabIncPropLngHlthShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should promote performing pulmonary rehabilitation"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLngRehab ;
-            vocab:basedOn           :CBLngRehabIncPropLngHlth ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLngRehab ;
+            tmr:basedOn           :CBLngRehabIncPropLngHlth ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLngRehabIncPropLngHlth
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LngTstIncPropServLngTstShould {
     :RecCOPD-LngTstIncPropServLngTstShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct a cardiovascular health assesment if the patient has had a recent exacerbation"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLngTst ;
-            vocab:basedOn           :CBLngTstIncPropServLngTst ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLngTst ;
+            tmr:basedOn           :CBLngTstIncPropServLngTst ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLngTstIncPropServLngTst
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-XraysScnIncPropServXrayScnShould {
     :RecCOPD-XraysScnIncPropServXrayScnShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend a chest X-Ray scan"@en ;
-            vocab:aboutExecutionOf  :ActAdministerXraysScn ;
-            vocab:basedOn           :CBXraysScnIncPropServXrayScn ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerXraysScn ;
+            tmr:basedOn           :CBXraysScnIncPropServXrayScn ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBXraysScnIncPropServXrayScn
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaIncPropRskCrdShouldnot {
     :RecCOPD-SabaIncPropRskCrdShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering SABA when cardiovascular disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSabaCvd ;
-            vocab:basedOn           :CBSabaIncPropRskCrd ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerSabaCvd ;
+            tmr:basedOn           :CBSabaIncPropRskCrd ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBSabaIncPropRskCrd
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-BetaAgonistIncPropRskCrdShouldnot {
     :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering any Beta Agonist when cardiovascular disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerBetaAgonist ;
-            vocab:basedOn           :CBBetaAgonistIncPropRskCrd ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerBetaAgonist ;
+            tmr:basedOn           :CBBetaAgonistIncPropRskCrd ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBBetaAgonistIncPropRskCrd
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-LabaIncPropRskCrdShouldnot {
     :RecCOPD-LabaIncPropRskCrdShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering any LABA when cardiovascular disease is present"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaCvd ;
-            vocab:basedOn           :CBLabaIncPropRskCrd ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerLabaCvd ;
+            tmr:basedOn           :CBLabaIncPropRskCrd ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBLabaIncPropRskCrd
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-LamaDecSevPropAlsShould {
     :RecCOPD-LamaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLama ;
-            vocab:basedOn           :CBLamaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLama ;
+            tmr:basedOn           :CBLamaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLamaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaDecSevPropAlsShould {
     :RecCOPD-LabaLamaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLama ;
-            vocab:basedOn           :CBLabaLamaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
+            tmr:basedOn           :CBLabaLamaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaIcsDecSevPropAlsShould {
     :RecCOPD-LabaIcsDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaIcs ;
-            vocab:basedOn           :CBLabaIcsDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
+            tmr:basedOn           :CBLabaIcsDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaIcsDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaDecSevPropAlsShould {
     :RecCOPD-SabaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSaba ;
-            vocab:basedOn           :CBSabaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSaba ;
+            tmr:basedOn           :CBSabaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SamaDecSevPropAlsShould {
     :RecCOPD-SamaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSama ;
-            vocab:basedOn           :CBSamaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSama ;
+            tmr:basedOn           :CBSamaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSamaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaSamaDecSevPropAlsShould {
     :RecCOPD-SabaSamaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSabaSama ;
-            vocab:basedOn           :CBSabaSamaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
+            tmr:basedOn           :CBSabaSamaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaSamaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaIcsDecSevPropAlsShould {
     :RecCOPD-LabaLamaIcsDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            vocab:basedOn           :CBLabaLamaIcsDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
+            tmr:basedOn           :CBLabaLamaIcsDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaIcsDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LamaDecVerySevPropAlsShould {
     :RecCOPD-LamaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLama ;
-            vocab:basedOn           :CBLamaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLama ;
+            tmr:basedOn           :CBLamaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLamaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaDecVerySevPropAlsShould {
     :RecCOPD-LabaLamaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLama ;
-            vocab:basedOn           :CBLabaLamaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
+            tmr:basedOn           :CBLabaLamaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaIcsDecVerySevPropAlsShould {
     :RecCOPD-LabaIcsDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaIcs ;
-            vocab:basedOn           :CBLabaIcsDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
+            tmr:basedOn           :CBLabaIcsDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaIcsDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould {
     :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            vocab:basedOn           :CBLabaLamaIcsDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
+            tmr:basedOn           :CBLabaLamaIcsDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaIcsDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-IcsIncPropRskPneumnShouldnot {
     :RecCOPD-IcsIncPropRskPneumnShouldnot
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should be aware that regular treatment with ICS increases the risk of pneumonia"@en ;
-            vocab:aboutExecutionOf  :ActAdministerIcs ;
-            vocab:basedOn           :CBIcsIncPropRskPneumn ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should-not" .
+            tmr:aboutExecutionOf  :ActAdministerIcs ;
+            tmr:basedOn           :CBIcsIncPropRskPneumn ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should-not" .
     
     :CBIcsIncPropRskPneumn
-            vocab:contribution  "negative" .
+            tmr:contribution  "negative" .
 }
 
 :RecCOPD-LabaDecSevPropAlsShould {
     :RecCOPD-LabaDecSevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLaba ;
-            vocab:basedOn           :CBLabaDecSevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLaba ;
+            tmr:basedOn           :CBLabaDecSevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaDecSevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaDecVerySevPropAlsShould {
     :RecCOPD-LabaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLaba ;
-            vocab:basedOn           :CBLabaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLaba ;
+            tmr:basedOn           :CBLabaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaDecVerySevPropAlsShould {
     :RecCOPD-SabaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSaba ;
-            vocab:basedOn           :CBSabaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSaba ;
+            tmr:basedOn           :CBSabaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SamaDecVerySevPropAlsShould {
     :RecCOPD-SamaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSama ;
-            vocab:basedOn           :CBSamaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSama ;
+            tmr:basedOn           :CBSamaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSamaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-SabaSamaDecVerySevPropAlsShould {
     :RecCOPD-SabaSamaDecVerySevPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA+SAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerSabaSama ;
-            vocab:basedOn           :CBSabaSamaDecVerySevPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
+            tmr:basedOn           :CBSabaSamaDecVerySevPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBSabaSamaDecVerySevPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaIncPropRskHypoShouldnot_head {
@@ -1300,15 +1300,15 @@
 
 :RecCOPD-LabaLamaMainMildPropAlsShould {
     :RecCOPD-LabaLamaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLama ;
-            vocab:basedOn           :CBLabaLamaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
+            tmr:basedOn           :CBLabaLamaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaMainMildPropAlsShould_provenance {
@@ -1361,15 +1361,15 @@
 
 :RecCOPD-LabaLamaIcsMainMildPropAlsShould {
     :RecCOPD-LabaLamaIcsMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            vocab:basedOn           :CBLabaLamaIcsMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
+            tmr:basedOn           :CBLabaLamaIcsMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaLamaIcsMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance {
@@ -1998,15 +1998,15 @@
 
 :RecCOPD-LabaMainMildPropAlsShould {
     :RecCOPD-LabaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should continue to recommend administering Laba since treatment was effective to decrease COPD stage"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLaba ;
-            vocab:basedOn           :CBLabaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLaba ;
+            tmr:basedOn           :CBLabaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLabaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LabaMainMildPropAlsShould_provenance {
@@ -2035,15 +2035,15 @@
 
 :RecCOPD-LamaMainMildPropAlsShould {
     :RecCOPD-LamaMainMildPropAlsShould
-            a                       vocab:ClinicalRecommendation ;
+            a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should continue to recommend administering Lama since treatment was effective to decrease COPD stage"@en ;
-            vocab:aboutExecutionOf  :ActAdministerLama ;
-            vocab:basedOn           :CBLamaMainMildPropAls ;
-            vocab:partOf            :CIG-COPD ;
-            vocab:strength          "should" .
+            tmr:aboutExecutionOf  :ActAdministerLama ;
+            tmr:basedOn           :CBLamaMainMildPropAls ;
+            tmr:partOf            :CIG-COPD ;
+            tmr:strength          "should" .
     
     :CBLamaMainMildPropAls
-            vocab:contribution  "positive" .
+            tmr:contribution  "positive" .
 }
 
 :RecCOPD-LamaMainMildPropAlsShould_provenance {

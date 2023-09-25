@@ -8,14 +8,14 @@
 :- rdf_register_prefix(sider, 'http://www4.wiwiss.fu-berlin.de/sider/resource/sider/', [force = true]).
 :- rdf_register_prefix(siderDrug, 'http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/', [force = true]).
 :- rdf_register_prefix(siderEffect, 'http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/', [force = true]).
-:- rdf_register_prefix(dikb, 'http://dbmi-icode-01.dbmi.pitt.edu:2020/vocab/resource/', [force = true]).
+:- rdf_register_prefix(dikb, 'http://dbmi-icode-01.dbmi.pitt.edu:2020/tmr/resource/', [force = true]).
 :- rdf_register_prefix(ddid, 'http://liddi.stanford.edu/LIDDI:', [force = true]).
-:- rdf_register_prefix(ddiv, 'http://liddi.stanford.edu/LIDDI_vocabulary:', [force = true]).
+:- rdf_register_prefix(ddiv, 'http://liddi.stanford.edu/LIDDI_tmrulary:', [force = true]).
 :- rdf_register_prefix(ddir, 'http://liddi.stanford.edu/LIDDI_resource:', [force = true]).
-:- rdf_register_prefix(dv, 'http://bio2rdf.org/drugbank_vocabulary:', [force = true]).
+:- rdf_register_prefix(dv, 'http://bio2rdf.org/drugbank_tmrulary:', [force = true]).
 :- rdf_register_prefix(drugbankb2r, 'http://bio2rdf.org/drugbank:', [force = true]).
 :- rdf_register_prefix(aers, 'http://aers.data2semantics.org/resource/', [force = true]).
-:- rdf_register_prefix(aersVocab, 'http://aers.data2semantics.org/vocab/', [force = true]).
+:- rdf_register_prefix(aerstmr, 'http://aers.data2semantics.org/tmr/', [force = true]).
 
 :- include(guidelines).
 
@@ -44,11 +44,11 @@ unloadExternalBeliefs(Source) :-
 drugbankAssertCausationFromCategory :-
     rdf_global_id(data:'drugbank', SourceURI),
 	forall((
-     rdf(DrugCategory, vocab:'hasGroupingCriteria', Trans1),
-     rdfs_individual_of(Trans1, vocab:'TransitionType'),
+     rdf(DrugCategory, tmr:'hasGroupingCriteria', Trans1),
+     rdfs_individual_of(Trans1, tmr:'TransitionType'),
 	 rdf(DrugDB, drugbank:'drugCategory', DrugCategoryDB),
 	 rdf(DrugCategory, owl:sameAs, DrugCategoryDB),
-	 rdf(Act1, vocab:'administrationOf', DrugType),
+	 rdf(Act1, tmr:'administrationOf', DrugType),
 	 rdf(DrugType, owl:sameAs, DrugDB),
      \+ causes(Act1, Trans1, _, _, SourceURI))
    , (assertCausation2(Act1, Trans1, 'always', SourceURI, NanopubURI),
@@ -62,20 +62,20 @@ drugbankAssertCausationFromCategory :-
 % effect => assert causation
 drugbankAssertCausationFromCategoryPlus :-
     forall((
-        rdf_global_id(vocab:'DrugType', DrugTypeURI),
+        rdf_global_id(tmr:'DrugType', DrugTypeURI),
      	rdf(DrugCategory, rdf:type, DrugTypeURI),
-     	rdf(DrugCategory, vocab:'hasGroupingCriteria', _),
+     	rdf(DrugCategory, tmr:'hasGroupingCriteria', _),
 	 	rdf(DrugCategory, owl:sameAs, DrugCategoryDB),
 	 	rdf(DrugDB, drugbank:'drugCategory', DrugCategoryDB),
 	 	rdf(DrugType, owl:sameAs, DrugDB),
-	 	rdf(Act, vocab:'administrationOf', DrugType)
+	 	rdf(Act, tmr:'administrationOf', DrugType)
 	    %\+ causes(Act, Trans1, _, _, SourceURI))
     ),
     (
     	forall(
-          rdf(DrugCategory, vocab:'hasGroupingCriteria', TypeGrCrit),%then
+          rdf(DrugCategory, tmr:'hasGroupingCriteria', TypeGrCrit),%then
           (
-          (  rdf(TypeGrCrit, rdf:type, vocab:'EventType')
+          (  rdf(TypeGrCrit, rdf:type, tmr:'EventType')
     	    ->  (rdf_global_id(data:'drugbank', SourceURI),
       		  assertCausation2(Act, TypeGrCrit, 'always', SourceURI))
       		  %assertCausation2(Act, TypeGrCrit, 'always', SourceURI, NanopubURI)),
@@ -84,20 +84,20 @@ drugbankAssertCausationFromCategoryPlus :-
 		  ; % if the grouping criteria is structural
            % check if there is an event type that has only this grouping criteria
            % and infer subsumption
-		    rdfs_individual_of(TypeGrCrit, vocab:'SituationType'),
-		    rdfs_individual_of(SupEventType, vocab:'EventType'),
-            rdf(SupEventType, vocab:'hasGroupingCriteria', TypeGrCrit),
+		    rdfs_individual_of(TypeGrCrit, tmr:'SituationType'),
+		    rdfs_individual_of(SupEventType, tmr:'EventType'),
+            rdf(SupEventType, tmr:'hasGroupingCriteria', TypeGrCrit),
             %different(SupEventType,Act),
             SupEventType \= Act,
-            forall(rdf(SupEventType, vocab:'hasGroupingCriteria', Type) ,
+            forall(rdf(SupEventType, tmr:'hasGroupingCriteria', Type) ,
                    same(Type, TypeGrCrit)) )
-    		-> rdf_assert(SupEventType, vocab:'subsumes', Act, 'http://anonymous.org/entailments')
+    		-> rdf_assert(SupEventType, tmr:'subsumes', Act, 'http://anonymous.org/entailments')
           ; % if there not such event type, than create one as blank node
           % and infer subsumption
-            rdf(TypeGrCrit, rdf:type, vocab:'SituationType')
+            rdf(TypeGrCrit, rdf:type, tmr:'SituationType')
     		-> (rdf_bnode(SupEventType),
-               	rdf_assert(SupEventType, vocab:'hasGroupingCriteria', TypeGrCrit, 'http://anonymous.org/entailments'),
-               	rdf_assert(SupEventType, vocab:'subsumes', Act, 'http://anonymous.org/entailments')
+               	rdf_assert(SupEventType, tmr:'hasGroupingCriteria', TypeGrCrit, 'http://anonymous.org/entailments'),
+               	rdf_assert(SupEventType, tmr:'subsumes', Act, 'http://anonymous.org/entailments')
                )
           )
         )
@@ -106,8 +106,8 @@ drugbankAssertCausationFromCategoryPlus :-
 % Assert Incompatibility Belief Between Interacting Pair of Drugs
 drugbankAssertIncompatibilityBelief :-
 	forall((
-	 	rdf(Act1, vocab:'administrationOf', DrugT1),
-	 	rdf(Act2, vocab:'administrationOf', DrugT2),
+	 	rdf(Act1, tmr:'administrationOf', DrugT1),
+	 	rdf(Act2, tmr:'administrationOf', DrugT2),
 	 	different(Act1, Act2),
 	 	%same(DrugT1, Drug1),
      	rdf(DrugT1, owl:sameAs, Drug1),
@@ -130,20 +130,21 @@ drugbankAssertIncompatibilityBelief :-
 % ** when the situtation type has the same UMLScode as sider:SideEffect
 % they are infered as the same via owl:sameAs
 sameSituationSider :-
-	forall((
-        rdf(SituationT, vocab:'umlsCode', literal(UMLSCode)),
+	forall(
+        (rdf(SituationT, tmr:'umlsCode', literal(UMLSCode)),
 		rdf(SideEffect, sider:'sideEffectId', literal(UMLSCode)),
         \+ rdf(SituationT, owl:sameAs, SideEffect)
 	),
-    (rdf_assert(SituationT, owl:sameAs, SideEffect, 'http://anonymous.org/data'))).
+    (rdf_assert(SituationT, owl:sameAs, SideEffect, 'http://anonymous.org/data')) 
+	).
 
 % Assert Causation Belief for Drug Administration
 % For all the DrugTypes that are belived to promote as sideEffects that are same as
 % Situations that take part in transitions (for restricting the imported sideEffect)
 siderAssertCausationSideEffect :-
     forall((
-	 	( rdf(_, vocab:'hasTransformableSituation', Situation)
-	 	; rdf(_, vocab:'hasExpectedSituation', Situation)),
+	 	( rdf(_, tmr:'hasTransformableSituation', Situation)
+	 	; rdf(_, tmr:'hasExpectedSituation', Situation)),
 	 	%same(Situation, SideEffect),
 	 	rdf(Situation, owl:sameAs, SideEffect),
 	 	rdf(DrugSider, sider:'sideEffect', SideEffect),
@@ -151,8 +152,8 @@ siderAssertCausationSideEffect :-
 	 	rdf_global_id(drugBerlim:ID, DrugBerlim),
 	 	rdf_global_id(drug:ID, DrugDB),
 	 	rdf(DrugType, owl:sameAs, DrugDB),
-	 	rdfs_individual_of(DrugType, vocab:'DrugType'),
-     	rdf(Action, vocab:'administrationOf', DrugType)
+	 	rdfs_individual_of(DrugType, tmr:'DrugType'),
+     	rdf(Action, tmr:'administrationOf', DrugType)
      ),
    	 (	assertPartialTransition(Situation, NewTr),
 		rdf_global_id(data:'sider', SourceURI),
@@ -172,14 +173,14 @@ dikbAssertIncompatibilityBelief :-
 	 	rdf_global_id(drugBerlim:ID1, Drug1Berlim),
 	 	rdf_global_id(drug:ID1, Drug1DB),
 	 	rdf(DrugType1, owl:sameAs, Drug1DB),
-	 	rdfs_individual_of(DrugType1, vocab:'DrugType'),
-     	rdf(Action1, vocab:'administrationOf', DrugType1),
+	 	rdfs_individual_of(DrugType1, tmr:'DrugType'),
+     	rdf(Action1, tmr:'administrationOf', DrugType1),
 	 	rdf(Drug2, owl:sameAs, Drug2Berlim),
 	 	rdf_global_id(drugBerlim:ID2, Drug2Berlim),
 	 	rdf_global_id(drug:ID2, Drug2DB),
 	 	rdf(DrugType2, owl:sameAs, Drug2DB),
-	 	rdfs_individual_of(DrugType2, vocab:'DrugType'),
-     	rdf(Action2, vocab:'administrationOf', DrugType2)
+	 	rdfs_individual_of(DrugType2, tmr:'DrugType'),
+     	rdf(Action2, tmr:'administrationOf', DrugType2)
      ),
      ( 	rdf_global_id(data:'dikb', SourceURI),
 	   	assertIncompatibility(Action1, Action2, SourceURI, NanopubURI),
@@ -194,8 +195,8 @@ dikbAssertIncompatibilityBelief :-
 % Future: Assert the undesired effect as causation of the composed action
 liddiAssertIncompatibilityBelief :-
 	forall((
-		rdf(Act1, vocab:'administrationOf', DrugT1),
-		rdf(Act2, vocab:'administrationOf', DrugT2),
+		rdf(Act1, tmr:'administrationOf', DrugT1),
+		rdf(Act2, tmr:'administrationOf', DrugT2),
 		different(Act1, Act2),
 		%first drug
 		rdf(DrugT1, owl:sameAs, Drug1DB),
@@ -228,13 +229,13 @@ liddiAssertIncompatibilityBelief :-
 % Assert Incompatibility Belief Between Interacting Many Drugs
 aersAssertIncompatibilityBelief :-
 	forall(
-    (rdf(Report, rdf:type, 'http://aers.data2semantics.org/vocab/Report'),
+    (rdf(Report, rdf:type, 'http://aers.data2semantics.org/tmr/Report'),
     % We consider only the reports with involvement from more than one
     % distinct drugbank mapping"
 	aggregate_all(count, (distinct([Report,DrugbankBerlimURI],
-      (rdf(Elem, 'http://aers.data2semantics.org/vocab/involved_in', Report),
-	  rdf(Elem, 'http://aers.data2semantics.org/vocab/drug', Drug),
-	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/vocab/Drug'),
+      (rdf(Elem, 'http://aers.data2semantics.org/tmr/involved_in', Report),
+	  rdf(Elem, 'http://aers.data2semantics.org/tmr/drug', Drug),
+	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/tmr/Drug'),
       rdf(Drug, skos:'closeMatch', DrugbankBerlimURI),
       rdf_global_id(drugBerlim:DrugbankID, DrugbankBerlimURI)))), Count),
 	Count > 1,
@@ -242,28 +243,28 @@ aersAssertIncompatibilityBelief :-
     % via the mapping to drugbank
     % ( in order to import only the relevant interactions )
     forall(
-      (rdf(Involment, 'http://aers.data2semantics.org/vocab/involved_in', Report),
-	  rdf(Involment, 'http://aers.data2semantics.org/vocab/drug', Drug),
-	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/vocab/Drug')),
+      (rdf(Involment, 'http://aers.data2semantics.org/tmr/involved_in', Report),
+	  rdf(Involment, 'http://aers.data2semantics.org/tmr/drug', Drug),
+	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/tmr/Drug')),
       ( rdf(Drug, skos:'closeMatch', DrugbankBerlimURI),
        rdf_global_id(drugBerlim:DrugbankID, DrugbankBerlimURI),
        rdf_global_id(drug:DrugbankID, DrugbankMannheimURI),
-       rdf(DrugType, rdf:type, vocab:'DrugType'),
+       rdf(DrugType, rdf:type, tmr:'DrugType'),
        rdf(DrugType, owl:sameAs, DrugbankMannheimURI)
       ))),
     % Then assert a low-confidence incompatibility belief
     % relating all the actions correspoding to the administration of the
     % involved drugs
     ( findall((ActionType,Drug), (distinct([ActionType, Drug],
-     (rdf(Involment, 'http://aers.data2semantics.org/vocab/involved_in', Report),
-	  rdf(Involment, 'http://aers.data2semantics.org/vocab/drug', Drug),
-	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/vocab/Drug'),
+     (rdf(Involment, 'http://aers.data2semantics.org/tmr/involved_in', Report),
+	  rdf(Involment, 'http://aers.data2semantics.org/tmr/drug', Drug),
+	  rdf(Drug, rdf:type, 'http://aers.data2semantics.org/tmr/Drug'),
 	  rdf(Drug, skos:'closeMatch', DrugbankBerlimURI),
       rdf_global_id(drugBerlim:DrugbankID, DrugbankBerlimURI),
       rdf_global_id(drug:DrugbankID, DrugbankMannheimURI),
-      rdf(DrugType, rdf:type, vocab:'DrugType'),
+      rdf(DrugType, rdf:type, tmr:'DrugType'),
       rdf(DrugType, owl:sameAs, DrugbankMannheimURI),
-      rdf(ActionType, vocab:'administrationOf', DrugType)
+      rdf(ActionType, tmr:'administrationOf', DrugType)
  	 ))),EventTypeList),
      rdf_global_id(data:'aers', SourceURI),
      assertIncompatibilityMultiEvents(EventTypeList, SourceURI)

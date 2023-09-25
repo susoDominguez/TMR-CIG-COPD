@@ -2,12 +2,30 @@
 %  AUXILIARY FUNCTIONS 
 /* *********************************** */
 
-/* *********************************** */
-%  AUXILIARY FUNCTIONS 
-/* *********************************** */
-
 %:- rdf_set_predicate(owl:sameAs, inverse_of(owl:sameAs)).
 %:- include(guidelines).
+
+%check if a modifier is greater than another one. TRansitive closure 
+%
+%library(semweb/rdfs)
+greaterOrderThan(Modifier1, Modifier2, Steps) :-
+    (
+        rdfs_individual_of(Modifier1, tmr:'Modifier') ,
+        rdfs_individual_of(Modifier2, tmr:'Modifier') ,
+        rdf_reachable( Modifier1, tmr:'hasHigherOrderThan', Modifier2 , infinite , Steps) -> true 
+    ; 
+        fail 
+    ) .
+
+sameOrderAs(Modifier1, Modifier2) :-
+    (
+        rdfs_individual_of(Modifier1, tmr:'Modifier') ,
+        rdfs_individual_of(Modifier2, tmr:'Modifier') ,
+        Modifier1 = Modifier2 -> true 
+    ; 
+        fail 
+    ) .
+
 
 %% temporary
 typeOf(Inst, Type) :-
@@ -66,21 +84,21 @@ reachable(X, Y, Visited) :-
 %  FUNCTIONS FOR OUTPUT
 /* *********************************** */
 getLabel(Resource, Label) :-   
-    (   instanceOf(Resource, vocab:'Norm'),
+    (   instanceOf(Resource, tmr:'Norm'),
     rdf(Resource, rdfs:label, literal(lang(en, Label1))),
     regulates(_, Resource, Action, Strength, _),
     getLabel(Action, ActionLabel),
     concat_atom([Label1,' - by ', Strength, ' ', ActionLabel], Label) -> true
     );   
-    (   instanceOf(Resource, vocab:'CausationBelief'),
+    (   instanceOf(Resource, tmr:'CausationBelief'),
     causes(Action, Effect, Frequency, Resource),
     getLabel(Action, ActionLabel),
     getLabel(Effect, EffectLabel),
     concat_atom([ActionLabel, ' ', Frequency, ' causes ', EffectLabel], Label) -> true
 	);   
-    (   instanceOf(Resource, vocab:'IncompatibilityBelief'),
+    (   instanceOf(Resource, tmr:'IncompatibilityBelief'),
 		findall(ActionLabel,
-        (rdf(Resource, vocab:'isAbout', Action),
+        (rdf(Resource, tmr:'isAbout', Action),
          getLabel(Action, ActionLabel)),
  	    ActionLabels),
         concat_atom(ActionLabels, ', ', ActionsList),
@@ -93,55 +111,55 @@ getLabel(Resource, Label) :-
 % retrieves a dictionary interacting recommendations and the type
 getInteractingRecommendations(Regulation, IntType, List, Source) :-
 	distinct([Interaction,IntType,Regulation,Source],
-    (instanceOf(Interaction, vocab4i:'Interaction'),
+    (instanceOf(Interaction, tmr4i:'Interaction'),
 	rdf(Interaction, rdf:type, IntType),
-	rdf_global_id(vocab4i:IntType, IntType),
-    rdf(Interaction, vocab4i:'relates', Norm),
-    rdf(Norm, vocab:'partOf', Regulation),
-	rdf(Interaction, vocab4i:'relates', Elem),
-    ( instanceOf(Interaction, vocab4i:'ExternalInteraction') 
-    	-> (instanceOf(Elem, vocab:'Belief'),
+	rdf_global_id(tmr4i:IntType, IntType),
+    rdf(Interaction, tmr4i:'relates', Norm),
+    rdf(Norm, tmr:'partOf', Regulation),
+	rdf(Interaction, tmr4i:'relates', Elem),
+    ( instanceOf(Interaction, tmr4i:'ExternalInteraction') 
+    	-> (instanceOf(Elem, tmr:'Belief'),
     		rdf(Elem, prov:'wasDerivedFrom', Source))
     ;  Source = 'Internal'
     ))),
 	findall(Label, (distinct([Label], 
-        (rdf(Interaction, vocab4i:'relates', Resource),
+        (rdf(Interaction, tmr4i:'relates', Resource),
          getLabel(Resource, Label)
  	    ))),List). %sort(Items, Unique)
 
 getCaseStudyInteractions(IntType, List) :-
     rdf_global_id(data:'CIG-OA-HT-DB', Regulation),
 %    getInteractingRecommendations(Regulation, IntType, List, Source).
-    rdf_reachable(IntTypeURI, rdfs:subClassOf, vocab4i:'Interaction'),
+    rdf_reachable(IntTypeURI, rdfs:subClassOf, tmr4i:'Interaction'),
     rdf(Interaction, rdf:type, IntTypeURI),
-    rdf_global_id(vocab4i:IntType, IntTypeURI),
+    rdf_global_id(tmr4i:IntType, IntTypeURI),
     setof(Label, interactionRecommendation(Interaction, Label, Regulation), List).
 
 getInternallyInteractingRecommendations(Regulation, IntType, List) :-
-    rdf_reachable(IntTypeURI, rdfs:subClassOf, vocab4i:'InternalInteraction'),
+    rdf_reachable(IntTypeURI, rdfs:subClassOf, tmr4i:'InternalInteraction'),
     rdf(Interaction, rdf:type, IntTypeURI),
-    rdf_global_id(vocab4i:IntType, IntTypeURI),
+    rdf_global_id(tmr4i:IntType, IntTypeURI),
     setof(Label, interactionRecommendation(Interaction, Label, Regulation), List).
     %InteractionDict = interaction{type:IntType, recList:List}.
 
 getExternallyInteractingRecommendations(Regulation, IntType, List) :-
-    rdf_reachable(IntTypeURI, rdfs:subClassOf, vocab4i:'ExternalInteraction'),
+    rdf_reachable(IntTypeURI, rdfs:subClassOf, tmr4i:'ExternalInteraction'),
     rdf(Interaction, rdf:type, IntTypeURI),
-    rdf_global_id(vocab4i:IntType, IntTypeURI),
+    rdf_global_id(tmr4i:IntType, IntTypeURI),
     setof(Label, interactionRecommendation(Interaction, Label, Regulation), List).
     %InteractionDict = interaction{type:IntType, recList:List}.
 
 
 interactionRecommendation(Interaction, Label, Reg) :-
-    instanceOf(Interaction, vocab4i:'Interaction'),
+    instanceOf(Interaction, tmr4i:'Interaction'),
     (rdf_reachable(Interaction, owl:sameAs, I2)
      ;
      rdf_reachable(I2, owl:sameAs, Interaction)
     ),
-    rdf(I2, vocab4i:'relates', Entity),
+    rdf(I2, tmr4i:'relates', Entity),
     getLabel(Entity, Label),
-    rdf(I2, vocab4i:'relates', Entity2),
-    rdf(Entity2, vocab:'partOf', Reg),
-    instanceOf(Reg, vocab:'Regulation').
+    rdf(I2, tmr4i:'relates', Entity2),
+    rdf(Entity2, tmr:'partOf', Reg),
+    instanceOf(Reg, tmr:'Regulation').
 
 

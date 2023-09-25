@@ -1,12 +1,12 @@
-@prefix : <http://anonymous.org/vocab4i/> .
+@prefix : <http://anonymous.org/tmr4i/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vocab: <http://anonymous.org/vocab/> .
-@base <http://anonymous.org/vocab4i/> .
+@prefix tmr: <http://anonymous.org/tmr/> .
+@base <http://anonymous.org/tmr4i/> .
 
-<http://anonymous.org/vocab4i/> rdf:type owl:Ontology .
+<http://anonymous.org/tmr4i/> rdf:type owl:Ontology .
 
 
 #################################################################
@@ -57,7 +57,7 @@
 #                             owl:intersectionOf ( :RecommendationInteraction
 #                                             [ rdf:type owl:Restriction ;
 #                                              owl:onProperty  :relates ;
-#                                              owl:someValuesFrom vocab:Recommendation
+#                                              owl:someValuesFrom tmr:Recommendation
 #                                              ]
 #                                             )
 #                         ] .

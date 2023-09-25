@@ -1,4 +1,4 @@
-@prefix :      <http://anonymous.org/data/> .
+@prefix :      <http://anonymous.org/tmr/data/> .
 @prefix np:    <http://www.nanopub.org/nschema#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
@@ -8,7 +8,7 @@
 @prefix oa:    <http://www.w3.org/ns/oa#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix vocab: <http://anonymous.org/vocab/> .
+@prefix tmr: <http://anonymous.org/tmr/> .
 @prefix nanopub: <http://www.nanopub.org/nschema#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 
@@ -50,12 +50,12 @@
 
 :CBIcsIncPropRskPneumn {
     :CBIcsIncPropRskPneumn
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerIcs
-            vocab:causes  :TrIncPropRskPneumn .
+            tmr:causes  :TrIncPropRskPneumn .
 }
 
 :CBLabaLamaIncPropRskHypo_publicationinfo {
@@ -102,12 +102,12 @@
 
 :CBMrcDScaleIncPropServMrcDScale {
     :ActAdministerMrcDScale
-            vocab:causes  :TrIncPropServMrcDScale .
+            tmr:causes  :TrIncPropServMrcDScale .
     
     :CBMrcDScaleIncPropServMrcDScale
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLamaMainMildPropAls_head {
@@ -120,42 +120,42 @@
 
 :CBLngTstIncPropServLngTst {
     :CBLngTstIncPropServLngTst
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLngTst
-            vocab:causes  :TrIncPropServLngTst .
+            tmr:causes  :TrIncPropServLngTst .
 }
 
 :CBLabaIcsMainMildPropAls {
     :CBLabaIcsMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaIcs
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
 }
 
 :CBLamaDecSevPropAls {
     :CBLamaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLama
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
 }
 
 :CBSamaDecVerySevPropAls {
     :CBSamaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerSama
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
 }
 
 :CBSabaSamaDecVerySevPropAls_head {
@@ -214,12 +214,12 @@
 
 :CBLabaIcsDecVerySevPropAls {
     :CBLabaIcsDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaIcs
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
 }
 
 :CBLabaIcsDecModPropAls_publicationinfo {
@@ -272,12 +272,12 @@
 
 :CBLabaLamaIcsDecModPropAls {
     :CBLabaLamaIcsDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLamaIcs
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
 }
 
 :CBSabaSamaDecModPropAls_provenance {
@@ -330,12 +330,12 @@
 
 :CBLabaIcsDecModPropAls {
     :CBLabaIcsDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaIcs
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
 }
 
 :CBLabaLamaIcsDecVerySevPropAls_head {
@@ -348,12 +348,12 @@
 
 :CBSamaMainMildPropAls {
     :CBSamaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerSama
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
 }
 
 :CBFluVacDecPropRskFlu_publicationinfo {
@@ -364,12 +364,12 @@
 
 :CBLabaLamaMainMildPropAls {
     :CBLabaLamaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLama
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
 }
 
 :CBLabaLamaMainMildPropAls_head {
@@ -382,12 +382,12 @@
 
 :CBXraysScnIncPropServXrayScn {
     :CBXraysScnIncPropServXrayScn
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerXraysScn
-            vocab:causes  :TrIncPropServXrayScn .
+            tmr:causes  :TrIncPropServXrayScn .
 }
 
 :CBSabaIncPropRskCrd_provenance {
@@ -520,12 +520,12 @@
 
 :CBCtScnIncPropServCtScn {
     :CBCtScnIncPropServCtScn
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerCtScn
-            vocab:causes  :TrIncPropServCtScn .
+            tmr:causes  :TrIncPropServCtScn .
 }
 
 :CBLabaLamaDecVerySevPropAls_publicationinfo {
@@ -556,12 +556,12 @@
 
 :CBLabaLamaIcsDecVerySevPropAls {
     :CBLabaLamaIcsDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLamaIcs
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
 }
 
 :CBSabaDecSevPropAls_head {
@@ -574,12 +574,12 @@
 
 :CBLabaLamaDecVerySevPropAls {
     :CBLabaLamaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLama
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
 }
 
 :CBLabaLamaIcsDecSevPropAls_head {
@@ -592,12 +592,12 @@
 
 :CBLabaLamaDecModPropAls {
     :CBLabaLamaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLama
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
 }
 
 :CBLabaLamaIcsDecSevPropAls_publicationinfo {
@@ -608,12 +608,12 @@
 
 :CBLabaLamaIcsMainMildPropAls {
     :CBLabaLamaIcsMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLamaIcs
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
 }
 
 :CBLabaDecSevPropAls_publicationinfo {
@@ -672,12 +672,12 @@
 
 :CBPneumnVacDecPropRskPneumoc {
     :ActAdministerPneumnVac
-            vocab:causes  :TrDecPropRskPneumoc .
+            tmr:causes  :TrDecPropRskPneumoc .
     
     :CBPneumnVacDecPropRskPneumoc
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBBetaAgonistIncPropRskCrd_publicationinfo {
@@ -722,32 +722,32 @@
 
 :CBLabaIncPropRskCrd {
     :CBLabaIncPropRskCrd
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaCvd
-            vocab:causes  :TrIncPropRskCrd .
+            tmr:causes  :TrIncPropRskCrd .
 }
 
 :CBBetaAgonistIncPropRskCrd {
     :CBBetaAgonistIncPropRskCrd
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerBetaAgonist
-            vocab:causes  :TrIncPropRskCrd .
+            tmr:causes  :TrIncPropRskCrd .
 }
 
 :CBSabaIncPropRskCrd {
     :CBSabaIncPropRskCrd
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerSabaCvd
-            vocab:causes  :TrIncPropRskCrd .
+            tmr:causes  :TrIncPropRskCrd .
 }
 
 :CBLabaIcsDecSevPropAls_head {
@@ -836,12 +836,12 @@
 
 :CBSabaSamaDecSevPropAls {
     :ActAdministerSabaSama
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
     
     :CBSabaSamaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSabaDecModPropAls_provenance {
@@ -866,12 +866,12 @@
 
 :CBLamaMainMildPropAls {
     :CBLamaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLama
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
 }
 
 :CBSabaMainMildPropAls_publicationinfo {
@@ -898,22 +898,22 @@
 
 :CBLngRehabIncPropLngHlth {
     :ActAdministerLngRehab
-            vocab:causes  :TrIncPropLngHlth .
+            tmr:causes  :TrIncPropLngHlth .
     
     :CBLngRehabIncPropLngHlth
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSamaDecModPropAls {
     :CBSamaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerSama
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
 }
 
 :CBSabaDecVerySevPropAls_provenance {
@@ -938,12 +938,12 @@
 
 :CBSamaDecSevPropAls {
     :CBSamaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerSama
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
 }
 
 :CBLngRehabIncPropLngHlth_head {
@@ -980,12 +980,12 @@
 
 :CBLabaIcsDecSevPropAls {
     :CBLabaIcsDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaIcs
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
 }
 
 :CBLabaLamaIcsDecModPropAls_publicationinfo {
@@ -1032,12 +1032,12 @@
 
 :CBLabaDecVerySevPropAls {
     :ActAdministerLaba
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
     
     :CBLabaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaIcsMainMildPropAls_provenance {
@@ -1094,12 +1094,12 @@
 
 :CBLabaLamaDecSevPropAls {
     :CBLabaLamaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
     
     :ActAdministerLabaLama
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
 }
 
 :CBSabaSamaDecModPropAls_publicationinfo {
@@ -1130,22 +1130,22 @@
 
 :CBSabaDecSevPropAls {
     :ActAdministerSaba
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
     
     :CBSabaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBFluVacDecPropRskFlu {
     :ActAdministerFluVac
-            vocab:causes  :TrDecPropRskFlu .
+            tmr:causes  :TrDecPropRskFlu .
     
     :CBFluVacDecPropRskFlu
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaIcsDecVerySevPropAls_publicationinfo {
@@ -1156,12 +1156,12 @@
 
 :CBLamaDecModPropAls {
     :ActAdministerLama
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
     
     :CBLamaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBIcsIncPropRskPneumn_head {
@@ -1230,22 +1230,22 @@
 
 :CBSabaSamaMainMildPropAls {
     :ActAdministerSabaSama
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
     
     :CBSabaSamaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLamaDecVerySevPropAls {
     :ActAdministerLama
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
     
     :CBLamaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaMainMildPropAls_publicationinfo {
@@ -1330,12 +1330,12 @@
 
 :CBSabaSamaDecVerySevPropAls {
     :ActAdministerSabaSama
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
     
     :CBSabaSamaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSamaDecVerySevPropAls_publicationinfo {
@@ -1376,32 +1376,32 @@
 
 :CBLabaLamaIncPropRskHypo {
     :ActAdministerLabaLamaCkd
-            vocab:causes  :TrIncPropRskHypo .
+            tmr:causes  :TrIncPropRskHypo .
     
     :CBLabaLamaIncPropRskHypo
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaIncPropRskHypo {
     :ActAdministerLabaCkd
-            vocab:causes  :TrIncPropRskHypo .
+            tmr:causes  :TrIncPropRskHypo .
     
     :CBLabaIncPropRskHypo
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLamaIncPropRskHypo {
     :ActAdministerLamaCkd
-            vocab:causes  :TrIncPropRskHypo .
+            tmr:causes  :TrIncPropRskHypo .
     
     :CBLamaIncPropRskHypo
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaDecSevPropAls_head {
@@ -1430,22 +1430,22 @@
 
 :CBLabaDecModPropAls {
     :ActAdministerLaba
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
     
     :CBLabaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSabaDecVerySevPropAls {
     :ActAdministerSaba
-            vocab:causes  :TrDecVerySevPropAls .
+            tmr:causes  :TrDecVerySevPropAls .
     
     :CBSabaDecVerySevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSamaDecSevPropAls_head {
@@ -1458,12 +1458,12 @@
 
 :CBLabaMainMildPropAls {
     :ActAdministerLaba
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
     
     :CBLabaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLamaDecModPropAls_publicationinfo {
@@ -1490,12 +1490,12 @@
 
 :CBLabaDecSevPropAls {
     :ActAdministerLaba
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
     
     :CBLabaDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaIcsDecVerySevPropAls_provenance {
@@ -1510,12 +1510,12 @@
 
 :CBSmokeThrpyIncPropQol {
     :ActAdministerSmokeThrpy
-            vocab:causes  :TrIncPropQol .
+            tmr:causes  :TrIncPropQol .
     
     :CBSmokeThrpyIncPropQol
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSabaSamaDecSevPropAls_publicationinfo {
@@ -1526,32 +1526,32 @@
 
 :CBSabaDecModPropAls {
     :ActAdministerSaba
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
     
     :CBSabaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaIcsDecSevPropAls {
     :ActAdministerLabaLamaIcs
-            vocab:causes  :TrDecSevPropAls .
+            tmr:causes  :TrDecSevPropAls .
     
     :CBLabaLamaIcsDecSevPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSabaSamaDecModPropAls {
     :ActAdministerSabaSama
-            vocab:causes  :TrDecModPropAls .
+            tmr:causes  :TrDecModPropAls .
     
     :CBSabaSamaDecModPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBSabaSamaDecVerySevPropAls_publicationinfo {
@@ -1562,12 +1562,12 @@
 
 :CBSabaMainMildPropAls {
     :ActAdministerSaba
-            vocab:causes  :TrMainMildPropAls .
+            tmr:causes  :TrMainMildPropAls .
     
     :CBSabaMainMildPropAls
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLabaLamaIcsDecModPropAls_head {
@@ -1580,12 +1580,12 @@
 
 :CBCatRsltIncPropServCatRslt {
     :ActAdministerCatRslt
-            vocab:causes  :TrIncPropServCatRslt .
+            tmr:causes  :TrIncPropServCatRslt .
     
     :CBCatRsltIncPropServCatRslt
-            a                vocab:CausationBelief ;
-            vocab:frequency  "always" ;
-            vocab:strength   "high" .
+            a                tmr:CausationBelief ;
+            tmr:frequency  "always" ;
+            tmr:strength   "high" .
 }
 
 :CBLngTstIncPropServLngTst_head {

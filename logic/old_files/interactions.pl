@@ -5,7 +5,7 @@ interaction(I, Label, Elements) :-
     distinct(Label-Elements, interaction_(I, Label, Elements)).
 
 interaction_(I, Label, Elements) :-
-    rdfs_individual_of(I, vocab4i:'Interaction'),
+    rdfs_individual_of(I, tmr4i:'Interaction'),
     rdf(I, rdf:type, Class),
     label(Class, Label),
     findall(E, interaction_element(I, E), Elements0),
@@ -14,4 +14,4 @@ interaction_(I, Label, Elements) :-
 interaction_element(I, E) :-
     ( rdf_reachable(I, owl:sameAs, I2)
     ; rdf_reachable(I2, owl:sameAs, I)),  
-    rdf(I2, vocab4i:relates, E).
+    rdf(I2, tmr4i:relates, E).

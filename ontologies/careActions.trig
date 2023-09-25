@@ -1,4 +1,4 @@
-@prefix :      <http://anonymous.org/data/> .
+@prefix :      <http://anonymous.org/tmr/data/> .
 @prefix np:    <http://www.nanopub.org/nschema#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
@@ -8,358 +8,360 @@
 @prefix oa:    <http://www.w3.org/ns/oa#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
-@prefix vocab: <http://anonymous.org/vocab/> .
+@prefix tmr: <http://anonymous.org/tmr/> .
 @prefix nanopub: <http://www.nanopub.org/nschema#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 
-<http://anonymous.org/data/DrugTLaba>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTLaba>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Laba"@en .
 
-<http://anonymous.org/data/ActAdministerLaba>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLaba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a LABA bronchodilator"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTLaba> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTLaba> .
 
-<http://anonymous.org/data/DrugTLama>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTLama>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Lama"@en .
 
-<http://anonymous.org/data/ActAdministerLama>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a LAMA bronchodilator"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTLama> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTLama> .
 
-<http://anonymous.org/data/DrugTSaba>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTSaba>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Saba"@en .
 
-<http://anonymous.org/data/ActAdministerSaba>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerSaba>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a SABA bronchodilator"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTSaba> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTSaba> .
 
-<http://anonymous.org/data/DrugTSama>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTSama>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Sama"@en .
 
-<http://anonymous.org/data/ActAdministerSama>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerSama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a SAMA bronchodilator"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTSama> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTSama> .
 
-<http://anonymous.org/data/DrugTIcs>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTIcs>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Ics"@en .
 
-<http://anonymous.org/data/ActAdministerIcs>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer inhaled corticosteroids"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTIcs> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTIcs> .
 
-<http://anonymous.org/data/DrugTGluccorticds>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTGluccorticds>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Gluccorticds"@en .
 
-<http://anonymous.org/data/ActAdministerGluccorticds>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerGluccorticds>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer Glucocorticoids"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTGluccorticds> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerIcs> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTGluccorticds> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerIcs> .
 
-<http://anonymous.org/data/DrugTFluVac>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTFluVac>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "FluVac"@en .
 
-<http://anonymous.org/data/ActAdministerFluVac>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerFluVac>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer the influenza vaccine"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTFluVac> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTFluVac> .
 
-<http://anonymous.org/data/DrugTPneumnVac>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugTPneumnVac>
+        a       <http://anonymous.org/tmr/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "PneumnVac"@en .
 
-<http://anonymous.org/data/ActAdministerPneumnVac>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerPneumnVac>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer the pneumococcal vaccine"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugTPneumnVac> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugTPneumnVac> .
 
-<http://anonymous.org/data/NonDrugTLngRehab>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTLngRehab>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LngRehab"@en .
 
-<http://anonymous.org/data/ActAdministerLngRehab>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLngRehab>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer pulmonary rehabilitation"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTLngRehab> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTLngRehab> .
 
-<http://anonymous.org/data/NonDrugTSmokeThrpy>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTSmokeThrpy>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "SmokeThrpy"@en .
 
-<http://anonymous.org/data/ActAdministerSmokeThrpy>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerSmokeThrpy>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer smoking cessation therapy"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTSmokeThrpy> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTSmokeThrpy> .
 
-<http://anonymous.org/data/NonDrugTCtScn>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTCtScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "CtScn"@en .
 
-<http://anonymous.org/data/ActAdministerCtScn>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerCtScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform CT scan"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTCtScn> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTCtScn> .
 
-<http://anonymous.org/data/NonDrugTXraysScn>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTXraysScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "XraysScn"@en .
 
-<http://anonymous.org/data/ActAdministerXraysScn>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerXraysScn>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform X-rays scan"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTXraysScn> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTXraysScn> .
 
-<http://anonymous.org/data/NonDrugTCatRslt>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTCatRslt>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "CatRslt"@en .
 
-<http://anonymous.org/data/ActAdministerCatRslt>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerCatRslt>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform COPD assessment test"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTCatRslt> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTCatRslt> .
 
-<http://anonymous.org/data/NonDrugTMrcDScale>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTMrcDScale>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "MrcDScale"@en .
 
-<http://anonymous.org/data/ActAdministerMrcDScale>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerMrcDScale>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform mMRC dyspnoea scale"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTMrcDScale> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTMrcDScale> .
 
-<http://anonymous.org/data/NonDrugTLngTst>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTLngTst>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LngTst"@en .
 
-<http://anonymous.org/data/ActAdministerLngTst>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLngTst>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform further lung function tests"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTLngTst> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTLngTst> .
 
-<http://anonymous.org/data/NonDrugTCvHlth>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugType> ;
+<http://anonymous.org/tmr/data/NonDrugTCvHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "CvHlth"@en .
 
-<http://anonymous.org/data/ActAdministerCvHlth>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/NonDrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerCvHlth>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/NonDrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "perform cardiovascular health assessment"@en ;
-        <http://anonymous.org/vocab/applicationOf>
-                <http://anonymous.org/data/NonDrugTCvHlth> .
+        <http://anonymous.org/tmr/applicationOf>
+                <http://anonymous.org/tmr/data/NonDrugTCvHlth> .
 
-<http://anonymous.org/data/DrugCatLabaLama>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatLabaLama>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LabaLama"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrMainMildPropAls> , <http://anonymous.org/tmr/data/TrDecModPropAls> , <http://anonymous.org/tmr/data/TrDecSevPropAls> , <http://anonymous.org/tmr/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerLabaLama>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLabaLama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a combination of LABA and LAMA bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaLama> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLama> , <http://anonymous.org/data/ActAdministerLaba> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugCatLabaLama> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerLama> , <http://anonymous.org/tmr/data/ActAdministerLaba> .
 
-<http://anonymous.org/data/DrugCatLabaIcs>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatLabaIcs>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LabaIcs"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrMainMildPropAls> , <http://anonymous.org/tmr/data/TrDecModPropAls> , <http://anonymous.org/tmr/data/TrDecSevPropAls> , <http://anonymous.org/tmr/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerLabaIcs>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLabaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a combination of LABA and ICS bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaIcs> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerIcs> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugCatLabaIcs> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerLaba> , <http://anonymous.org/tmr/data/ActAdministerIcs> .
 
-<http://anonymous.org/data/DrugCatSabaSama>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatSabaSama>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "SabaSama"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrMainMildPropAls> , <http://anonymous.org/tmr/data/TrDecModPropAls> , <http://anonymous.org/tmr/data/TrDecSevPropAls> , <http://anonymous.org/tmr/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerSabaSama>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerSabaSama>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a combination of SABA and SAMA bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatSabaSama> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerSaba> , <http://anonymous.org/data/ActAdministerSama> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugCatSabaSama> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerSaba> . #, <http://anonymous.org/tmr/data/ActAdministerSama> .
 
-<http://anonymous.org/data/ActAdministerSabaCvd>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerSabaCvd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a beta agonist bronchodilator when cardiovascular disease is present"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                                         <http://anonymous.org/data/DrugCatSabaCvd> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerSaba> , <http://anonymous.org/data/ActAdministerSabaSama> .
+        <http://anonymous.org/tmr/administrationOf>
+                                         <http://anonymous.org/tmr/data/DrugCatSabaCvd> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerSaba> , <http://anonymous.org/tmr/data/ActAdministerSabaSama> .
 
-<http://anonymous.org/data/ActAdministerLabaCvd>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLabaCvd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a beta agonist bronchodilator when cardiovascular disease is present"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                                 <http://anonymous.org/data/DrugCatLabaCvd> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLabaIcs> , <http://anonymous.org/data/ActAdministerLabaLamaComorbid> , <http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid> .
+        <http://anonymous.org/tmr/administrationOf>
+                                 <http://anonymous.org/tmr/data/DrugCatLabaCvd> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerLaba> , <http://anonymous.org/tmr/data/ActAdministerLabaIcs> , <http://anonymous.org/tmr/data/ActAdministerLabaLamaComorbid> , <http://anonymous.org/tmr/data/ActAdministerLabaLamaIcsComorbid> .
 
-<http://anonymous.org/data/DrugCatSabaCvd>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatSabaCvd>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "SabaCvd"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrIncPropRskCrd> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrIncPropRskCrd> .
 
-<http://anonymous.org/data/DrugCatLabaCvd>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatLabaCvd>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LabaCvd"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrIncPropRskCrd> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrIncPropRskCrd> .
 
-<http://anonymous.org/data/DrugCatLabaLamaIcs>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatLabaLamaIcs>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LabaLamaIcs"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrMainMildPropAls> , <http://anonymous.org/tmr/data/TrDecModPropAls> , <http://anonymous.org/tmr/data/TrDecSevPropAls> , <http://anonymous.org/tmr/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerLabaLamaIcs>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLabaLamaIcs>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a combination of LABA, LAMA and ICS bronchodilators"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatLabaLamaIcs> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLama> , <http://anonymous.org/data/ActAdministerIcs> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugCatLabaLamaIcs> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerLaba> , <http://anonymous.org/tmr/data/ActAdministerLama> , <http://anonymous.org/tmr/data/ActAdministerIcs> .
 
-<http://anonymous.org/data/ActAdministerLabaLamaCkd>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerLabaLamaCkd>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer a LABA or LAMA bronchodilator when renal or nephrotic disease is present"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                                         <http://anonymous.org/data/DrugCatLabaLamaCkd> ;
-        <http://anonymous.org/vocab/subsumes>
-                                <http://anonymous.org/data/ActAdministerLama>, <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerLabaIcs> , <http://anonymous.org/data/ActAdministerLabaLama> , <http://anonymous.org/data/ActAdministerLabaLamaIcs> .
+        <http://anonymous.org/tmr/administrationOf>
+                                         <http://anonymous.org/tmr/data/DrugCatLabaLamaCkd> ;
+        <http://anonymous.org/tmr/subsumes>
+                                <http://anonymous.org/tmr/data/ActAdministerLama>, <http://anonymous.org/tmr/data/ActAdministerLaba> , <http://anonymous.org/tmr/data/ActAdministerLabaIcs> , <http://anonymous.org/tmr/data/ActAdministerLabaLama> , <http://anonymous.org/tmr/data/ActAdministerLabaLamaIcs> .
 
-<http://anonymous.org/data/DrugCatLabaLamaCkd>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatLabaLamaCkd>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "LabaLamaCkd"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrIncPropRskHypo> .
+        <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrIncPropRskHypo> .
 
-<http://anonymous.org/data/DrugCatBetaAgonist>
-        a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+<http://anonymous.org/tmr/data/DrugCatBetaAgonist>
+        a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "BetaAgonist"@en ;
-        <http://anonymous.org/vocab/hasGroupingCriteria>
-                <http://anonymous.org/data/TrMainMildPropAls> , <http://anonymous.org/data/TrDecModPropAls> , <http://anonymous.org/data/TrDecSevPropAls> , <http://anonymous.org/data/TrDecVerySevPropAls> .
+       <http://anonymous.org/tmr/hasGroupingCriteria>
+                <http://anonymous.org/tmr/data/TrMainMildPropAls> , <http://anonymous.org/tmr/data/TrDecModPropAls> , <http://anonymous.org/tmr/data/TrDecSevPropAls> , <http://anonymous.org/tmr/data/TrDecVerySevPropAls> .
 
-<http://anonymous.org/data/ActAdministerBetaAgonist>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+<http://anonymous.org/tmr/data/ActAdministerBetaAgonist>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "administer Beta Agonists when cardiovascular disease is present"@en ;
-        <http://anonymous.org/vocab/administrationOf>
-                <http://anonymous.org/data/DrugCatBetaAgonist> ;
-        <http://anonymous.org/vocab/subsumes>
-                <http://anonymous.org/data/ActAdministerLaba> , <http://anonymous.org/data/ActAdministerSaba>, <http://anonymous.org/data/ActAdministerLabaIcs>, <http://anonymous.org/data/ActAdministerLabaLama>, <http://anonymous.org/data/ActAdministerLabaLamaIcs>, <http://anonymous.org/data/ActAdministerSabaSama> .
+        <http://anonymous.org/tmr/administrationOf>
+                <http://anonymous.org/tmr/data/DrugCatBetaAgonist> ;
+        <http://anonymous.org/tmr/subsumes>
+                <http://anonymous.org/tmr/data/ActAdministerLaba> , <http://anonymous.org/tmr/data/ActAdministerSaba>, <http://anonymous.org/tmr/data/ActAdministerSabaSama>, <http://anonymous.org/tmr/data/ActAdministerLabaIcs>, <http://anonymous.org/tmr/data/ActAdministerLabaLama>, <http://anonymous.org/tmr/data/ActAdministerLabaLamaIcs> .
+#owl:AllDifferent
 
-#<http://anonymous.org/data/ActAdministerLamaCkd>
-#        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+
+#<http://anonymous.org/tmr/data/ActAdministerLamaCkd>
+#        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
 #        <http://www.w3.org/2000/01/rdf-schema#label>
 #                "administer a LAMA bronchodilator when renal or nephrotic disease is present"@en ;
-#        <http://anonymous.org/vocab/administrationOf>
-#                                                <http://anonymous.org/data/DrugCatLabaLamaCkd> ;
-#        <http://anonymous.org/vocab/subsumes>
-#                 <http://anonymous.org/data/ActAdministerLama> ,  <http://anonymous.org/data/ActAdministerLabaLama> ,  <http://anonymous.org/data/ActAdministerLabaLamaIcs> .
+#        <http://anonymous.org/tmr/administrationOf>
+#                                                <http://anonymous.org/tmr/data/DrugCatLabaLamaCkd> ;
+#        <http://anonymous.org/tmr/subsumes>
+#                 <http://anonymous.org/tmr/data/ActAdministerLama> ,  <http://anonymous.org/tmr/data/ActAdministerLabaLama> ,  <http://anonymous.org/tmr/data/ActAdministerLabaLamaIcs> .
 
-#<http://anonymous.org/data/DrugCatLamaCkd>
- #       a       <http://anonymous.org/vocab/DrugType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+#<http://anonymous.org/tmr/data/DrugCatLamaCkd>
+ #       a       <http://anonymous.org/tmr/DrugCategory> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
   #      <http://www.w3.org/2000/01/rdf-schema#label>
   #              "LamaCkd"@en ;
-   #     <http://anonymous.org/vocab/hasGroupingCriteria>
-    #            <http://anonymous.org/data/TrIncPropRskHypo> .
+   #     <http://anonymous.org/tmr/hasGroupingCriteria>
+    #            <http://anonymous.org/tmr/data/TrIncPropRskHypo> .
 
-#<http://anonymous.org/data/ActAdministerLabaLamaComorbid>
- #       a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+#<http://anonymous.org/tmr/data/ActAdministerLabaLamaComorbid>
+ #       a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
  #       <http://www.w3.org/2000/01/rdf-schema#label>
   #              "administer a combination of LABA, LAMA bronchodilators"@en ;
-   #     <http://anonymous.org/vocab/administrationOf>
-    #            <http://anonymous.org/data/DrugCatLabaLama> .
+   #     <http://anonymous.org/tmr/administrationOf>
+    #            <http://anonymous.org/tmr/data/DrugCatLabaLama> .
 
-#<http://anonymous.org/data/ActAdministerLabaLamaIcsComorbid>
-     #   a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/vocab/DrugAdministrationType> ;
+#<http://anonymous.org/tmr/data/ActAdministerLabaLamaIcsComorbid>
+     #   a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://anonymous.org/tmr/DrugAdministrationType> ;
       #  <http://www.w3.org/2000/01/rdf-schema#label>
        #         "administer a combination of LABA, LAMA and ICS bronchodilators"@en ;
-        #<http://anonymous.org/vocab/administrationOf>
-         #       <http://anonymous.org/data/DrugCatLabaLamaIcs> .
+        #<http://anonymous.org/tmr/administrationOf>
+         #       <http://anonymous.org/tmr/data/DrugCatLabaLamaIcs> .

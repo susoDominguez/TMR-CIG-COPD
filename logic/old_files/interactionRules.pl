@@ -6,9 +6,9 @@
 
 % Check if an interaction exist among two norms
 interacts(IntType, Norm1, Norm2, Interaction) :-
-   rdf(Interaction, vocab4i:'relates', Norm1),
-   rdf(Interaction, vocab4i:'relates', Norm2),
-   rdf_global_id(vocab4i:IntType, IntTypeURI),
+   rdf(Interaction, tmr4i:'relates', Norm1),
+   rdf(Interaction, tmr4i:'relates', Norm2),
+   rdf_global_id(tmr4i:IntType, IntTypeURI),
    rdfs_individual_of(Interaction, IntTypeURI),
    different(Norm1, Norm2).
 
@@ -25,18 +25,18 @@ existsInteraction(IntType, Norm1, Norm2) :-
         concat_atom([IntType, IDNorm1, IDNorm2], NewID),
         rdf_global_id(data:NewID, NewURI),
         % asserting the interaction
-        rdf_global_id(vocab4i:IntType, IntTypeURI),
+        rdf_global_id(tmr4i:IntType, IntTypeURI),
         rdf_assert(NewURI, rdf:type, IntTypeURI, my_entailments),
-        rdf_assert(NewURI, vocab4i:'relates', Norm1, my_entailments),
-        rdf_assert(NewURI, vocab4i:'relates', Norm2, my_entailments)
+        rdf_assert(NewURI, tmr4i:'relates', Norm1, my_entailments),
+        rdf_assert(NewURI, tmr4i:'relates', Norm2, my_entailments)
     ).
 
 existsInteraction(IntType, Resource1, Resource2, Resource3) :-
     (   %check if the interaction already exists
-    	rdf(Interaction, vocab4i:'relates', Resource1),
-		rdf(Interaction, vocab4i:'relates', Resource1),
-		rdf(Interaction, vocab4i:'relates', Resource3),
-        rdf_global_id(vocab4i:IntType, IntTypeURI),
+    	rdf(Interaction, tmr4i:'relates', Resource1),
+		rdf(Interaction, tmr4i:'relates', Resource1),
+		rdf(Interaction, tmr4i:'relates', Resource3),
+        rdf_global_id(tmr4i:IntType, IntTypeURI),
    		rdfs_individual_of(Interaction, IntTypeURI),
    		different(Resource1, Resource2),
    		different(Resource1, Resource3) ,
@@ -49,29 +49,29 @@ existsInteraction(IntType, Resource1, Resource2, Resource3) :-
         concat_atom([IntType, ID1, ID2, ID3], NewID),
         rdf_global_id(data:NewID, NewURI),
         % asserting the interaction
-        rdf_global_id(vocab4i:IntType, IntTypeURI),
+        rdf_global_id(tmr4i:IntType, IntTypeURI),
         rdf_assert(NewURI, rdf:type, IntTypeURI, my_entailments),
-        rdf_assert(NewURI, vocab4i:'relates', Resource1, my_entailments),
-        rdf_assert(NewURI, vocab4i:'relates', Resource2, my_entailments),
-        rdf_assert(NewURI, vocab4i:'relates', Resource3, my_entailments)
+        rdf_assert(NewURI, tmr4i:'relates', Resource1, my_entailments),
+        rdf_assert(NewURI, tmr4i:'relates', Resource2, my_entailments),
+        rdf_assert(NewURI, tmr4i:'relates', Resource3, my_entailments)
     ).
 
 existsInteractionList(IntType, ResourceList) :-
     (   %check if the interaction already exists
-    	rdf_global_id(vocab4i:IntType, IntTypeURI),
+    	rdf_global_id(tmr4i:IntType, IntTypeURI),
    		rdfs_individual_of(Interaction, IntTypeURI),
     	foreach(member(Resource, ResourceList),
-			rdf(Interaction, vocab4i:'relates', Resource)) -> true
+			rdf(Interaction, tmr4i:'relates', Resource)) -> true
 	    ;
         % composing new random URI for interaction
         random_between(0,1000000,R),
         concat_atom([IntType, R], NewID),
         rdf_global_id(data:NewID, NewURI),
         % asserting the interaction
-        rdf_global_id(vocab4i:IntType, IntTypeURI),
+        rdf_global_id(tmr4i:IntType, IntTypeURI),
         rdf_assert(NewURI, rdf:type, IntTypeURI, my_entailments),
         foreach(member(Resource, ResourceList),
-			rdf_assert(NewURI, vocab4i:'relates', Resource, my_entailments))
+		rdf_assert(NewURI, tmr4i:'relates', Resource, my_entailments))
     ).
 
 
@@ -85,7 +85,8 @@ inferInternalInteractions :-
 
 % check Contradiction
 detectContradiction :-
-    forall((
+    forall(
+        (
      	regulates(Reg, Norm1, Act1, 'should', CB1),
      	regulates(Reg, Norm2, Act2, Strength, CB2),
      	causes(Act1, Tr1, 'always', CB1),
@@ -99,8 +100,8 @@ detectContradiction :-
 		   different(Act1,Act2),
      	   inverseTo(Tr1,Tr2))  ),
      	different(Norm1,Norm2)
-     ),
-     (existsInteraction('Contradiction', Norm1, Norm2))).
+        ),
+        (existsInteraction('Contradiction', Norm1, Norm2))).
 
 % check RepeatedAction
 detectRepetition :-
@@ -111,7 +112,6 @@ detectRepetition :-
      	different(Norm1,Norm2)
     ),
     (existsInteraction('RepeatedAction',Norm1, Norm2))),
-
     % accumulate RepeatedAction
     forall( (
         interacts('RepeatedAction', Norm1, Norm2, I1),
@@ -127,7 +127,6 @@ detectAlternativeActions :-
      	similarTo(CB1, CB2) %includes diff(a1, a2) and diff(n1, n2).
      ),
      (existsInteraction('AlternativeActions', Norm1, Norm2))),
-
     % accumulate AlternativeActions
     forall( (
         interacts('AlternativeActions', Norm1, Norm2, I1),
@@ -172,7 +171,7 @@ detectExternalAlternativeAction :-
      	interacts('ExternalAlternativeAction', Norm2, CB, I2),
         regulates(Reg, Norm1, _, _, _),
         regulates(Reg, Norm2, _, _, _),
-        rdfs_individual_of(CB, vocab:'CausationBelief'),
+        rdfs_individual_of(CB, tmr:'CausationBelief'),
      	different(Norm1,Norm2), different(I1, I2)
      ),
      (rdf_assert(I1, owl:sameAs, I2, my_entailments) )).
@@ -192,16 +191,16 @@ detectExternalAlternativeAction :-
 
 detectExternalIncompatibleActions :- % for multi-actions
     forall((
-        rdfs_individual_of(IncBelief, vocab:'IncompatibilityBelief'),
-        rdfs_individual_of(Reg, vocab:'Regulation'),
-        forall( rdf(IncBelief, vocab:'isAbout', Action),
+        rdfs_individual_of(IncBelief, tmr:'IncompatibilityBelief'),
+        rdfs_individual_of(Reg, tmr:'Regulation'),
+        forall( rdf(IncBelief, tmr:'isAbout', Action),
                 (regulates(Reg, _, Action, 'should', _)
                  ;
                 regulates(Reg, _, RelAction, 'should', _),
                 relatedTypes(Action, RelAction)))
      ),
      ( findall(Norm, (distinct([Norm],
-        (rdf(IncBelief, vocab:'isAbout', Action),
+        (rdf(IncBelief, tmr:'isAbout', Action),
          (regulates(Reg, Norm, Action, 'should', _)
          ;
          regulates(Reg, Norm, RelAction, 'should', _),
@@ -217,12 +216,12 @@ detectExternalIncompatibleEffect :-
 	     regulates(Reg, Norm1, Act1, Strength, CB1),
 	     causes(Act1, Tr1, 'always', CB1),
 	     ((Strength = 'should',
-	       rdf(Tr1, vocab:'hasTransformableSituation', St1))
+	       rdf(Tr1, tmr:'hasTransformableSituation', St1))
 	     ; (Strength = 'should-not',
-	       rdf(Tr1, vocab:'hasExpectedSituation', St1))),
+	       rdf(Tr1, tmr:'hasExpectedSituation', St1))),
 	     causes(Act, Tr, 'always', CB),
 	     different(Act, Act1),
-	     rdf(Tr, vocab:'hasExpectedSituation', St1),
+	     rdf(Tr, tmr:'hasExpectedSituation', St1),
 	     regulates(Reg, Norm2, Act2, 'should', CB2),
 	     relatedTypes(Act, Act2),
      	different(CB2, CB)

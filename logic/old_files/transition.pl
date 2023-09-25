@@ -3,34 +3,34 @@
 :- use_module(library(dcg/basics)).
 
 transition0(T, TropeType, BeforeValue, ActionL, AfterValue) :-
-    rdf(T, vocab:hasExpectedSituation, After),
+    rdf(T, tmr:hasExpectedSituation, After),
     label(After, AfterL),
     tropetype_value(AfterL, TropeType, AfterValue),
-    (   rdf(T, vocab:hasTransformableSituation, Before)
+    (   rdf(T, tmr:hasTransformableSituation, Before)
     ->  label(Before, BeforeL),
         tropetype_value(BeforeL, TropeType, BeforeValue)
     ;   BeforeValue = '?'
     ),
-    rdf(Action, vocab:causes, T),
+    rdf(Action, tmr:causes, T),
     label(Action, ActionL).
 
 transition(CausationBelief, TropeType, BeforeValue, ActionL, AfterValue) :-
-    rdfs_individual_of(CausationBelief, vocab:'CausationBelief'),
-    rdf(Action, vocab:causes, Transition, CausationBelief),
+    rdfs_individual_of(CausationBelief, tmr:'CausationBelief'),
+    rdf(Action, tmr:causes, Transition, CausationBelief),
     label(Action, ActionL),
-    rdf(Transition, vocab:hasExpectedSituation, After),
+    rdf(Transition, tmr:hasExpectedSituation, After),
     label(After, AfterL),
     tropetype_value(AfterL, TropeType, AfterValue),
-    (   rdf(Transition, vocab:hasTransformableSituation, Before)
+    (   rdf(Transition, tmr:hasTransformableSituation, Before)
     ->  label(Before, BeforeL),
         tropetype_value(BeforeL, TropeType, BeforeValue)
     ;   BeforeValue = '?'
     ).
 
 transition(IB, 'unknown', '?', ActionL, 'undesired\n state') :-
-    rdfs_individual_of(IB, vocab:'IncompatibilityBelief'),
-	findall(Label,(rdf(IB, vocab:isAbout, Action),
-    				( rdf(Action, vocab:administrationOf, Drug)
+    rdfs_individual_of(IB, tmr:'IncompatibilityBelief'),
+	findall(Label,(rdf(IB, tmr:isAbout, Action),
+    				( rdf(Action, tmr:administrationOf, Drug)
 					  -> label(Drug, Label)
 					; label(Action, Label))), 
             		ActionLabelsList),

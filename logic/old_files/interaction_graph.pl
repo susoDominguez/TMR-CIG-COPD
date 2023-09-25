@@ -94,10 +94,10 @@ interaction(Recommendations, Interaction, Label, Elements, External) :-
 
 guideline_recommendations(Guideline, Recommendations) :-
     guideline(Guideline),
-    findall(R, rdf(R, vocab:partOf, Guideline), Recommendations).
+    findall(R, rdf(R, tmr:partOf, Guideline), Recommendations).
 
 guideline(GuideLine) :-
-    rdf(GuideLine, rdf:type, vocab:'ClinicalGuideline').
+    rdf(GuideLine, rdf:type, tmr:'ClinicalGuideline').
 
 external_transitions(Externals, Transitions) :-
     append(Externals, FlatExternals0),
