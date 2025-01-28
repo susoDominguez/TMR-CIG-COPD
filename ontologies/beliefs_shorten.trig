@@ -1,8 +1,5 @@
-@prefix :      <http://anonymous.org/tmr/data/> .
-@prefix np:    <http://www.nanopub.org/nschema#> .
+@prefix data:      <http://anonymous.org/tmr/data/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
-@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
@@ -12,1634 +9,1634 @@
 @prefix nanopub: <http://www.nanopub.org/nschema#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 
-:CBLabaIcsDecVerySevPropAls_provenance {
-    :CBLabaIcsDecVerySevPropAls_provenance
+data:CBLabaIcsDecVerySevPropAls_provenance {
+    data:CBLabaIcsDecVerySevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaIcsDecVerySevPropAls ;
+            oa:hasBody    data:CBLabaIcsDecVerySevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLabaIcsDecVerySevPropAls
+    data:CBLabaIcsDecVerySevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLabaMainMildPropAls_publicationinfo {
-    :CBLabaMainMildPropAls_head
+data:CBLabaMainMildPropAls_publicationinfo {
+    data:CBLabaMainMildPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLamaMainMildPropAls_provenance {
-    :CBLamaMainMildPropAls_provenance
+data:CBLamaMainMildPropAls_provenance {
+    data:CBLamaMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLamaMainMildPropAls ;
+            oa:hasBody    data:CBLamaMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLamaMainMildPropAls
+    data:CBLamaMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBIcsIncPropRskPneumn_provenance {
-    :CBIcsIncPropRskPneumn_provenance
+data:CBIcsIncPropRskPneumn_provenance {
+    data:CBIcsIncPropRskPneumn_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBIcsIncPropRskPneumn ;
+            oa:hasBody    data:CBIcsIncPropRskPneumn ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBIcsIncPropRskPneumn
+    data:CBIcsIncPropRskPneumn
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBIcsIncPropRskPneumn {
-    :CBIcsIncPropRskPneumn
+data:CBIcsIncPropRskPneumn {
+    data:CBIcsIncPropRskPneumn
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerIcs
-            tmr:causes  :TrIncPropRskPneumn .
+    data:ActAdministerIcs
+            tmr:causes  data:TrIncPropRskPneumn .
 }
 
-:CBLabaLamaIncPropRskHypo_publicationinfo {
-    :CBLabaLamaIncPropRskHypo_head
+data:CBLabaLamaIncPropRskHypo_publicationinfo {
+    data:CBLabaLamaIncPropRskHypo_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLabaIncPropRskHypo_publicationinfo {
-    :CBLabaIncPropRskHypo_head
+data:CBLabaIncPropRskHypo_publicationinfo {
+    data:CBLabaIncPropRskHypo_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLamaIncPropRskHypo_publicationinfo {
-    :CBLamaIncPropRskHypo_head
+data:CBLamaIncPropRskHypo_publicationinfo {
+    data:CBLamaIncPropRskHypo_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBCtScnIncPropServCtScn_provenance {
-    :CBCtScnIncPropServCtScn_provenance
+data:CBCtScnIncPropServCtScn_provenance {
+    data:CBCtScnIncPropServCtScn_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBCtScnIncPropServCtScn ;
+            oa:hasBody    data:CBCtScnIncPropServCtScn ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBCtScnIncPropServCtScn
+    data:CBCtScnIncPropServCtScn
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBSabaDecVerySevPropAls_head {
-    :CBSabaDecVerySevPropAls_head
+data:CBSabaDecVerySevPropAls_head {
+    data:CBSabaDecVerySevPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBSabaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaDecVerySevPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBSabaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBSabaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaDecVerySevPropAls_publicationinfo .
 }
 
-:CBLabaDecModPropAls_publicationinfo {
-    :CBLabaDecModPropAls_head
+data:CBLabaDecModPropAls_publicationinfo {
+    data:CBLabaDecModPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBMrcDScaleIncPropServMrcDScale {
-    :ActAdministerMrcDScale
-            tmr:causes  :TrIncPropServMrcDScale .
+data:CBMrcDScaleIncPropServMrcDScale {
+    data:ActAdministerMrcDScale
+            tmr:causes  data:TrIncPropServMrcDScale .
     
-    :CBMrcDScaleIncPropServMrcDScale
+    data:CBMrcDScaleIncPropServMrcDScale
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
 }
 
-:CBLamaMainMildPropAls_head {
-    :CBLamaMainMildPropAls_head
+data:CBLamaMainMildPropAls_head {
+    data:CBLamaMainMildPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLamaMainMildPropAls ;
-            nanopub:hasProvenance       :CBLamaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLamaMainMildPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBLamaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBLamaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLamaMainMildPropAls_publicationinfo .
 }
 
-:CBLngTstIncPropServLngTst {
-    :CBLngTstIncPropServLngTst
+data:CBLngTstIncPropServLngTst {
+    data:CBLngTstIncPropServLngTst
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerLngTst
-            tmr:causes  :TrIncPropServLngTst .
+    data:ActAdministerLngTst
+            tmr:causes  data:TrIncPropServLngTst .
 }
 
-:CBLabaIcsMainMildPropAls {
-    :CBLabaIcsMainMildPropAls
+data:CBLabaIcsMainMildPropAls {
+    data:CBLabaIcsMainMildPropAls
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerLabaIcs
-            tmr:causes  :TrMainMildPropAls .
+    data:ActAdministerLabaIcs
+            tmr:causes  data:TrMainMildPropAls .
 }
 
-:CBLamaDecSevPropAls {
-    :CBLamaDecSevPropAls
+data:CBLamaDecSevPropAls {
+    data:CBLamaDecSevPropAls
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerLama
-            tmr:causes  :TrDecSevPropAls .
+    data:ActAdministerLama
+            tmr:causes  data:TrDecSevPropAls .
 }
 
-:CBSamaDecVerySevPropAls {
-    :CBSamaDecVerySevPropAls
+data:CBSamaDecVerySevPropAls {
+    data:CBSamaDecVerySevPropAls
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerSama
-            tmr:causes  :TrDecVerySevPropAls .
+    data:ActAdministerSama
+            tmr:causes  data:TrDecVerySevPropAls .
 }
 
-:CBSabaSamaDecVerySevPropAls_head {
-    :CBSabaSamaDecVerySevPropAls_head
+data:CBSabaSamaDecVerySevPropAls_head {
+    data:CBSabaSamaDecVerySevPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaSamaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBSabaSamaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaSamaDecVerySevPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBSabaSamaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBSabaSamaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaSamaDecVerySevPropAls_publicationinfo .
 }
 
-:CBLabaDecSevPropAls_head {
-    :CBLabaDecSevPropAls_head
+data:CBLabaDecSevPropAls_head {
+    data:CBLabaDecSevPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaDecSevPropAls ;
-            nanopub:hasProvenance       :CBLabaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaDecSevPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBLabaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBLabaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaDecSevPropAls_publicationinfo .
 }
 
-:CBSamaDecVerySevPropAls_head {
-    :CBSamaDecVerySevPropAls_head
+data:CBSamaDecVerySevPropAls_head {
+    data:CBSamaDecVerySevPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSamaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBSamaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSamaDecVerySevPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBSamaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBSamaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSamaDecVerySevPropAls_publicationinfo .
 }
 
-:CBLabaLamaIncPropRskHypo_provenance {
-    :CBLabaLamaIncPropRskHypo_provenance
+data:CBLabaLamaIncPropRskHypo_provenance {
+    data:CBLabaLamaIncPropRskHypo_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaIncPropRskHypo ;
+            oa:hasBody    data:CBLabaLamaIncPropRskHypo ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLabaLamaIncPropRskHypo
+    data:CBLabaLamaIncPropRskHypo
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLabaIncPropRskHypo_provenance {
-    :CBLabaIncPropRskHypo_provenance
+data:CBLabaIncPropRskHypo_provenance {
+    data:CBLabaIncPropRskHypo_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaIncPropRskHypo ;
+            oa:hasBody    data:CBLabaIncPropRskHypo ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLabaIncPropRskHypo
+    data:CBLabaIncPropRskHypo
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLamaIncPropRskHypo_provenance {
-    :CBLamaIncPropRskHypo_provenance
+data:CBLamaIncPropRskHypo_provenance {
+    data:CBLamaIncPropRskHypo_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLamaIncPropRskHypo ;
+            oa:hasBody    data:CBLamaIncPropRskHypo ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLamaIncPropRskHypo
+    data:CBLamaIncPropRskHypo
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLabaIcsDecVerySevPropAls {
-    :CBLabaIcsDecVerySevPropAls
+data:CBLabaIcsDecVerySevPropAls {
+    data:CBLabaIcsDecVerySevPropAls
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
     
-    :ActAdministerLabaIcs
-            tmr:causes  :TrDecVerySevPropAls .
+    data:ActAdministerLabaIcs
+            tmr:causes  data:TrDecVerySevPropAls .
 }
 
-:CBLabaIcsDecModPropAls_publicationinfo {
-    :CBLabaIcsDecModPropAls_head
+data:CBLabaIcsDecModPropAls_publicationinfo {
+    data:CBLabaIcsDecModPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBXraysScnIncPropServXrayScn_head {
-    :CBXraysScnIncPropServXrayScn_head
+data:CBXraysScnIncPropServXrayScn_head {
+    data:CBXraysScnIncPropServXrayScn_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBXraysScnIncPropServXrayScn ;
-            nanopub:hasProvenance       :CBXraysScnIncPropServXrayScn_provenance ;
-            nanopub:hasPublicationInfo  :CBXraysScnIncPropServXrayScn_publicationinfo .
+            nanopub:hasAssertion        data:CBXraysScnIncPropServXrayScn ;
+            nanopub:hasProvenance       data:CBXraysScnIncPropServXrayScn_provenance ;
+            nanopub:hasPublicationInfo  data:CBXraysScnIncPropServXrayScn_publicationinfo .
 }
 
-:CBSamaDecVerySevPropAls_provenance {
-    :CBSamaDecVerySevPropAls
+data:CBSamaDecVerySevPropAls_provenance {
+    data:CBSamaDecVerySevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBSamaDecVerySevPropAls_provenance
+    data:CBSamaDecVerySevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSamaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBSamaMainMildPropAls_head {
-    :CBSamaMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSamaMainMildPropAls ;
-            nanopub:hasProvenance       :CBSamaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSamaMainMildPropAls_publicationinfo .
-}
-
-:CBSabaDecVerySevPropAls_publicationinfo {
-    :CBSabaDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaDecVerySevPropAls_provenance {
-    :CBLabaDecVerySevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaDecVerySevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaLamaIcsDecModPropAls {
-    :CBLabaLamaIcsDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLamaIcs
-            tmr:causes  :TrDecModPropAls .
-}
-
-:CBSabaSamaDecModPropAls_provenance {
-    :CBSabaSamaDecModPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaSamaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaSamaDecModPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBCatRsltIncPropServCatRslt_head {
-    :CBCatRsltIncPropServCatRslt_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBCatRsltIncPropServCatRslt ;
-            nanopub:hasProvenance       :CBCatRsltIncPropServCatRslt_provenance ;
-            nanopub:hasPublicationInfo  :CBCatRsltIncPropServCatRslt_publicationinfo .
-}
-
-:CBLamaDecModPropAls_provenance {
-    :CBLamaDecModPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLamaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLamaDecModPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaDecModPropAls_provenance {
-    :CBLabaDecModPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaDecModPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaMainMildPropAls_provenance {
-    :CBLabaMainMildPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaMainMildPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaMainMildPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaIcsDecModPropAls {
-    :CBLabaIcsDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaIcs
-            tmr:causes  :TrDecModPropAls .
-}
-
-:CBLabaLamaIcsDecVerySevPropAls_head {
-    :CBLabaLamaIcsDecVerySevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaIcsDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaIcsDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaIcsDecVerySevPropAls_publicationinfo .
-}
-
-:CBSamaMainMildPropAls {
-    :CBSamaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerSama
-            tmr:causes  :TrMainMildPropAls .
-}
-
-:CBFluVacDecPropRskFlu_publicationinfo {
-    :CBFluVacDecPropRskFlu_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaLamaMainMildPropAls {
-    :CBLabaLamaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLama
-            tmr:causes  :TrMainMildPropAls .
-}
-
-:CBLabaLamaMainMildPropAls_head {
-    :CBLabaLamaMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaMainMildPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaMainMildPropAls_publicationinfo .
-}
-
-:CBXraysScnIncPropServXrayScn {
-    :CBXraysScnIncPropServXrayScn
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerXraysScn
-            tmr:causes  :TrIncPropServXrayScn .
-}
-
-:CBSabaIncPropRskCrd_provenance {
-    :CBSabaIncPropRskCrd_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaIncPropRskCrd ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaIncPropRskCrd
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBBetaAgonistIncPropRskCrd_provenance {
-    :CBBetaAgonistIncPropRskCrd_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBBetaAgonistIncPropRskCrd ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBBetaAgonistIncPropRskCrd
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaIncPropRskCrd_provenance {
-    :CBLabaIncPropRskCrd_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaIncPropRskCrd ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaIncPropRskCrd
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBSabaSamaDecSevPropAls_head {
-    :CBSabaSamaDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaSamaDecSevPropAls ;
-            nanopub:hasProvenance       :CBSabaSamaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaSamaDecSevPropAls_publicationinfo .
-}
-
-:CBLabaLamaMainMildPropAls_provenance {
-    :CBLabaLamaMainMildPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBLabaLamaMainMildPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaMainMildPropAls ;
+            oa:hasBody    data:CBSamaDecVerySevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBSamaMainMildPropAls_provenance {
-    :CBSamaMainMildPropAls
+data:CBSamaMainMildPropAls_head {
+    data:CBSamaMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSamaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBSamaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSamaMainMildPropAls_publicationinfo .
+}
+
+data:CBSabaDecVerySevPropAls_publicationinfo {
+    data:CBSabaDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaDecVerySevPropAls_provenance {
+    data:CBLabaDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaDecVerySevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaLamaIcsDecModPropAls {
+    data:CBLabaLamaIcsDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLamaIcs
+            tmr:causes  data:TrDecModPropAls .
+}
+
+data:CBSabaSamaDecModPropAls_provenance {
+    data:CBSabaSamaDecModPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaSamaDecModPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSabaSamaDecModPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBCatRsltIncPropServCatRslt_head {
+    data:CBCatRsltIncPropServCatRslt_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBCatRsltIncPropServCatRslt ;
+            nanopub:hasProvenance       data:CBCatRsltIncPropServCatRslt_provenance ;
+            nanopub:hasPublicationInfo  data:CBCatRsltIncPropServCatRslt_publicationinfo .
+}
+
+data:CBLamaDecModPropAls_provenance {
+    data:CBLamaDecModPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLamaDecModPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLamaDecModPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaDecModPropAls_provenance {
+    data:CBLabaDecModPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaDecModPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaDecModPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaMainMildPropAls_provenance {
+    data:CBLabaMainMildPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaMainMildPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaMainMildPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaIcsDecModPropAls {
+    data:CBLabaIcsDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaIcs
+            tmr:causes  data:TrDecModPropAls .
+}
+
+data:CBLabaLamaIcsDecVerySevPropAls_head {
+    data:CBLabaLamaIcsDecVerySevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaIcsDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaIcsDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaIcsDecVerySevPropAls_publicationinfo .
+}
+
+data:CBSamaMainMildPropAls {
+    data:CBSamaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerSama
+            tmr:causes  data:TrMainMildPropAls .
+}
+
+data:CBFluVacDecPropRskFlu_publicationinfo {
+    data:CBFluVacDecPropRskFlu_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaLamaMainMildPropAls {
+    data:CBLabaLamaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLama
+            tmr:causes  data:TrMainMildPropAls .
+}
+
+data:CBLabaLamaMainMildPropAls_head {
+    data:CBLabaLamaMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaMainMildPropAls_publicationinfo .
+}
+
+data:CBXraysScnIncPropServXrayScn {
+    data:CBXraysScnIncPropServXrayScn
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerXraysScn
+            tmr:causes  data:TrIncPropServXrayScn .
+}
+
+data:CBSabaIncPropRskCrd_provenance {
+    data:CBSabaIncPropRskCrd_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaIncPropRskCrd ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSabaIncPropRskCrd
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBBetaAgonistIncPropRskCrd_provenance {
+    data:CBBetaAgonistIncPropRskCrd_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBBetaAgonistIncPropRskCrd ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBBetaAgonistIncPropRskCrd
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaIncPropRskCrd_provenance {
+    data:CBLabaIncPropRskCrd_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaIncPropRskCrd ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaIncPropRskCrd
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSabaSamaDecSevPropAls_head {
+    data:CBSabaSamaDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaSamaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBSabaSamaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaSamaDecSevPropAls_publicationinfo .
+}
+
+data:CBLabaLamaMainMildPropAls_provenance {
+    data:CBLabaLamaMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBSamaMainMildPropAls_provenance
+    data:CBLabaLamaMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSamaMainMildPropAls ;
+            oa:hasBody    data:CBLabaLamaMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBXraysScnIncPropServXrayScn_provenance {
-    :CBXraysScnIncPropServXrayScn
+data:CBSamaMainMildPropAls_provenance {
+    data:CBSamaMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBXraysScnIncPropServXrayScn_provenance
+    data:CBSamaMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBXraysScnIncPropServXrayScn ;
+            oa:hasBody    data:CBSamaMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLabaIcsMainMildPropAls_publicationinfo {
-    :CBLabaIcsMainMildPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaDecSevPropAls_provenance {
-    :CBSabaDecSevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaDecSevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBSabaSamaDecModPropAls_head {
-    :CBSabaSamaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaSamaDecModPropAls ;
-            nanopub:hasProvenance       :CBSabaSamaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaSamaDecModPropAls_publicationinfo .
-}
-
-:CBLabaLamaIcsMainMildPropAls_head {
-    :CBLabaLamaIcsMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaIcsMainMildPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaIcsMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaIcsMainMildPropAls_publicationinfo .
-}
-
-:CBLabaLamaDecModPropAls_head {
-    :CBLabaLamaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaDecModPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaDecModPropAls_publicationinfo .
-}
-
-:CBSamaDecModPropAls_provenance {
-    :CBSamaDecModPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSamaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSamaDecModPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaLamaIcsDecSevPropAls_provenance {
-    :CBLabaLamaIcsDecSevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaIcsDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaLamaIcsDecSevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBCtScnIncPropServCtScn {
-    :CBCtScnIncPropServCtScn
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerCtScn
-            tmr:causes  :TrIncPropServCtScn .
-}
-
-:CBLabaLamaDecVerySevPropAls_publicationinfo {
-    :CBLabaLamaDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaIcsMainMildPropAls_head {
-    :CBLabaIcsMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIcsMainMildPropAls ;
-            nanopub:hasProvenance       :CBLabaIcsMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIcsMainMildPropAls_publicationinfo .
-}
-
-:CBCatRsltIncPropServCatRslt_publicationinfo {
-    :CBCatRsltIncPropServCatRslt_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaMainMildPropAls_publicationinfo {
-    :CBLamaMainMildPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaLamaIcsDecVerySevPropAls {
-    :CBLabaLamaIcsDecVerySevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLamaIcs
-            tmr:causes  :TrDecVerySevPropAls .
-}
-
-:CBSabaDecSevPropAls_head {
-    :CBSabaDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaDecSevPropAls ;
-            nanopub:hasProvenance       :CBSabaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaDecSevPropAls_publicationinfo .
-}
-
-:CBLabaLamaDecVerySevPropAls {
-    :CBLabaLamaDecVerySevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLama
-            tmr:causes  :TrDecVerySevPropAls .
-}
-
-:CBLabaLamaIcsDecSevPropAls_head {
-    :CBLabaLamaIcsDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaIcsDecSevPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaIcsDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaIcsDecSevPropAls_publicationinfo .
-}
-
-:CBLabaLamaDecModPropAls {
-    :CBLabaLamaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLama
-            tmr:causes  :TrDecModPropAls .
-}
-
-:CBLabaLamaIcsDecSevPropAls_publicationinfo {
-    :CBLabaLamaIcsDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaLamaIcsMainMildPropAls {
-    :CBLabaLamaIcsMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLamaIcs
-            tmr:causes  :TrMainMildPropAls .
-}
-
-:CBLabaDecSevPropAls_publicationinfo {
-    :CBLabaDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaIcsMainMildPropAls_provenance {
-    :CBLabaIcsMainMildPropAls
+data:CBXraysScnIncPropServXrayScn_provenance {
+    data:CBXraysScnIncPropServXrayScn
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaIcsMainMildPropAls_provenance
+    data:CBXraysScnIncPropServXrayScn_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaIcsMainMildPropAls ;
+            oa:hasBody    data:CBXraysScnIncPropServXrayScn ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLabaDecModPropAls_head {
-    :CBLabaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaDecModPropAls ;
-            nanopub:hasProvenance       :CBLabaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaDecModPropAls_publicationinfo .
-}
-
-:CBLabaLamaIncPropRskHypo_head {
-    :CBLabaLamIncPropRskHypo_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaIncPropRskHypo ;
-            nanopub:hasProvenance       :CBLabaLamaIncPropRskHypo_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaIncPropRskHypo_publicationinfo .
-}
-
-:CBLabaIncPropRskHypo_head {
-    :CBLabaIncPropRskHypo_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIncPropRskHypo ;
-            nanopub:hasProvenance       :CBLabaIncPropRskHypo_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIncPropRskHypo_publicationinfo .
-}
-
-:CBLamaIncPropRskHypo_head {
-    :CBLamaIncPropRskHypo_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLamaIncPropRskHypo ;
-            nanopub:hasProvenance       :CBLamaIncPropRskHypo_provenance ;
-            nanopub:hasPublicationInfo  :CBLamaIncPropRskHypo_publicationinfo .
-}
-
-:CBCtScnIncPropServCtScn_publicationinfo {
-    :CBCtScnIncPropServCtScn_head
+data:CBLabaIcsMainMildPropAls_publicationinfo {
+    data:CBLabaIcsMainMildPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBPneumnVacDecPropRskPneumoc {
-    :ActAdministerPneumnVac
-            tmr:causes  :TrDecPropRskPneumoc .
-    
-    :CBPneumnVacDecPropRskPneumoc
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBBetaAgonistIncPropRskCrd_publicationinfo {
-    :CBBetaAgonistIncPropRskCrd_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaIncPropRskCrd_publicationinfo {
-    :CBSabaIncPropRskCrd_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaIncPropRskCrd_publicationinfo {
-    :CBLabaIncPropRskCrd_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaMainMildPropAls_head {
-    :CBSabaMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaMainMildPropAls ;
-            nanopub:hasProvenance       :CBSabaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaMainMildPropAls_publicationinfo .
-}
-
-:CBLngTstIncPropServLngTst_publicationinfo {
-    :CBLngTstIncPropServLngTst_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaDecModPropAls_head {
-    :CBSabaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaDecModPropAls ;
-            nanopub:hasProvenance       :CBSabaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaDecModPropAls_publicationinfo .
-}
-
-:CBLabaIncPropRskCrd {
-    :CBLabaIncPropRskCrd
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaCvd
-            tmr:causes  :TrIncPropRskCrd .
-}
-
-:CBBetaAgonistIncPropRskCrd {
-    :CBBetaAgonistIncPropRskCrd
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerBetaAgonist
-            tmr:causes  :TrIncPropRskCrd .
-}
-
-:CBSabaIncPropRskCrd {
-    :CBSabaIncPropRskCrd
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerSabaCvd
-            tmr:causes  :TrIncPropRskCrd .
-}
-
-:CBLabaIcsDecSevPropAls_head {
-    :CBLabaIcsDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIcsDecSevPropAls ;
-            nanopub:hasProvenance       :CBLabaIcsDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIcsDecSevPropAls_publicationinfo .
-}
-
-:CBLngRehabIncPropLngHlth_provenance {
-    :CBLngRehabIncPropLngHlth_provenance
+data:CBSabaDecSevPropAls_provenance {
+    data:CBSabaDecSevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLngRehabIncPropLngHlth ;
+            oa:hasBody    data:CBSabaDecSevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLngRehabIncPropLngHlth
+    data:CBSabaDecSevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLabaLamaDecSevPropAls_publicationinfo {
-    :CBLabaLamaDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaMainMildPropAls_head {
-    :CBLabaMainMildPropAls_head
+data:CBSabaSamaDecModPropAls_head {
+    data:CBSabaSamaDecModPropAls_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaMainMildPropAls ;
-            nanopub:hasProvenance       :CBLabaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaMainMildPropAls_publicationinfo .
+            nanopub:hasAssertion        data:CBSabaSamaDecModPropAls ;
+            nanopub:hasProvenance       data:CBSabaSamaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaSamaDecModPropAls_publicationinfo .
 }
 
-:CBLabaLamaDecSevPropAls_provenance {
-    :CBLabaLamaDecSevPropAls_provenance
+data:CBLabaLamaIcsMainMildPropAls_head {
+    data:CBLabaLamaIcsMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaIcsMainMildPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaIcsMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaIcsMainMildPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecModPropAls_head {
+    data:CBLabaLamaDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaDecModPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaDecModPropAls_publicationinfo .
+}
+
+data:CBSamaDecModPropAls_provenance {
+    data:CBSamaDecModPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaDecSevPropAls ;
+            oa:hasBody    data:CBSamaDecModPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBLabaLamaDecSevPropAls
+    data:CBSamaDecModPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBSmokeThrpyIncPropQol_publicationinfo {
-    :CBSmokeThrpyIncPropQol_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaIcsDecSevPropAls_publicationinfo {
-    :CBLabaIcsDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSamaDecModPropAls_head {
-    :CBSamaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSamaDecModPropAls ;
-            nanopub:hasProvenance       :CBSamaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSamaDecModPropAls_publicationinfo .
-}
-
-:CBSmokeThrpyIncPropQol_provenance {
-    :CBSmokeThrpyIncPropQol_provenance
+data:CBLabaLamaIcsDecSevPropAls_provenance {
+    data:CBLabaLamaIcsDecSevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSmokeThrpyIncPropQol ;
+            oa:hasBody    data:CBLabaLamaIcsDecSevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBSmokeThrpyIncPropQol
+    data:CBLabaLamaIcsDecSevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBLabaIcsDecVerySevPropAls_publicationinfo {
-    :CBLabaIcsDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLngRehabIncPropLngHlth_publicationinfo {
-    :CBLngRehabIncPropLngHlth_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaSamaDecSevPropAls {
-    :ActAdministerSabaSama
-            tmr:causes  :TrDecSevPropAls .
-    
-    :CBSabaSamaDecSevPropAls
+data:CBCtScnIncPropServCtScn {
+    data:CBCtScnIncPropServCtScn
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerCtScn
+            tmr:causes  data:TrIncPropServCtScn .
 }
 
-:CBSabaDecModPropAls_provenance {
-    :CBSabaDecModPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaDecModPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaDecModPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+data:CBLabaLamaDecVerySevPropAls_publicationinfo {
+    data:CBLabaLamaDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBSabaSamaDecSevPropAls_provenance {
-    :CBSabaSamaDecSevPropAls
+data:CBLabaIcsMainMildPropAls_head {
+    data:CBLabaIcsMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIcsMainMildPropAls ;
+            nanopub:hasProvenance       data:CBLabaIcsMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIcsMainMildPropAls_publicationinfo .
+}
+
+data:CBCatRsltIncPropServCatRslt_publicationinfo {
+    data:CBCatRsltIncPropServCatRslt_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLamaMainMildPropAls_publicationinfo {
+    data:CBLamaMainMildPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaLamaIcsDecVerySevPropAls {
+    data:CBLabaLamaIcsDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLamaIcs
+            tmr:causes  data:TrDecVerySevPropAls .
+}
+
+data:CBSabaDecSevPropAls_head {
+    data:CBSabaDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBSabaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaDecSevPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecVerySevPropAls {
+    data:CBLabaLamaDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLama
+            tmr:causes  data:TrDecVerySevPropAls .
+}
+
+data:CBLabaLamaIcsDecSevPropAls_head {
+    data:CBLabaLamaIcsDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaIcsDecSevPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaIcsDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaIcsDecSevPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecModPropAls {
+    data:CBLabaLamaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLama
+            tmr:causes  data:TrDecModPropAls .
+}
+
+data:CBLabaLamaIcsDecSevPropAls_publicationinfo {
+    data:CBLabaLamaIcsDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaLamaIcsMainMildPropAls {
+    data:CBLabaLamaIcsMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLamaIcs
+            tmr:causes  data:TrMainMildPropAls .
+}
+
+data:CBLabaDecSevPropAls_publicationinfo {
+    data:CBLabaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaIcsMainMildPropAls_provenance {
+    data:CBLabaIcsMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBSabaSamaDecSevPropAls_provenance
+    data:CBLabaIcsMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSabaSamaDecSevPropAls ;
+            oa:hasBody    data:CBLabaIcsMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLamaMainMildPropAls {
-    :CBLamaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLama
-            tmr:causes  :TrMainMildPropAls .
+data:CBLabaDecModPropAls_head {
+    data:CBLabaDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaDecModPropAls ;
+            nanopub:hasProvenance       data:CBLabaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaDecModPropAls_publicationinfo .
 }
 
-:CBSabaMainMildPropAls_publicationinfo {
-    :CBSabaMainMildPropAls_head
+data:CBLabaLamaIncPropRskHypo_head {
+    data:CBLabaLamIncPropRskHypo_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaIncPropRskHypo ;
+            nanopub:hasProvenance       data:CBLabaLamaIncPropRskHypo_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaIncPropRskHypo_publicationinfo .
+}
+
+data:CBLabaIncPropRskHypo_head {
+    data:CBLabaIncPropRskHypo_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIncPropRskHypo ;
+            nanopub:hasProvenance       data:CBLabaIncPropRskHypo_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIncPropRskHypo_publicationinfo .
+}
+
+data:CBLamaIncPropRskHypo_head {
+    data:CBLamaIncPropRskHypo_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLamaIncPropRskHypo ;
+            nanopub:hasProvenance       data:CBLamaIncPropRskHypo_provenance ;
+            nanopub:hasPublicationInfo  data:CBLamaIncPropRskHypo_publicationinfo .
+}
+
+data:CBCtScnIncPropServCtScn_publicationinfo {
+    data:CBCtScnIncPropServCtScn_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLabaLamaIcsDecModPropAls_provenance {
-    :CBLabaLamaIcsDecModPropAls
+data:CBPneumnVacDecPropRskPneumoc {
+    data:ActAdministerPneumnVac
+            tmr:causes  data:TrDecPropRskPneumoc .
+    
+    data:CBPneumnVacDecPropRskPneumoc
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBBetaAgonistIncPropRskCrd_publicationinfo {
+    data:CBBetaAgonistIncPropRskCrd_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaIncPropRskCrd_publicationinfo {
+    data:CBSabaIncPropRskCrd_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaIncPropRskCrd_publicationinfo {
+    data:CBLabaIncPropRskCrd_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaMainMildPropAls_head {
+    data:CBSabaMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBSabaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaMainMildPropAls_publicationinfo .
+}
+
+data:CBLngTstIncPropServLngTst_publicationinfo {
+    data:CBLngTstIncPropServLngTst_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaDecModPropAls_head {
+    data:CBSabaDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaDecModPropAls ;
+            nanopub:hasProvenance       data:CBSabaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaDecModPropAls_publicationinfo .
+}
+
+data:CBLabaIncPropRskCrd {
+    data:CBLabaIncPropRskCrd
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaCvd
+            tmr:causes  data:TrIncPropRskCrd .
+}
+
+data:CBBetaAgonistIncPropRskCrd {
+    data:CBBetaAgonistIncPropRskCrd
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerBetaAgonist
+            tmr:causes  data:TrIncPropRskCrd .
+}
+
+data:CBSabaIncPropRskCrd {
+    data:CBSabaIncPropRskCrd
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerSabaCvd
+            tmr:causes  data:TrIncPropRskCrd .
+}
+
+data:CBLabaIcsDecSevPropAls_head {
+    data:CBLabaIcsDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIcsDecSevPropAls ;
+            nanopub:hasProvenance       data:CBLabaIcsDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIcsDecSevPropAls_publicationinfo .
+}
+
+data:CBLngRehabIncPropLngHlth_provenance {
+    data:CBLngRehabIncPropLngHlth_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLngRehabIncPropLngHlth ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLngRehabIncPropLngHlth
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaLamaDecSevPropAls_publicationinfo {
+    data:CBLabaLamaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaMainMildPropAls_head {
+    data:CBLabaMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBLabaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaMainMildPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecSevPropAls_provenance {
+    data:CBLabaLamaDecSevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaLamaDecSevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaLamaDecSevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSmokeThrpyIncPropQol_publicationinfo {
+    data:CBSmokeThrpyIncPropQol_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaIcsDecSevPropAls_publicationinfo {
+    data:CBLabaIcsDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSamaDecModPropAls_head {
+    data:CBSamaDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSamaDecModPropAls ;
+            nanopub:hasProvenance       data:CBSamaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSamaDecModPropAls_publicationinfo .
+}
+
+data:CBSmokeThrpyIncPropQol_provenance {
+    data:CBSmokeThrpyIncPropQol_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSmokeThrpyIncPropQol ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSmokeThrpyIncPropQol
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaIcsDecVerySevPropAls_publicationinfo {
+    data:CBLabaIcsDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLngRehabIncPropLngHlth_publicationinfo {
+    data:CBLngRehabIncPropLngHlth_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaSamaDecSevPropAls {
+    data:ActAdministerSabaSama
+            tmr:causes  data:TrDecSevPropAls .
+    
+    data:CBSabaSamaDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSabaDecModPropAls_provenance {
+    data:CBSabaDecModPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaDecModPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSabaDecModPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSabaSamaDecSevPropAls_provenance {
+    data:CBSabaSamaDecSevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaLamaIcsDecModPropAls_provenance
+    data:CBSabaSamaDecSevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaIcsDecModPropAls ;
+            oa:hasBody    data:CBSabaSamaDecSevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLabaLamaIcsMainMildPropAls_publicationinfo {
-    :CBLabaLamaIcsMainMildPropAls_head
+data:CBLamaMainMildPropAls {
+    data:CBLamaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLama
+            tmr:causes  data:TrMainMildPropAls .
+}
+
+data:CBSabaMainMildPropAls_publicationinfo {
+    data:CBSabaMainMildPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLngRehabIncPropLngHlth {
-    :ActAdministerLngRehab
-            tmr:causes  :TrIncPropLngHlth .
-    
-    :CBLngRehabIncPropLngHlth
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSamaDecModPropAls {
-    :CBSamaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerSama
-            tmr:causes  :TrDecModPropAls .
-}
-
-:CBSabaDecVerySevPropAls_provenance {
-    :CBSabaDecVerySevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaDecVerySevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBSabaSamaMainMildPropAls_provenance {
-    :CBSabaSamaMainMildPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaSamaMainMildPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaSamaMainMildPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBSamaDecSevPropAls {
-    :CBSamaDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerSama
-            tmr:causes  :TrDecSevPropAls .
-}
-
-:CBLngRehabIncPropLngHlth_head {
-    :CBLngRehabIncPropLngHlth_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLngRehabIncPropLngHlth ;
-            nanopub:hasProvenance       :CBLngRehabIncPropLngHlth_provenance ;
-            nanopub:hasPublicationInfo  :CBLngRehabIncPropLngHlth_publicationinfo .
-}
-
-:CBSabaSamaMainMildPropAls_publicationinfo {
-    :CBSabaSamaMainMildPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaIcsDecVerySevPropAls_head {
-    :CBLabaIcsDecVerySevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIcsDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBLabaIcsDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIcsDecVerySevPropAls_publicationinfo .
-}
-
-:CBMrcDScaleIncPropServMrcDScale_provenance {
-    :CBMrcDScaleIncPropServMrcDScale
+data:CBLabaLamaIcsDecModPropAls_provenance {
+    data:CBLabaLamaIcsDecModPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBMrcDScaleIncPropServMrcDScale_provenance
+    data:CBLabaLamaIcsDecModPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBMrcDScaleIncPropServMrcDScale ;
+            oa:hasBody    data:CBLabaLamaIcsDecModPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLabaIcsDecSevPropAls {
-    :CBLabaIcsDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaIcs
-            tmr:causes  :TrDecSevPropAls .
-}
-
-:CBLabaLamaIcsDecModPropAls_publicationinfo {
-    :CBLabaLamaIcsDecModPropAls_head
+data:CBLabaLamaIcsMainMildPropAls_publicationinfo {
+    data:CBLabaLamaIcsMainMildPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLabaIcsDecModPropAls_provenance {
-    :CBLabaIcsDecModPropAls
+data:CBLngRehabIncPropLngHlth {
+    data:ActAdministerLngRehab
+            tmr:causes  data:TrIncPropLngHlth .
+    
+    data:CBLngRehabIncPropLngHlth
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSamaDecModPropAls {
+    data:CBSamaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerSama
+            tmr:causes  data:TrDecModPropAls .
+}
+
+data:CBSabaDecVerySevPropAls_provenance {
+    data:CBSabaDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaDecVerySevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSabaDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSabaSamaMainMildPropAls_provenance {
+    data:CBSabaSamaMainMildPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaSamaMainMildPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBSabaSamaMainMildPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSamaDecSevPropAls {
+    data:CBSamaDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerSama
+            tmr:causes  data:TrDecSevPropAls .
+}
+
+data:CBLngRehabIncPropLngHlth_head {
+    data:CBLngRehabIncPropLngHlth_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLngRehabIncPropLngHlth ;
+            nanopub:hasProvenance       data:CBLngRehabIncPropLngHlth_provenance ;
+            nanopub:hasPublicationInfo  data:CBLngRehabIncPropLngHlth_publicationinfo .
+}
+
+data:CBSabaSamaMainMildPropAls_publicationinfo {
+    data:CBSabaSamaMainMildPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaIcsDecVerySevPropAls_head {
+    data:CBLabaIcsDecVerySevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIcsDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBLabaIcsDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIcsDecVerySevPropAls_publicationinfo .
+}
+
+data:CBMrcDScaleIncPropServMrcDScale_provenance {
+    data:CBMrcDScaleIncPropServMrcDScale
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaIcsDecModPropAls_provenance
+    data:CBMrcDScaleIncPropServMrcDScale_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaIcsDecModPropAls ;
+            oa:hasBody    data:CBMrcDScaleIncPropServMrcDScale ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBPneumnVacDecPropRskPneumoc_head {
-    :CBPneumnVacDecPropRskPneumoc_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBPneumnVacDecPropRskPneumoc ;
-            nanopub:hasProvenance       :CBPneumnVacDecPropRskPneumoc_provenance ;
-            nanopub:hasPublicationInfo  :CBPneumnVacDecPropRskPneumoc_publicationinfo .
+data:CBLabaIcsDecSevPropAls {
+    data:CBLabaIcsDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaIcs
+            tmr:causes  data:TrDecSevPropAls .
 }
 
-:CBLabaDecVerySevPropAls_head {
-    :CBLabaDecVerySevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBLabaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaDecVerySevPropAls_publicationinfo .
+data:CBLabaLamaIcsDecModPropAls_publicationinfo {
+    data:CBLabaLamaIcsDecModPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLabaLamaDecModPropAls_provenance {
-    :CBLabaLamaDecModPropAls
+data:CBLabaIcsDecModPropAls_provenance {
+    data:CBLabaIcsDecModPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaLamaDecModPropAls_provenance
+    data:CBLabaIcsDecModPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaDecModPropAls ;
+            oa:hasBody    data:CBLabaIcsDecModPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLabaDecVerySevPropAls {
-    :ActAdministerLaba
-            tmr:causes  :TrDecVerySevPropAls .
-    
-    :CBLabaDecVerySevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+data:CBPneumnVacDecPropRskPneumoc_head {
+    data:CBPneumnVacDecPropRskPneumoc_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBPneumnVacDecPropRskPneumoc ;
+            nanopub:hasProvenance       data:CBPneumnVacDecPropRskPneumoc_provenance ;
+            nanopub:hasPublicationInfo  data:CBPneumnVacDecPropRskPneumoc_publicationinfo .
 }
 
-:CBLabaLamaIcsMainMildPropAls_provenance {
-    :CBLabaLamaIcsMainMildPropAls
+data:CBLabaDecVerySevPropAls_head {
+    data:CBLabaDecVerySevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBLabaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaDecVerySevPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecModPropAls_provenance {
+    data:CBLabaLamaDecModPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaLamaIcsMainMildPropAls_provenance
+    data:CBLabaLamaDecModPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaIcsMainMildPropAls ;
+            oa:hasBody    data:CBLabaLamaDecModPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBSamaDecSevPropAls_provenance {
-    :CBSamaDecSevPropAls
+data:CBLabaDecVerySevPropAls {
+    data:ActAdministerLaba
+            tmr:causes  data:TrDecVerySevPropAls .
+    
+    data:CBLabaDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaIcsMainMildPropAls_provenance {
+    data:CBLabaLamaIcsMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBSamaDecSevPropAls_provenance
+    data:CBLabaLamaIcsMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSamaDecSevPropAls ;
+            oa:hasBody    data:CBLabaLamaIcsMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBCtScnIncPropServCtScn_head {
-    :CBCtScnIncPropServCtScn_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBCtScnIncPropServCtScn ;
-            nanopub:hasProvenance       :CBCtScnIncPropServCtScn_provenance ;
-            nanopub:hasPublicationInfo  :CBCtScnIncPropServCtScn_publicationinfo .
-}
-
-:CBLabaIncPropRskCrd_head {
-    :CBLabaIncPropRskCrd_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIncPropRskCrd ;
-            nanopub:hasProvenance       :CBLabaIncPropRskCrd_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIncPropRskCrd_publicationinfo .
-}
-
-:CBBetaAgonistIncPropRskCrd_head {
-    :CBBetaAgonistIncPropRskCrd_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBBetaAgonistIncPropRskCrd ;
-            nanopub:hasProvenance       :CBBetaAgonistIncPropRskCrd_provenance ;
-            nanopub:hasPublicationInfo  :CBBetaAgonistIncPropRskCrd_publicationinfo .
-}
-
-:CBSabaIncPropRskCrd_head {
-    :CBSabaIncPropRskCrd_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaIncPropRskCrd ;
-            nanopub:hasProvenance       :CBSabaIncPropRskCrd_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaIncPropRskCrd_publicationinfo .
-}
-
-:CBLabaLamaDecSevPropAls {
-    :CBLabaLamaDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-    
-    :ActAdministerLabaLama
-            tmr:causes  :TrDecSevPropAls .
-}
-
-:CBSabaSamaDecModPropAls_publicationinfo {
-    :CBSabaSamaDecModPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBMrcDScaleIncPropServMrcDScale_head {
-    :CBMrcDScaleIncPropServMrcDScale_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBMrcDScaleIncPropServMrcDScale ;
-            nanopub:hasProvenance       :CBMrcDScaleIncPropServMrcDScale_provenance ;
-            nanopub:hasPublicationInfo  :CBMrcDScaleIncPropServMrcDScale_publicationinfo .
-}
-
-:CBXraysScnIncPropServXrayScn_publicationinfo {
-    :CBXraysScnIncPropServXrayScn_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaDecVerySevPropAls_publicationinfo {
-    :CBLamaDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaDecSevPropAls {
-    :ActAdministerSaba
-            tmr:causes  :TrDecSevPropAls .
-    
-    :CBSabaDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBFluVacDecPropRskFlu {
-    :ActAdministerFluVac
-            tmr:causes  :TrDecPropRskFlu .
-    
-    :CBFluVacDecPropRskFlu
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaIcsDecVerySevPropAls_publicationinfo {
-    :CBLabaLamaIcsDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaDecModPropAls {
-    :ActAdministerLama
-            tmr:causes  :TrDecModPropAls .
-    
-    :CBLamaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBIcsIncPropRskPneumn_head {
-    :CBIcsIncPropRskPneumn_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBIcsIncPropRskPneumn ;
-            nanopub:hasProvenance       :CBIcsIncPropRskPneumn_provenance ;
-            nanopub:hasPublicationInfo  :CBIcsIncPropRskPneumn_publicationinfo .
-}
-
-:CBPneumnVacDecPropRskPneumoc_publicationinfo {
-    :CBPneumnVacDecPropRskPneumoc_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaDecModPropAls_head {
-    :CBLamaDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLamaDecModPropAls ;
-            nanopub:hasProvenance       :CBLamaDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLamaDecModPropAls_publicationinfo .
-}
-
-:CBLabaIcsDecModPropAls_head {
-    :CBLabaIcsDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaIcsDecModPropAls ;
-            nanopub:hasProvenance       :CBLabaIcsDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaIcsDecModPropAls_publicationinfo .
-}
-
-:CBMrcDScaleIncPropServMrcDScale_publicationinfo {
-    :CBMrcDScaleIncPropServMrcDScale_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSamaDecModPropAls_publicationinfo {
-    :CBSamaDecModPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaDecVerySevPropAls_head {
-    :CBLamaDecVerySevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLamaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBLamaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLamaDecVerySevPropAls_publicationinfo .
-}
-
-:CBFluVacDecPropRskFlu_head {
-    :CBFluVacDecPropRskFlu_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBFluVacDecPropRskFlu ;
-            nanopub:hasProvenance       :CBFluVacDecPropRskFlu_provenance ;
-            nanopub:hasPublicationInfo  :CBFluVacDecPropRskFlu_publicationinfo .
-}
-
-:CBSabaDecModPropAls_publicationinfo {
-    :CBSabaDecModPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaSamaMainMildPropAls {
-    :ActAdministerSabaSama
-            tmr:causes  :TrMainMildPropAls .
-    
-    :CBSabaSamaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLamaDecVerySevPropAls {
-    :ActAdministerLama
-            tmr:causes  :TrDecVerySevPropAls .
-    
-    :CBLamaDecVerySevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaMainMildPropAls_publicationinfo {
-    :CBLabaLamaMainMildPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaMainMildPropAls_provenance {
-    :CBSabaMainMildPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBSabaMainMildPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBSabaMainMildPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLngTstIncPropServLngTst_provenance {
-    :CBLngTstIncPropServLngTst
+data:CBSamaDecSevPropAls_provenance {
+    data:CBSamaDecSevPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLngTstIncPropServLngTst_provenance
+    data:CBSamaDecSevPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLngTstIncPropServLngTst ;
+            oa:hasBody    data:CBSamaDecSevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBFluVacDecPropRskFlu_provenance {
-    :CBFluVacDecPropRskFlu
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBFluVacDecPropRskFlu_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBFluVacDecPropRskFlu ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBLamaDecSevPropAls_provenance {
-    :CBLamaDecSevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBLamaDecSevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLamaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBPneumnVacDecPropRskPneumoc_provenance {
-    :CBPneumnVacDecPropRskPneumoc
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBPneumnVacDecPropRskPneumoc_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBPneumnVacDecPropRskPneumoc ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBLamaDecVerySevPropAls_provenance {
-    :CBLamaDecVerySevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBLamaDecVerySevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLamaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBSmokeThrpyIncPropQol_head {
-    :CBSmokeThrpyIncPropQol_head
+data:CBCtScnIncPropServCtScn_head {
+    data:CBCtScnIncPropServCtScn_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSmokeThrpyIncPropQol ;
-            nanopub:hasProvenance       :CBSmokeThrpyIncPropQol_provenance ;
-            nanopub:hasPublicationInfo  :CBSmokeThrpyIncPropQol_publicationinfo .
+            nanopub:hasAssertion        data:CBCtScnIncPropServCtScn ;
+            nanopub:hasProvenance       data:CBCtScnIncPropServCtScn_provenance ;
+            nanopub:hasPublicationInfo  data:CBCtScnIncPropServCtScn_publicationinfo .
 }
 
-:CBLabaDecVerySevPropAls_publicationinfo {
-    :CBLabaDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+data:CBLabaIncPropRskCrd_head {
+    data:CBLabaIncPropRskCrd_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIncPropRskCrd ;
+            nanopub:hasProvenance       data:CBLabaIncPropRskCrd_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIncPropRskCrd_publicationinfo .
 }
 
-:CBSabaSamaDecVerySevPropAls {
-    :ActAdministerSabaSama
-            tmr:causes  :TrDecVerySevPropAls .
-    
-    :CBSabaSamaDecVerySevPropAls
+data:CBBetaAgonistIncPropRskCrd_head {
+    data:CBBetaAgonistIncPropRskCrd_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBBetaAgonistIncPropRskCrd ;
+            nanopub:hasProvenance       data:CBBetaAgonistIncPropRskCrd_provenance ;
+            nanopub:hasPublicationInfo  data:CBBetaAgonistIncPropRskCrd_publicationinfo .
+}
+
+data:CBSabaIncPropRskCrd_head {
+    data:CBSabaIncPropRskCrd_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaIncPropRskCrd ;
+            nanopub:hasProvenance       data:CBSabaIncPropRskCrd_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaIncPropRskCrd_publicationinfo .
+}
+
+data:CBLabaLamaDecSevPropAls {
+    data:CBLabaLamaDecSevPropAls
             a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+    
+    data:ActAdministerLabaLama
+            tmr:causes  data:TrDecSevPropAls .
 }
 
-:CBSamaDecVerySevPropAls_publicationinfo {
-    :CBSamaDecVerySevPropAls_head
+data:CBSabaSamaDecModPropAls_publicationinfo {
+    data:CBSabaSamaDecModPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBSabaDecSevPropAls_publicationinfo {
-    :CBSabaDecSevPropAls_head
+data:CBMrcDScaleIncPropServMrcDScale_head {
+    data:CBMrcDScaleIncPropServMrcDScale_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBMrcDScaleIncPropServMrcDScale ;
+            nanopub:hasProvenance       data:CBMrcDScaleIncPropServMrcDScale_provenance ;
+            nanopub:hasPublicationInfo  data:CBMrcDScaleIncPropServMrcDScale_publicationinfo .
+}
+
+data:CBXraysScnIncPropServXrayScn_publicationinfo {
+    data:CBXraysScnIncPropServXrayScn_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBLabaLamaDecModPropAls_publicationinfo {
-    :CBLabaLamaDecModPropAls_head
+data:CBLamaDecVerySevPropAls_publicationinfo {
+    data:CBLamaDecVerySevPropAls_head
             prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:CBCatRsltIncPropServCatRslt_provenance {
-    :CBCatRsltIncPropServCatRslt_provenance
+data:CBSabaDecSevPropAls {
+    data:ActAdministerSaba
+            tmr:causes  data:TrDecSevPropAls .
+    
+    data:CBSabaDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBFluVacDecPropRskFlu {
+    data:ActAdministerFluVac
+            tmr:causes  data:TrDecPropRskFlu .
+    
+    data:CBFluVacDecPropRskFlu
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaIcsDecVerySevPropAls_publicationinfo {
+    data:CBLabaLamaIcsDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLamaDecModPropAls {
+    data:ActAdministerLama
+            tmr:causes  data:TrDecModPropAls .
+    
+    data:CBLamaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBIcsIncPropRskPneumn_head {
+    data:CBIcsIncPropRskPneumn_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBIcsIncPropRskPneumn ;
+            nanopub:hasProvenance       data:CBIcsIncPropRskPneumn_provenance ;
+            nanopub:hasPublicationInfo  data:CBIcsIncPropRskPneumn_publicationinfo .
+}
+
+data:CBPneumnVacDecPropRskPneumoc_publicationinfo {
+    data:CBPneumnVacDecPropRskPneumoc_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLamaDecModPropAls_head {
+    data:CBLamaDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLamaDecModPropAls ;
+            nanopub:hasProvenance       data:CBLamaDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLamaDecModPropAls_publicationinfo .
+}
+
+data:CBLabaIcsDecModPropAls_head {
+    data:CBLabaIcsDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaIcsDecModPropAls ;
+            nanopub:hasProvenance       data:CBLabaIcsDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaIcsDecModPropAls_publicationinfo .
+}
+
+data:CBMrcDScaleIncPropServMrcDScale_publicationinfo {
+    data:CBMrcDScaleIncPropServMrcDScale_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSamaDecModPropAls_publicationinfo {
+    data:CBSamaDecModPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLamaDecVerySevPropAls_head {
+    data:CBLamaDecVerySevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLamaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBLamaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLamaDecVerySevPropAls_publicationinfo .
+}
+
+data:CBFluVacDecPropRskFlu_head {
+    data:CBFluVacDecPropRskFlu_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBFluVacDecPropRskFlu ;
+            nanopub:hasProvenance       data:CBFluVacDecPropRskFlu_provenance ;
+            nanopub:hasPublicationInfo  data:CBFluVacDecPropRskFlu_publicationinfo .
+}
+
+data:CBSabaDecModPropAls_publicationinfo {
+    data:CBSabaDecModPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaSamaMainMildPropAls {
+    data:ActAdministerSabaSama
+            tmr:causes  data:TrMainMildPropAls .
+    
+    data:CBSabaSamaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLamaDecVerySevPropAls {
+    data:ActAdministerLama
+            tmr:causes  data:TrDecVerySevPropAls .
+    
+    data:CBLamaDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaMainMildPropAls_publicationinfo {
+    data:CBLabaLamaMainMildPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaMainMildPropAls_provenance {
+    data:CBSabaMainMildPropAls_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBCatRsltIncPropServCatRslt ;
+            oa:hasBody    data:CBSabaMainMildPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
     
-    :CBCatRsltIncPropServCatRslt
+    data:CBSabaMainMildPropAls
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
 }
 
-:CBSabaSamaMainMildPropAls_head {
-    :CBSabaSamaMainMildPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSabaSamaMainMildPropAls ;
-            nanopub:hasProvenance       :CBSabaSamaMainMildPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSabaSamaMainMildPropAls_publicationinfo .
-}
-
-:CBLabaLamaIncPropRskHypo {
-    :ActAdministerLabaLamaCkd
-            tmr:causes  :TrIncPropRskHypo .
-    
-    :CBLabaLamaIncPropRskHypo
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaIncPropRskHypo {
-    :ActAdministerLabaCkd
-            tmr:causes  :TrIncPropRskHypo .
-    
-    :CBLabaIncPropRskHypo
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLamaIncPropRskHypo {
-    :ActAdministerLamaCkd
-            tmr:causes  :TrIncPropRskHypo .
-    
-    :CBLamaIncPropRskHypo
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaDecSevPropAls_head {
-    :CBLabaLamaDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaDecSevPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaDecSevPropAls_publicationinfo .
-}
-
-:CBSamaMainMildPropAls_publicationinfo {
-    :CBSamaMainMildPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaSamaDecVerySevPropAls_provenance {
-    :CBSabaSamaDecVerySevPropAls
+data:CBLngTstIncPropServLngTst_provenance {
+    data:CBLngTstIncPropServLngTst
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBSabaSamaDecVerySevPropAls_provenance
+    data:CBLngTstIncPropServLngTst_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBSabaSamaDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBLabaDecModPropAls {
-    :ActAdministerLaba
-            tmr:causes  :TrDecModPropAls .
-    
-    :CBLabaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSabaDecVerySevPropAls {
-    :ActAdministerSaba
-            tmr:causes  :TrDecVerySevPropAls .
-    
-    :CBSabaDecVerySevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSamaDecSevPropAls_head {
-    :CBSamaDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBSamaDecSevPropAls ;
-            nanopub:hasProvenance       :CBSamaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBSamaDecSevPropAls_publicationinfo .
-}
-
-:CBLabaMainMildPropAls {
-    :ActAdministerLaba
-            tmr:causes  :TrMainMildPropAls .
-    
-    :CBLabaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLamaDecModPropAls_publicationinfo {
-    :CBLamaDecModPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLamaDecSevPropAls_publicationinfo {
-    :CBLamaDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaDecSevPropAls_provenance {
-    :CBLabaDecSevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaDecSevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-    
-    :CBLabaDecSevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-}
-
-:CBLabaDecSevPropAls {
-    :ActAdministerLaba
-            tmr:causes  :TrDecSevPropAls .
-    
-    :CBLabaDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaIcsDecVerySevPropAls_provenance {
-    :CBLabaLamaIcsDecVerySevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBLabaLamaIcsDecVerySevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaIcsDecVerySevPropAls ;
-            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
-}
-
-:CBSmokeThrpyIncPropQol {
-    :ActAdministerSmokeThrpy
-            tmr:causes  :TrIncPropQol .
-    
-    :CBSmokeThrpyIncPropQol
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSabaSamaDecSevPropAls_publicationinfo {
-    :CBSabaSamaDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaDecModPropAls {
-    :ActAdministerSaba
-            tmr:causes  :TrDecModPropAls .
-    
-    :CBSabaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaIcsDecSevPropAls {
-    :ActAdministerLabaLamaIcs
-            tmr:causes  :TrDecSevPropAls .
-    
-    :CBLabaLamaIcsDecSevPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSabaSamaDecModPropAls {
-    :ActAdministerSabaSama
-            tmr:causes  :TrDecModPropAls .
-    
-    :CBSabaSamaDecModPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBSabaSamaDecVerySevPropAls_publicationinfo {
-    :CBSabaSamaDecVerySevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBSabaMainMildPropAls {
-    :ActAdministerSaba
-            tmr:causes  :TrMainMildPropAls .
-    
-    :CBSabaMainMildPropAls
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLabaLamaIcsDecModPropAls_head {
-    :CBLabaLamaIcsDecModPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaIcsDecModPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaIcsDecModPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaIcsDecModPropAls_publicationinfo .
-}
-
-:CBCatRsltIncPropServCatRslt {
-    :ActAdministerCatRslt
-            tmr:causes  :TrIncPropServCatRslt .
-    
-    :CBCatRsltIncPropServCatRslt
-            a                tmr:CausationBelief ;
-            tmr:frequency  "always" ;
-            tmr:strength   "high" .
-}
-
-:CBLngTstIncPropServLngTst_head {
-    :CBLngTstIncPropServLngTst_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLngTstIncPropServLngTst ;
-            nanopub:hasProvenance       :CBLngTstIncPropServLngTst_provenance ;
-            nanopub:hasPublicationInfo  :CBLngTstIncPropServLngTst_publicationinfo .
-}
-
-:CBLabaIcsDecSevPropAls_provenance {
-    :CBLabaIcsDecSevPropAls
-            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
-    
-    :CBLabaIcsDecSevPropAls_provenance
-            a             oa:Annotation ;
-            oa:hasBody    :CBLabaIcsDecSevPropAls ;
+            oa:hasBody    data:CBLngTstIncPropServLngTst ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }
 
-:CBLamaDecSevPropAls_head {
-    :CBLamaDecSevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLamaDecSevPropAls ;
-            nanopub:hasProvenance       :CBLamaDecSevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLamaDecSevPropAls_publicationinfo .
-}
-
-:CBLabaLamaDecVerySevPropAls_head {
-    :CBLabaLamaDecVerySevPropAls_head
-            a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :CBLabaLamaDecVerySevPropAls ;
-            nanopub:hasProvenance       :CBLabaLamaDecVerySevPropAls_provenance ;
-            nanopub:hasPublicationInfo  :CBLabaLamaDecVerySevPropAls_publicationinfo .
-}
-
-:CBSamaDecSevPropAls_publicationinfo {
-    :CBSamaDecSevPropAls_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBIcsIncPropRskPneumn_publicationinfo {
-    :CBIcsIncPropRskPneumn_head
-            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
-}
-
-:CBLabaLamaDecVerySevPropAls_provenance {
-    :CBLabaLamaDecVerySevPropAls
+data:CBFluVacDecPropRskFlu_provenance {
+    data:CBFluVacDecPropRskFlu
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :CBLabaLamaDecVerySevPropAls_provenance
+    data:CBFluVacDecPropRskFlu_provenance
             a             oa:Annotation ;
-            oa:hasBody    :CBLabaLamaDecVerySevPropAls ;
+            oa:hasBody    data:CBFluVacDecPropRskFlu ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBLamaDecSevPropAls_provenance {
+    data:CBLamaDecSevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBLamaDecSevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLamaDecSevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBPneumnVacDecPropRskPneumoc_provenance {
+    data:CBPneumnVacDecPropRskPneumoc
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBPneumnVacDecPropRskPneumoc_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBPneumnVacDecPropRskPneumoc ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBLamaDecVerySevPropAls_provenance {
+    data:CBLamaDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBLamaDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLamaDecVerySevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBSmokeThrpyIncPropQol_head {
+    data:CBSmokeThrpyIncPropQol_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSmokeThrpyIncPropQol ;
+            nanopub:hasProvenance       data:CBSmokeThrpyIncPropQol_provenance ;
+            nanopub:hasPublicationInfo  data:CBSmokeThrpyIncPropQol_publicationinfo .
+}
+
+data:CBLabaDecVerySevPropAls_publicationinfo {
+    data:CBLabaDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaSamaDecVerySevPropAls {
+    data:ActAdministerSabaSama
+            tmr:causes  data:TrDecVerySevPropAls .
+    
+    data:CBSabaSamaDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSamaDecVerySevPropAls_publicationinfo {
+    data:CBSamaDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaDecSevPropAls_publicationinfo {
+    data:CBSabaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaLamaDecModPropAls_publicationinfo {
+    data:CBLabaLamaDecModPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBCatRsltIncPropServCatRslt_provenance {
+    data:CBCatRsltIncPropServCatRslt_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBCatRsltIncPropServCatRslt ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBCatRsltIncPropServCatRslt
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBSabaSamaMainMildPropAls_head {
+    data:CBSabaSamaMainMildPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSabaSamaMainMildPropAls ;
+            nanopub:hasProvenance       data:CBSabaSamaMainMildPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSabaSamaMainMildPropAls_publicationinfo .
+}
+
+data:CBLabaLamaIncPropRskHypo {
+    data:ActAdministerLabaLamaCkd
+            tmr:causes  data:TrIncPropRskHypo .
+    
+    data:CBLabaLamaIncPropRskHypo
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaIncPropRskHypo {
+    data:ActAdministerLabaCkd
+            tmr:causes  data:TrIncPropRskHypo .
+    
+    data:CBLabaIncPropRskHypo
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLamaIncPropRskHypo {
+    data:ActAdministerLamaCkd
+            tmr:causes  data:TrIncPropRskHypo .
+    
+    data:CBLamaIncPropRskHypo
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaDecSevPropAls_head {
+    data:CBLabaLamaDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaDecSevPropAls_publicationinfo .
+}
+
+data:CBSamaMainMildPropAls_publicationinfo {
+    data:CBSamaMainMildPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaSamaDecVerySevPropAls_provenance {
+    data:CBSabaSamaDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBSabaSamaDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBSabaSamaDecVerySevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBLabaDecModPropAls {
+    data:ActAdministerLaba
+            tmr:causes  data:TrDecModPropAls .
+    
+    data:CBLabaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSabaDecVerySevPropAls {
+    data:ActAdministerSaba
+            tmr:causes  data:TrDecVerySevPropAls .
+    
+    data:CBSabaDecVerySevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSamaDecSevPropAls_head {
+    data:CBSamaDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBSamaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBSamaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBSamaDecSevPropAls_publicationinfo .
+}
+
+data:CBLabaMainMildPropAls {
+    data:ActAdministerLaba
+            tmr:causes  data:TrMainMildPropAls .
+    
+    data:CBLabaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLamaDecModPropAls_publicationinfo {
+    data:CBLamaDecModPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLamaDecSevPropAls_publicationinfo {
+    data:CBLamaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaDecSevPropAls_provenance {
+    data:CBLabaDecSevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaDecSevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+    
+    data:CBLabaDecSevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+}
+
+data:CBLabaDecSevPropAls {
+    data:ActAdministerLaba
+            tmr:causes  data:TrDecSevPropAls .
+    
+    data:CBLabaDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaIcsDecVerySevPropAls_provenance {
+    data:CBLabaLamaIcsDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBLabaLamaIcsDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaLamaIcsDecVerySevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBSmokeThrpyIncPropQol {
+    data:ActAdministerSmokeThrpy
+            tmr:causes  data:TrIncPropQol .
+    
+    data:CBSmokeThrpyIncPropQol
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSabaSamaDecSevPropAls_publicationinfo {
+    data:CBSabaSamaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaDecModPropAls {
+    data:ActAdministerSaba
+            tmr:causes  data:TrDecModPropAls .
+    
+    data:CBSabaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaIcsDecSevPropAls {
+    data:ActAdministerLabaLamaIcs
+            tmr:causes  data:TrDecSevPropAls .
+    
+    data:CBLabaLamaIcsDecSevPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSabaSamaDecModPropAls {
+    data:ActAdministerSabaSama
+            tmr:causes  data:TrDecModPropAls .
+    
+    data:CBSabaSamaDecModPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBSabaSamaDecVerySevPropAls_publicationinfo {
+    data:CBSabaSamaDecVerySevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBSabaMainMildPropAls {
+    data:ActAdministerSaba
+            tmr:causes  data:TrMainMildPropAls .
+    
+    data:CBSabaMainMildPropAls
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLabaLamaIcsDecModPropAls_head {
+    data:CBLabaLamaIcsDecModPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaIcsDecModPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaIcsDecModPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaIcsDecModPropAls_publicationinfo .
+}
+
+data:CBCatRsltIncPropServCatRslt {
+    data:ActAdministerCatRslt
+            tmr:causes  data:TrIncPropServCatRslt .
+    
+    data:CBCatRsltIncPropServCatRslt
+            a                tmr:CausationBelief ;
+            tmr:frequency  tmr:Always ;
+            tmr:strength   tmr:High .
+}
+
+data:CBLngTstIncPropServLngTst_head {
+    data:CBLngTstIncPropServLngTst_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLngTstIncPropServLngTst ;
+            nanopub:hasProvenance       data:CBLngTstIncPropServLngTst_provenance ;
+            nanopub:hasPublicationInfo  data:CBLngTstIncPropServLngTst_publicationinfo .
+}
+
+data:CBLabaIcsDecSevPropAls_provenance {
+    data:CBLabaIcsDecSevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBLabaIcsDecSevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaIcsDecSevPropAls ;
+            oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
+}
+
+data:CBLamaDecSevPropAls_head {
+    data:CBLamaDecSevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLamaDecSevPropAls ;
+            nanopub:hasProvenance       data:CBLamaDecSevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLamaDecSevPropAls_publicationinfo .
+}
+
+data:CBLabaLamaDecVerySevPropAls_head {
+    data:CBLabaLamaDecVerySevPropAls_head
+            a                           nanopub:Nanopublication ;
+            nanopub:hasAssertion        data:CBLabaLamaDecVerySevPropAls ;
+            nanopub:hasProvenance       data:CBLabaLamaDecVerySevPropAls_provenance ;
+            nanopub:hasPublicationInfo  data:CBLabaLamaDecVerySevPropAls_publicationinfo .
+}
+
+data:CBSamaDecSevPropAls_publicationinfo {
+    data:CBSamaDecSevPropAls_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBIcsIncPropRskPneumn_publicationinfo {
+    data:CBIcsIncPropRskPneumn_head
+            prov:generatedAtTime  "2019-01-01T13:14:15"^^xsd:dateTime ;
+            prov:wasAttributedTo  data:JDA .
+}
+
+data:CBLabaLamaDecVerySevPropAls_provenance {
+    data:CBLabaLamaDecVerySevPropAls
+            prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
+    
+    data:CBLabaLamaDecVerySevPropAls_provenance
+            a             oa:Annotation ;
+            oa:hasBody    data:CBLabaLamaDecVerySevPropAls ;
             oa:hasTarget  [ oa:hasSource  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> ] .
 }

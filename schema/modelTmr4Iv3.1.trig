@@ -1,0 +1,706 @@
+@prefix tmr: <http://anonymous.org/tmr/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl2: <http://www.w3.org/2006/012/owl2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+#@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix nanopub: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmr4i: <http://anonymous.org/tmr4i/> .
+@base <http://anonymous.org/tmr/> .
+
+<http://anonymous.org/tmr/> rdf:type owl:Ontology .
+
+#################################################################
+#
+#    TMR4I 3.0 - Interactions
+#
+#################################################################
+
+tmr4i:Interaction rdf:type owl:Class .
+
+tmr4i:InternalInteraction rdf:type owl:Class, rdfs:Class ;
+    rdfs:subClassOf tmr4i:Interaction .
+
+tmr4i:ExternalInteraction rdf:type owl:Class ;
+    rdfs:subClassOf tmr4i:Interaction .
+
+tmr4i:RepeatedAction rdf:type owl:Class, rdfs:Class ;
+    rdfs:label "Repeated Action"@en;
+    rdfs:subClassOf tmr4i:InternalInteraction .
+
+tmr4i:AlternativeActions rdf:type owl:Class ;
+    rdfs:label "Alternative Actions"@en;
+    rdfs:subClassOf tmr4i:InternalInteraction .
+
+tmr4i:Contradiction rdf:type owl:Class ;
+    rdfs:label "Contradictory Norms"@en;
+    rdfs:subClassOf tmr4i:InternalInteraction .
+
+tmr4i:RepairableTransition rdf:type owl:Class ;
+    rdfs:label "Repairable Transition"@en;
+    rdfs:subClassOf tmr4i:InternalInteraction .
+
+tmr4i:ExternalAlternativeAction rdf:type owl:Class ;
+    rdfs:label "External-Alternative Action"@en;
+    rdfs:subClassOf tmr4i:ExternalInteraction .
+
+tmr4i:ExternalIncompatibleActions rdf:type owl:Class ;
+    rdfs:label "External-Incompatible Actions"@en;
+    rdfs:subClassOf tmr4i:ExternalInteraction .
+
+tmr4i:ExternalIncompatibleEffects rdf:type owl:Class ;
+    rdfs:label "External-Incompatible Effects"@en;
+    rdfs:subClassOf tmr4i:ExternalInteraction .
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+tmr4i:relates a owl:ObjectProperty ;
+    rdfs:domain tmr4i:Interaction.
+
+#Interaction identifies causation belief which relates to Norm
+tmr4i:identifies a owl:ObjectProperty ;
+    rdfs:domain tmr4i:Interaction.
+
+
+
+#################################################################
+#
+#    Classes of TMR 3.0
+#
+#################################################################
+#   General & Event-related Classes
+#################################################################
+#TODO: for library rdfs, do we need to define rdfs:Class?
+tmr:Type rdf:type owl:Class, rdfs:Class ;
+    rdfs:subClassOf owl:Thing .
+
+tmr:Category rdf:type owl:Class, rdfs:Class ;
+    rdfs:subClassOf tmr:Type ;
+    owl:disjointWith tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Belief , tmr:Source , tmr:Regulation , tmr:Norm .
+
+tmr:ObjectType rdf:type owl:Class , rdfs:Class ;
+    rdfs:subClassOf tmr:Type ;
+    owl:disjointWith tmr:Category , tmr:SituationType , tmr:EventType , tmr:Belief , tmr:Source , tmr:Regulation , tmr:Norm .
+
+tmr:SituationType rdf:type owl:Class , rdfs:Class ;
+    rdfs:subClassOf tmr:Type ;
+    owl:disjointWith tmr:Category , tmr:ObjectType , tmr:EventType , tmr:Belief , tmr:Source , tmr:Regulation , tmr:Norm .
+
+tmr:EventType rdf:type owl:Class , rdfs:Class ;
+    rdfs:subClassOf tmr:Type ;
+    owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:Belief , tmr:Source , tmr:Regulation , tmr:Norm .
+
+tmr:AtomicSituation rdf:type owl:Class , rdfs:Class ;
+    rdfs:subClassOf tmr:SituationType .
+
+tmr:CompoundSituation rdf:type owl:Class , rdfs:Class ;
+    rdfs:subClassOf tmr:SituationType .
+
+#_:y a owl:AllDisjointClasses .
+#_:y owl:members ( tmr:Category tmr:ObjectType tmr:SituationType tmr:EventType ) .
+
+
+tmr:TransitionType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:EventType ;
+    owl:disjointWith tmr:TropeType , tmr:CareActionType .
+
+#syntactic sugar for completion purposes when building JSON for DSS
+tmr:TropeType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:ObjectType ;
+    owl:disjointWith tmr:TransitionType , tmr:CareActionType .
+
+tmr:ActionType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:EventType ;
+    owl:disjointWith tmr:TransitionType , tmr:TropeType .
+
+tmr:CareActionType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:ActionType ;
+    owl:disjointWith tmr:TransitionType , tmr:TropeType .
+
+#_:y1 a owl:AllDisjointClasses .
+#_:y1 owl:members ( tmr:TransitionT  ype tmr:TropeType tmr:ActionType ) .
+
+#special case for actions that do not involve therapies (pharma- or otherwise) (eg. examinations)
+tmr:NonDrugAdministrationType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:CareActionType ;
+    owl:disjointWith tmr:DrugAdministrationType , tmr:VaccinationType .
+
+# general type for care action admin
+tmr:DrugAdministrationType rdf:type owl:Class ;
+    rdfs:subClassOf tmr:CareActionType ;
+    owl:disjointWith tmr:NonDrugAdministrationType  .
+
+# drugAdminT subclass for vaccinations
+tmr:VaccinationType rdf:type owl:Class ;
+     rdfs:subClassOf tmr:DrugAdministrationType ;
+     owl:disjointWith tmr:NonDrugAdministrationType  .
+
+# care action type for compound types that are the result of combining distinct care actions
+tmr:CombinedCareActionType rdf:type owl:Class ;
+        rdfs:subClassOf tmr:CareActionType ;
+        owl:disjointWith tmr:DrugAdministrationType , tmr:NonDrugAdministrationType .
+
+# type of care action elements that are not therapy-related (pharmcaotherapy or otherwise)
+tmr:NonDrugType rdf:type owl:Class;
+      rdfs:subClassOf tmr:Type ;
+      owl:disjointWith tmr:DrugType , tmr:VaccineType .
+
+# type of drug-related elements
+tmr:DrugType rdf:type owl:Class ;
+        owl:disjointWith tmr:NonDrugType  ; 
+        rdfs:subClassOf tmr:Type , _:dt .
+_:dt a owl:Restriction .
+_:dt owl:onProperty tmr:subsumes .
+_:dt owl:allValuesFrom tmr:DrugType  .
+
+# type of vacinnes which are a subclass of drug types
+tmr:VaccineType rdf:type owl:Class ;
+        owl:disjointWith  tmr:NonDrugType , tmr:CompoundType ;
+        rdfs:subClassOf tmr:DrugType .
+
+# individual drug types, subclass of drug types
+tmr:DrugType rdf:type owl:Class ;
+     rdfs:subClassOf tmr:DrugType ;
+     owl:disjointWith tmr:VaccineType , tmr:NonDrugType , tmr:DrugCategory , tmr:CompoundType .
+tmr:DrugType  rdfs:subClassOf _:a .
+_:a     a           owl:Restriction .
+_:a     owl:onProperty tmr:subsumes .
+_:a     owl:allValuesFrom tmr:DrugType .
+
+# means of categorizing drugs. subclass of drug types
+tmr:DrugCategory rdf:type owl:Class ;
+            rdfs:subClassOf tmr:DrugType ;
+            owl:disjointWith tmr:VaccineType , tmr:NonDrugType, tmr:DrugType , tmr:CompoundType .
+tmr:DrugCategory  rdfs:subClassOf _:a1 .
+_:a1     a         owl:Restriction .
+_:a1     owl:onProperty tmr:subsumes .
+_:a1     owl:allValuesFrom _:a11 .
+_:a11 rdf:type owl:Class .
+_:a11 owl:unionOf ( tmr:DrugType tmr:CompoundType ) .
+tmr:DrugCategory  rdfs:subClassOf _:a2 .
+_:a2 a owl:Restriction .
+_:a2  owl:onProperty tmr:subsumes .
+_:a2  owl:someValuesFrom tmr:DrugType .
+
+
+tmr:DrugEffectCategory rdf:type owl:Class ;
+                rdfs:subClassOf tmr:DrugCategory .
+
+# The class of combined components min=2; max=4 TODO: to be reviewed
+tmr:CompoundType rdf:type owl:Class ;
+                owl:disjointWith tmr:VaccineType , tmr:NonDrugType, tmr:DrugType , tmr:DrugCategory ;
+                  rdfs:subClassOf tmr:DrugType , tmr:NonDrugType .
+tmr:CompoundType  rdfs:subClassOf _:x .
+_:x     a           owl:Restriction .
+_:x     owl:onProperty tmr:hasComponent .
+_:x     owl:allValuesFrom tmr:Type .
+tmr:CompoundType  rdfs:subClassOf _:x1 .
+_:x1 a owl:Restriction .
+_:x1  owl:onProperty tmr:hasComponent .
+_:x1  owl:someValuesFrom tmr:Type .
+tmr:CompoundType  rdfs:subClassOf _:x2 .
+_:x2 a owl:Restriction .
+_:x2  owl:minCardinality "2"^^xsd:nonNegativeInteger .
+_:x2  owl:onProperty tmr:hasComponent .
+_:x2  rdfs:onClass tmr:Type .
+tmr:CompoundType  rdfs:subClassOf _:x3 .
+_:x3 a owl:Restriction .
+_:x3  owl:maxCardinality "4"^^xsd:nonNegativeInteger .
+_:x3  owl:onProperty tmr:hasComponent .
+_:x3  rdfs:onClass tmr:Type .
+
+#
+#_:y2 a owl:AllDisjointClasses .
+#_:y2    owl:members ( tmr:NonDrugAdministrationType tmr:DrugAdministrationType tmr:VaccinationType tmr:NonDrugType tmr:DrugType ) .
+
+#_:y3 a owl:AllDisjointClasses .
+#_:y3    owl:members ( tmr:DrugCategory tmr:CompoundType ) .
+
+#_:y4 a owl:AllDisjointClasses 
+#_:y4    owl:members ( tmr:DrugCategory tmr:DrugType ) .
+
+#_:y5 a owl:AllDisjointClasses .
+#_:y5    owl:members ( tmr:DrugType tmr:CompoundType ) .
+
+#_:y6 a owl:AllDisjointClasses .
+#_:y6    owl:members ( tmr:VaccineType tmr:CompoundType ) .
+
+#_:y7 a owl:AllDisjointClasses .
+#_:y2    owl:members ( tmr:VaccineType tmr:DrugType ) .
+
+#_:y8 a owl:AllDisjointClasses .
+#_:y8    owl:members ( tmr:VaccineType tmr:DrugCategory ) .
+
+#_:y9 a owl:AllDisjointClasses .
+#_:y9    owl:members ( tmr:NonDrugType tmr:DrugType ) .
+
+#################################################################
+#   Belief-related Classes
+#################################################################
+
+tmr:Belief rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Source , tmr:Regulation , tmr:Norm .
+
+tmr:Source rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Belief , tmr:Regulation , tmr:Norm , tmr:Statement .
+
+tmr:CausationBelief rdf:type owl:Class ;
+    rdfs:subClassOf tmr:Belief.
+
+tmr:IncompatibilityBelief rdf:type owl:Class ;
+    rdfs:subClassOf tmr:Belief.
+
+#################################################################
+#   Statement-related Classes
+#################################################################
+
+tmr:Statement rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Source , tmr:Regulation , tmr:Norm , tmr:Belief .
+
+tmr:ClinicalStatement rdf:type owl:Class ;
+    rdfs:subClassOf tmr:Statement.
+
+
+#################################################################
+#   Norm-related Classes
+#################################################################
+
+tmr:Regulation rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Belief , tmr:Source , tmr:Norm .
+
+tmr:Norm rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        owl:disjointWith tmr:Category , tmr:ObjectType , tmr:SituationType , tmr:EventType , tmr:Belief , tmr:Regulation , tmr:Source .
+
+tmr:ClinicalGuideline rdf:type owl:Class;
+    rdfs:subClassOf tmr:Regulation.
+
+tmr:ClinicalRecommendation rdf:type owl:Class;
+    rdfs:subClassOf tmr:Norm.
+
+# recommendation with no care actions. only advice 
+tmr:GoodPracticeRecommendation rdf:type owl:Class;
+    rdfs:subClassOf tmr:Norm.
+
+tmr:SingleDiseaseGuideline rdf:type owl:Class ;
+    rdfs:subClassOf tmr:ClinicalGuideline .
+
+tmr:ComposedGuideline rdf:type owl:Class ;
+    rdfs:subClassOf tmr:ClinicalGuideline .
+
+#Guideline that is part of a strictly larger guideline
+tmr:SubGuideline rdf:type owl:Class ;
+    rdfs:subClassOf tmr:ClinicalGuideline .
+
+#_:y10 a owl:AllDisjointClasses .
+#_:y10    owl:members ( tmr:ObjectType tmr:SituationType tmr:EventType tmr:Belief tmr:Source tmr:Regulation tmr:Norm ) .
+
+####################################
+#
+#   Enumerated classes
+#
+###################################
+#
+
+tmr:Modifier  a   owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+tmr:Probability_value rdf:type  owl:Class ;
+                rdfs:subClassOf tmr:Modifier ;
+                owl:disjointWith tmr:Contribution_value , tmr:Deontic_strength_value , tmr:Derivative_value 
+                , tmr:Evidence_level_value ;
+                rdfs:comment "probability with which a care action type is believed to promote a transition type with a certain degree of conﬁdence according to a clinical guideline or clinical knowledge base." .
+
+tmr:Evidence_level_value rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Modifier ;
+        owl:disjointWith tmr:Deontic_strength_value , tmr:Derivative_value , tmr:Probability_value , tmr:Contribution_value ;
+        rdfs:comment "It reﬂects the certainty (evidence level) about a causation belief. In this work we are interested in the belief strength bigger than zero, which means a positive degree of conﬁdence." .
+
+tmr:Contribution_value rdf:type owl:Class, rdfs:Class ;
+        rdfs:subClassOf tmr:Modifier ;
+        owl:disjointWith tmr:Deontic_strength_value , tmr:Derivative_value , tmr:Probability_value , tmr:Evidence_level_value ;
+        rdfs:comment "contribution to goals by a causation belief in the context of a clinical guideline" .
+
+tmr:Derivative_value rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Modifier ;
+        owl:disjointWith tmr:Deontic_strength_value , tmr:Contribution_value , tmr:Probability_value , tmr:Evidence_level_value ;
+        rdfs:comment "the direction of change of a transition attribute" .
+
+tmr:Deontic_strength_value rdf:type owl:Class ;
+    rdfs:subClassOf tmr:Modifier ;
+    owl:disjointWith tmr:Contribution_value , tmr:Derivative_value , tmr:Probability_value , tmr:Evidence_level_value ;
+    rdfs:comment    "The deontic strength reﬂects a degree of obligatoriness expected for a clinical recommendation" .
+
+#### derivative values
+
+tmr:Increase rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Derivative_value ;
+        owl:disjointWith tmr:Decrease , tmr:Maintain ;
+        rdfs:label "increase".
+
+tmr:Decrease rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Derivative_value ;
+        owl:disjointWith tmr:Increase , tmr:Maintain ;
+        rdfs:label "decrease" .
+tmr:Maintain rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Derivative_value ;
+        owl:disjointWith tmr:Increase , tmr:Decrease ;
+        rdfs:label "maintain".
+
+## deontic strength values
+
+tmr:Should rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Deontic_strength_value ;
+        owl:disjointWith tmr:Should_not , tmr:Must , tmr:Must_not ;
+        rdfs:label "should".
+
+tmr:Should_not rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Deontic_strength_value ;
+        owl:disjointWith tmr:Should , tmr:Must , tmr:Must_not ;
+        rdfs:label "should not" .
+
+tmr:Must rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Deontic_strength_value ;
+        owl:disjointWith tmr:Should , tmr:Must_not , tmr:Should_not ;
+        rdfs:label "must" .
+
+tmr:Must_not rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Deontic_strength_value ;
+        owl:disjointWith tmr:Should , tmr:Must_not , tmr:Should_not ;
+        rdfs:label "must not" .
+
+
+# contribution values
+
+tmr:Positive rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Contribution_value ;
+        owl:disjointWith tmr:Neutral , tmr:Negative ;
+        rdfs:label "positive" .
+
+tmr:Negative rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Contribution_value ;
+        owl:disjointWith tmr:Neutral , tmr:Positive ;
+        rdfs:label "negative" .
+
+tmr:Neutral rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Contribution_value ;
+        owl:disjointWith tmr:Negative, tmr:Positive ;
+        rdfs:label "neutral" .
+
+## evidence level values
+
+tmr:Low rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Evidence_level_value ;
+        owl:disjointWith tmr:High , tmr:Medium ;
+        rdfs:label "low level of evidence".
+
+tmr:Medium rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Evidence_level_value ;
+        owl:disjointWith tmr:High , tmr:Low ;
+        rdfs:label "medium level of evidence" .
+
+tmr:High rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Evidence_level_value ;
+        owl:disjointWith tmr:Medium, tmr:Low ;
+        rdfs:label "high level of evidence" .
+
+#### probability values
+
+ tmr:Always rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Probability_value ;
+        owl:disjointWith tmr:Sometimes , tmr:Rarely , tmr:Never , tmr:Often;
+        rdfs:label "always".
+
+tmr:Never rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Probability_value ;
+        owl:disjointWith tmr:Sometimes , tmr:Rarely , tmr:Often , tmr:Always;
+        rdfs:label "never" .
+
+tmr:Rarely rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Probability_value ;
+        owl:disjointWith tmr:Sometimes , tmr:Often , tmr:Never , tmr:Always;
+        rdfs:label "rarely" .
+
+tmr:Sometimes rdf:type owl:Class ;
+        rdfs:subClassOf tmr:Probability_value ;
+        owl:disjointWith tmr:Often , tmr:Rarely , tmr:Never , tmr:Always;
+        rdfs:label "sometimes".
+
+tmr:Often rdf:type owl:Class ;
+            rdfs:subClassOf tmr:Probability_value ;
+            owl:disjointWith tmr:Sometimes , tmr:Rarely , tmr:Never , tmr:Always;
+            rdfs:label "often" .
+
+#################################################################
+#
+#    Object Properties of TMR 2.0
+#
+#################################################################
+
+#################################################################
+#   General & EventType-related Properties
+#################################################################
+# A subsumes B if all elements in B are also in A or are subsumed by elements in A
+tmr:subsumes a owl:ObjectProperty ,
+            owl2:IrreflexiveProperty ,
+            owl2:AsymmetricProperty,
+            owl:TransitiveProperty;
+    rdfs:domain tmr:Type ;
+    rdfs:range tmr:Type .
+
+tmr:subsumedBy a owl:ObjectProperty ,
+            owl2:IrreflexiveProperty ,
+            owl2:AsymmetricProperty,
+            owl:TransitiveProperty;
+    owl:inverseOf tmr:subsumes ;
+    rdfs:domain tmr:Type ;
+    rdfs:range tmr:Type .
+
+#relation for the components of a compound type TODO: check subsumption is correct
+tmr:hasComponent rdf:type owl:ObjectProperty ,
+                        owl2:IrreflexiveProperty,
+                        owl2:AsymmetricProperty ,
+                        owl:TransitiveProperty ;
+                        rdfs:subPropertyOf tmr:subsumedBy ;
+                rdfs:domain tmr:CompoundType ;
+                rdfs:range tmr:Type .
+
+tmr:hasHigherOrderThan a owl:ObjectProperty , owl2:IrreflexiveProperty, owl2:AsymmetricProperty , owl:TransitiveProperty ;
+    rdfs:domain tmr:Modifier ;
+    rdfs:range tmr:Modifier .
+ 
+tmr:Always tmr:hasHigherOrderThan tmr:Often .
+tmr:Often tmr:hasHigherOrderThan tmr:Sometimes .
+tmr:Sometimes tmr:hasHigherOrderThan tmr:Rarely .
+tmr:Rarely tmr:hasHigherOrderThan tmr:Never .
+tmr:High tmr:hasHigherOrderThan tmr:Medium .
+tmr:Medium tmr:hasHigherOrderThan tmr:Low .
+tmr:Positive tmr:hasHigherOrderThan tmr:Negative .
+tmr:Positive tmr:hasHigherOrderThan tmr:Neutral .
+tmr:Neutral tmr:hasHigherOrderThan tmr:Negative .
+tmr:Must tmr:hasHigherOrderThan tmr:Should .
+tmr:Should tmr:hasHigherOrderThan tmr:Should_not .
+tmr:Should_not tmr:hasHigherOrderThan tmr:Must_not .
+
+tmr:hasEqOrder a owl:ObjectProperty , owl:ReflexiveProperty, owl:SymmetricProperty ;
+        rdfs:domain tmr:Modifier ;
+        rdfs:range tmr:Modifier .
+
+tmr:Always tmr:hasEqOrder tmr:Always .
+tmr:Often tmr:hasEqOrder tmr:Often .
+tmr:Sometimes tmr:hasEqOrder tmr:Sometimes .
+tmr:Rarely tmr:hasEqOrder tmr:Rarely .
+tmr:High tmr:hasEqOrder tmr:High .
+tmr:Medium tmr:hasEqOrder tmr:Medium .
+tmr:Low tmr:hasEqOrder tmr:Low .
+tmr:Positive tmr:hasEqOrder tmr:Positive .
+tmr:Negative tmr:hasEqOrder tmr:Negative .
+tmr:Neutral tmr:hasEqOrder tmr:Neutral .
+tmr:Should tmr:hasEqOrder tmr:Should .
+tmr:Should_not tmr:hasEqOrder tmr:Should_not .
+tmr:Must tmr:hasEqOrder tmr:Must .
+tmr:Must_not tmr:hasEqOrder tmr:Must_not .
+tmr:Increase tmr:hasEqOrder tmr:Increase .
+tmr:Decrease tmr:hasEqOrder tmr:Decrease .
+tmr:Maintain tmr:hasEqOrder tmr:Maintain .
+
+tmr:hasGroupingCriteria a owl:ObjectProperty;
+    rdfs:domain tmr:DrugCategory ;
+    rdfs:range tmr:GroupingCriteria .
+
+tmr:participationOf a owl:ObjectProperty ;
+    rdfs:domain tmr:EventType;
+    rdfs:range tmr:ObjectType .
+
+tmr:administrationOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:participationOf ;
+    rdfs:domain tmr:DrugAdministrationType;
+    rdfs:range tmr:DrugType .
+
+#same as administratioOf but for nonDrug types
+tmr:applicationOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:participationOf ;
+    rdfs:domain tmr:NonDrugAdministrationType;
+    rdfs:range tmr:NonDrugType .
+
+tmr:inoculationOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:administrationOf ;
+    rdfs:domain tmr:VaccinationType;
+    rdfs:range tmr:VaccineType .
+
+tmr:hasSituation rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:SituationType .
+
+#syntactic sugar for dss
+tmr:affects rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:TransitionType ;
+    rdfs:domain tmr:TropeType .
+
+tmr:hasTransformableSituation rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:hasSituation ;
+    rdfs:domain tmr:TransitionType .
+
+tmr:hasExpectedSituation rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:hasSituation ;
+    rdfs:domain tmr:TransitionType .
+
+tmr:hasFilterSituation rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:SituationType ;
+    rdfs:domain tmr:Norm .
+
+tmr:and rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:SituationType ;
+    rdfs:range tmr:SituationType .
+
+tmr:or rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:SituationType ;
+    rdfs:range tmr:SituationType .
+
+tmr:neg rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:SituationType ;
+    rdfs:range tmr:SituationType .
+
+tmr:inverseToTransition rdf:type owl:ObjectProperty ,
+                            owl:SymmetricProperty.
+
+tmr:causes rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:EventType ;
+    rdfs:domain tmr:EventType .
+
+tmr:incompatibleWith rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:EventType ;
+    rdfs:domain tmr:EventType .
+
+#################################################################
+#   Belief-related Properties
+#################################################################
+
+tmr:about rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:Belief ;
+    rdfs:domain owl:Thing .
+
+tmr:hasSource rdf:type owl:ObjectProperty ;
+    #rdfs:range tmr:Belief or Norm;
+    rdfs:domain tmr:Source .
+
+tmr:hasAsCause rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:about ;
+    rdfs:range tmr:CausationBelief ;
+    rdfs:domain tmr:EventType .
+
+tmr:hasAsEffect rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf tmr:about ;
+    rdfs:range tmr:CausationBelief ;
+    rdfs:domain tmr:EventType .
+
+tmr:similarTo rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:CausationBelief ;
+    rdfs:domain tmr:CausationBelief .
+
+tmr:opposedTo rdf:type owl:ObjectProperty ;
+    rdfs:range tmr:CausationBelief ;
+    rdfs:domain tmr:CausationBelief .
+
+#################################################################
+#   Regulation-related Properties
+#################################################################
+
+#is a subguideline of a particular clinical guideline
+tmr:isSubGuidelineOf rdf:type owl:FunctionalProperty ,
+                    owl:ObjectProperty ;
+            rdfs:range tmr:Regulation ;
+            rdfs:domain tmr:SubGuideline .
+
+#the nanopublication, which it is a graph, is part of one or more clinical guidelines
+tmr:isPartOf rdf:type owl:ObjectProperty ;
+            rdfs:range tmr:Regulation ;
+            rdfs:domain nanopub:Nanopublication .
+
+
+#################################################################
+#   Norm-related Properties
+#################################################################
+
+#:derivesFrom rdf:type owl:ObjectProperty .
+
+tmr:partOf rdf:type owl:FunctionalProperty ,
+                    owl:ObjectProperty ;
+            rdfs:range tmr:Regulation ;
+            rdfs:domain tmr:Norm .
+
+tmr:aboutExecutionOf rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:Norm ;
+    rdfs:range tmr:ActionType .
+
+tmr:basedOn rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:Norm ;
+    rdfs:range tmr:CausationBelief .
+
+tmr:aboutNotificationOf rdf:type owl:ObjectProperty ;
+    rdfs:domain tmr:GoodPracticeRecommendation ;
+    rdfs:range tmr:ClinicalStatement .
+
+#############################################
+#
+#   Range of Data properties
+#
+############################################
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+tmr:OrganizationJurisdiction rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:GoodPracticeRecommendation .
+
+tmr:OrganizationName rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:GoodPracticeRecommendation .
+    
+tmr:OrganizationJurisdiction rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:ClinicalStatement .
+
+tmr:OrganizationName rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:ClinicalStatement .
+
+tmr:hasStatementText rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:ClinicalStatement .
+
+tmr:hasStatementTitle rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:ClinicalStatement .
+
+tmr:frequency rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:CausationBelief .
+
+tmr:strength rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:Norm .
+
+#Motivation on applying a particular recommendation; also, explanation.
+tmr:motivation rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:Norm .
+
+#derivative of a transition -syntactic sugar for DSS [Maintain | Increase | Decrease]
+tmr:derivative rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:TransitionType .
+
+#contribution of this causation belief to the recommendation [positive | negative]
+tmr:contribution rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:CausationBelief .
+    
+#state of the situation with respect to the affected property. E.g., severe, mild, low risk, etc
+tmr:stateOf rdf:type owl:DatatypeProperty ;
+    rdfs:domain tmr:SituationType .
+
+#the probability of achieving a contribution's transition
+tmr:probability rdf:type owl:DatatypeProperty ;
+         rdfs:domain tmr:CausationBelief .

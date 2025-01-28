@@ -1,8 +1,5 @@
-@prefix :      <http://anonymous.org/tmr/data/> .
-@prefix np:    <http://www.nanopub.org/nschema#> .
+@prefix data:      <http://anonymous.org/tmr/data/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
-@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
@@ -12,2052 +9,2098 @@
 @prefix nanopub: <http://www.nanopub.org/nschema#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 
-:CIG-COPD  a        tmr:ClinicalGuideline , owl:NamedIndividual ;
+data:CIG-COPD  a        tmr:ClinicalGuideline , owl:NamedIndividual ;
         rdfs:label  "GOLD COPD guideline (2017)"@en .
 
-:RecCOPD-SamaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
+data:RecCOPD-SamaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A .
 
-:RecCOPD-SabaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
+data:RecCOPD-SabaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A .
 
-:RecCOPD-SabaSamaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A .
+data:RecCOPD-SabaSamaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A .
 
-:subCIG-Group_A  a              owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_A  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.Laba .
+data:RecCOPD-LabaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.Laba .
 
-:subCIG-Group_A.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_A.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA from previous treatment"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LamaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.Lama .
+data:RecCOPD-LamaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.Lama .
 
-:subCIG-Group_A.Lama  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_A.Lama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LAMA from previous treatment"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLama .
+data:RecCOPD-LabaLamaMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.LabaLama .
 
-:subCIG-Group_A.LabaLama
+data:subCIG-Group_A.LabaLama
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + LAMA from previous treatment"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaIcsMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs .
+data:RecCOPD-LabaIcsMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.LabaIcs .
 
-:subCIG-Group_A.LabaIcs
+data:subCIG-Group_A.LabaIcs
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + ICS  from previous treatment"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaIcsMainMildPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaLamaIcs .
+data:RecCOPD-LabaLamaIcsMainMildPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.LabaLamaIcs .
 
-:subCIG-Group_A.LabaLamaIcs
+data:subCIG-Group_A.LabaLamaIcs
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group A taking LABA + LAMA + ICS  from previous treatment"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
+data:RecCOPD-LabaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B .
 
-:subCIG-Group_B  a              owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_B  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LamaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
+data:RecCOPD-LamaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B .
 
-:RecCOPD-LabaLamaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B .
+data:RecCOPD-LabaLamaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B .
 
-:RecCOPD-SabaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.Saba .
+data:RecCOPD-SabaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B.Saba .
 
-:subCIG-Group_B.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_B.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B  where clinician has deemed SABA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SamaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.Sama .
+data:RecCOPD-SamaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B.Sama .
 
-:subCIG-Group_B.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_B.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B  where clinician has deemed SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SabaSamaDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.SabaSama .
+data:RecCOPD-SabaSamaDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B.SabaSama .
 
-:subCIG-Group_B.SabaSama
+data:subCIG-Group_B.SabaSama
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B where clinician has deemed SABA + SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaIcsDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaIcs .
+data:RecCOPD-LabaIcsDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B.LabaIcs .
 
-:subCIG-Group_B.LabaIcs
+data:subCIG-Group_B.LabaIcs
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B that were taking LABA + ICS"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaIcsDecModPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_B.LabaLamaIcs .
+data:RecCOPD-LabaLamaIcsDecModPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_B.LabaLamaIcs .
 
-:subCIG-Group_B.LabaLamaIcs
+data:subCIG-Group_B.LabaLamaIcs
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group B that were taking LABA + LAMA + ICS"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-#:subCIG-Ckd-Lama  a                  owl:NamedIndividual , tmr:subGuideline ;
+#data:subCIG-Ckd-Lama  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patients with renal disease which are currently taking LAMA-based bronchodilators"@en ;
-#        tmr:isSubGuidelineOf  :CIG-COPD .
+#        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-#:subCIG-Ckd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
+#data:subCIG-Ckd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patients with renal disease which are currently taking LABA-based bronchodilators"@en ;
-#        tmr:isSubGuidelineOf  :CIG-COPD .
+#        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot
-        tmr:isPartOf  :CIG-COPD , :subCIG-Ckd .
+data:RecCOPD-LabaLamaIncPropRskHypoShouldnot
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Ckd .
 
-:subCIG-Ckd  a                  owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Ckd  a                  owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "warning for COPD patients with renal disease which are currently taking LABA- or LAMA-based bronchodilators"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-#:RecCOPD-LamaIncPropRskHypoShouldnot
-#        tmr:isPartOf  :CIG-COPD , :subCIG-Ckd-Lama .
+#data:RecCOPD-LamaIncPropRskHypoShouldnot
+#        tmr:isPartOf  data:CIG-COPD , data:subCIG-Ckd-Lama .
 
-#:RecCOPD-LabaIncPropRskHypoShouldnot
- #       tmr:isPartOf  :CIG-COPD , :subCIG-Ckd-Laba .
+#data:RecCOPD-LabaIncPropRskHypoShouldnot
+ #       tmr:isPartOf  data:CIG-COPD , data:subCIG-Ckd-Laba .
 
-:RecCOPD-MrcDScaleIncPropServMrcDScaleShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-ServMrcDScale .
+data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-ServMrcDScale .
 
-:subCIG-ServMrcDScale
+data:subCIG-ServMrcDScale
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "mMRC Dyspnea scale score"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-CatRsltIncPropServCatRsltShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-ServCatRslt .
+data:RecCOPD-CatRsltIncPropServCatRsltShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-ServCatRslt .
 
-:subCIG-ServCatRslt  a          owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-ServCatRslt  a          owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "COPD assesment test"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SmokeThrpyIncPropQolShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Smoker .
+data:RecCOPD-SmokeThrpyIncPropQolShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Smoker .
 
-:subCIG-Smoker  a               owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Smoker  a               owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment recommendation for patients with COPD that smoke"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-FluVacDecPropRskFluShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-FluVac .
+data:RecCOPD-FluVacDecPropRskFluShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-FluVac .
 
-:subCIG-FluVac  a               owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-FluVac  a               owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "annual treatment recommendation to avoid contracting Influenza on COPD patients"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-PneumnVacDecPropRskPneumocShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-PneumnVac .
+data:RecCOPD-PneumnVacDecPropRskPneumocShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-PneumnVac .
 
-:subCIG-PneumnVac  a            owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-PneumnVac  a            owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment recommendation to avoid contracting Pneumococcal Pneumonia on COPD patients"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LngRehabIncPropLngHlthShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Core .
+data:RecCOPD-LngRehabIncPropLngHlthShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Core .
 
-:subCIG-Core  a                 owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Core  a                 owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "COPD subGuideline with treatment to provide pulmonary rehabilitation"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LngTstIncPropServLngTstShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-ServLngTst .
+data:RecCOPD-LngTstIncPropServLngTstShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-ServLngTst .
 
-:subCIG-ServLngTst  a           owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-ServLngTst  a           owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "further COPD lung function tests"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-XraysScnIncPropServXrayScnShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-ServXrayScn .
+data:RecCOPD-XraysScnIncPropServXrayScnShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-ServXrayScn .
 
-:RecCOPD-CtScnIncPropServCtScnShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-ServCtScn .
+data:RecCOPD-CtScnIncPropServCtScnShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-ServCtScn .
 
-:subCIG-ServCtScn  a            owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-ServCtScn  a            owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "CAT scan"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-#:subCIG-Cvd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
+#data:subCIG-Cvd-Laba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking LABA-based bronchodilators"@en ;
- #       tmr:isSubGuidelineOf  :CIG-COPD .
+ #       tmr:isSubGuidelineOf  data:CIG-COPD .
 
-#:subCIG-Cvd-Saba  a                  owl:NamedIndividual , tmr:subGuideline ;
+#data:subCIG-Cvd-Saba  a                  owl:NamedIndividual , tmr:subGuideline ;
 #        rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking SABA-based bronchodilators"@en ;
- #       tmr:isSubGuidelineOf  :CIG-COPD .
+ #       tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:subCIG-Cvd  a                  owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Cvd  a                  owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "warning for COPD patient with cardiovascular disease comorbidity which are currently taking beta-agonist bronchodilators"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot
-        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd .
+data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Cvd .
 
-#:RecCOPD-LabaIncPropRskCrdShouldnot
-#        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd-Laba .
+#data:RecCOPD-LabaIncPropRskCrdShouldnot
+#        tmr:isPartOf  data:CIG-COPD , data:subCIG-Cvd-Laba .
 
-#:RecCOPD-SabaIncPropRskCrdShouldnot
-#        tmr:isPartOf  :CIG-COPD , :subCIG-Cvd-Saba .
+#data:RecCOPD-SabaIncPropRskCrdShouldnot
+#        tmr:isPartOf  data:CIG-COPD , data:subCIG-Cvd-Saba .
 
-:RecCOPD-LamaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
+data:RecCOPD-LamaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C .
 
-:subCIG-Group_C  a              owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_C  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
+data:RecCOPD-LabaLamaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C .
 
-:RecCOPD-LabaIcsDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C .
+data:RecCOPD-LabaIcsDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C .
 
-:RecCOPD-SabaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Saba .
+data:RecCOPD-SabaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C.Saba .
 
-:subCIG-Group_C.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_C.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SABA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SamaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Sama .
+data:RecCOPD-SamaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C.Sama .
 
-:subCIG-Group_C.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_C.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SabaSamaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.SabaSama .
+data:RecCOPD-SabaSamaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C.SabaSama .
 
-:subCIG-Group_C.SabaSama
+data:subCIG-Group_C.SabaSama
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C where clinician has deemed SABA + SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaIcsDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.LabaLamaIcs .
+data:RecCOPD-LabaLamaIcsDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C.LabaLamaIcs .
 
-:subCIG-Group_C.LabaLamaIcs
+data:subCIG-Group_C.LabaLamaIcs
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C that were already taking Laba + Lama + Ics"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LamaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
+data:RecCOPD-LamaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D .
 
-:subCIG-Group_D  a              owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_D  a              owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaLamaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
+data:RecCOPD-LabaLamaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D .
 
-:RecCOPD-LabaIcsDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
+data:RecCOPD-LabaIcsDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D .
 
-:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D .
+data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D .
 
-:RecCOPD-IcsIncPropRskPneumnShouldnot
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_A.LabaIcs , :subCIG-Group_A.LabaLamaIcs , :subCIG-Group_B.LabaIcs , :subCIG-Group_B.LabaLamaIcs,  :subCIG-Group_C , :subCIG-Group_D .
+data:RecCOPD-IcsIncPropRskPneumnShouldnot
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_A.LabaIcs , data:subCIG-Group_A.LabaLamaIcs , data:subCIG-Group_B.LabaIcs , data:subCIG-Group_B.LabaLamaIcs,  data:subCIG-Group_C , data:subCIG-Group_D .
 
-:RecCOPD-LabaDecSevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_C.Laba .
+data:RecCOPD-LabaDecSevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_C.Laba .
 
-:subCIG-Group_C.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_C.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group C that were already taking Laba"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-LabaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Laba .
+data:RecCOPD-LabaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D.Laba .
 
-:subCIG-Group_D.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_D.Laba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed LABA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SabaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Saba .
+data:RecCOPD-SabaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D.Saba .
 
-:subCIG-Group_D.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_D.Saba  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SABA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SamaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.Sama .
+data:RecCOPD-SamaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D.Sama .
 
-:subCIG-Group_D.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-Group_D.Sama  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SabaSamaDecVerySevPropAlsShould
-        tmr:isPartOf  :CIG-COPD , :subCIG-Group_D.SabaSama .
+data:RecCOPD-SabaSamaDecVerySevPropAlsShould
+        tmr:isPartOf  data:CIG-COPD , data:subCIG-Group_D.SabaSama .
 
-:subCIG-Group_D.SabaSama
+data:subCIG-Group_D.SabaSama
         a                       owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "treatment pathways for patients in COPD group D where clinician has deemed SABA + SAMA suitable"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:subCIG-ServXraysScn  a         owl:NamedIndividual , tmr:subGuideline ;
+data:subCIG-ServXraysScn  a         owl:NamedIndividual , tmr:subGuideline ;
         rdfs:label              "X-rays scan"@en ;
-        tmr:isSubGuidelineOf  :CIG-COPD .
+        tmr:isSubGuidelineOf  data:CIG-COPD .
 
-:RecCOPD-SamaMainMildPropAlsShould {
-    :RecCOPD-SamaMainMildPropAlsShould
+data:RecCOPD-SamaMainMildPropAlsShould {
+    data:RecCOPD-SamaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA to maintain COPD stage 1"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSama ;
-            tmr:basedOn           :CBSamaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSama ;
+            tmr:basedOn           data:CBSamaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+           
+            tmr:strength          tmr:Should .
     
-    :CBSamaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBSamaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaMainMildPropAlsShould {
-    :RecCOPD-SabaMainMildPropAlsShould
+data:RecCOPD-SabaMainMildPropAlsShould {
+    data:RecCOPD-SabaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA to maintain COPD stage 1"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSaba ;
-            tmr:basedOn           :CBSabaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSaba ;
+            tmr:basedOn           data:CBSabaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaSamaMainMildPropAlsShould {
-    :RecCOPD-SabaSamaMainMildPropAlsShould
+data:RecCOPD-SabaSamaMainMildPropAlsShould {
+    data:RecCOPD-SabaSamaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA to maintain COPD stage 1"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
-            tmr:basedOn           :CBSabaSamaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSabaSama ;
+            tmr:basedOn           data:CBSabaSamaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaSamaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaSamaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaIcsMainMildPropAlsShould {
-    :RecCOPD-LabaIcsMainMildPropAlsShould
+data:RecCOPD-LabaIcsMainMildPropAlsShould {
+    data:RecCOPD-LabaIcsMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
-            tmr:basedOn           :CBLabaIcsMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaIcs ;
+            tmr:basedOn           data:CBLabaIcsMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaIcsMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaIcsMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaDecModPropAlsShould {
-    :RecCOPD-LabaDecModPropAlsShould
+data:RecCOPD-LabaDecModPropAlsShould {
+    data:RecCOPD-LabaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLaba ;
-            tmr:basedOn           :CBLabaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLaba ;
+            tmr:basedOn           data:CBLabaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LamaDecModPropAlsShould {
-    :RecCOPD-LamaDecModPropAlsShould
+data:RecCOPD-LamaDecModPropAlsShould {
+    data:RecCOPD-LamaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLama ;
-            tmr:basedOn           :CBLamaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLama ;
+            tmr:basedOn           data:CBLamaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLamaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBLamaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaDecModPropAlsShould {
-    :RecCOPD-LabaLamaDecModPropAlsShould
+data:RecCOPD-LabaLamaDecModPropAlsShould {
+    data:RecCOPD-LabaLamaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
-            tmr:basedOn           :CBLabaLamaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLama ;
+            tmr:basedOn           data:CBLabaLamaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaDecModPropAlsShould {
-    :RecCOPD-SabaDecModPropAlsShould
+data:RecCOPD-SabaDecModPropAlsShould {
+    data:RecCOPD-SabaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSaba ;
-            tmr:basedOn           :CBSabaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSaba ;
+            tmr:basedOn           data:CBSabaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+            tmr:strength          tmr:Should .
     
-    :CBSabaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SamaDecModPropAlsShould {
-    :RecCOPD-SamaDecModPropAlsShould
+data:RecCOPD-SamaDecModPropAlsShould {
+    data:RecCOPD-SamaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSama ;
-            tmr:basedOn           :CBSamaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSama ;
+            tmr:basedOn           data:CBSamaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSamaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBSamaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaSamaDecModPropAlsShould {
-    :RecCOPD-SabaSamaDecModPropAlsShould
+data:RecCOPD-SabaSamaDecModPropAlsShould {
+    data:RecCOPD-SabaSamaDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
-            tmr:basedOn           :CBSabaSamaDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSabaSama ;
+            tmr:basedOn           data:CBSabaSamaDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaSamaDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaSamaDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaIcsDecModPropAlsShould {
-    :RecCOPD-LabaIcsDecModPropAlsShould
+data:RecCOPD-LabaIcsDecModPropAlsShould {
+    data:RecCOPD-LabaIcsDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
-            tmr:basedOn           :CBLabaIcsDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaIcs ;
+            tmr:basedOn           data:CBLabaIcsDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaIcsDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaIcsDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaIcsDecModPropAlsShould {
-    :RecCOPD-LabaLamaIcsDecModPropAlsShould
+data:RecCOPD-LabaLamaIcsDecModPropAlsShould {
+    data:RecCOPD-LabaLamaIcsDecModPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            tmr:basedOn           :CBLabaLamaIcsDecModPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLamaIcs ;
+            tmr:basedOn           data:CBLabaLamaIcsDecModPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaIcsDecModPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaIcsDecModPropAls
+            tmr:contribution  tmr:Positive .
 }
 
 
 
-:RecCOPD-LabaIncPropRskHypoShouldnot {
-    :RecCOPD-LabaIncPropRskHypoShouldnot
+data:RecCOPD-LabaIncPropRskHypoShouldnot {
+    data:RecCOPD-LabaIncPropRskHypoShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LABA when nephrotic or renal disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaCkd ;
-            tmr:basedOn           :CBLabaIncPropRskHypo ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaCkd ;
+            tmr:basedOn           data:CBLabaIncPropRskHypo ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBLabaIncPropRskHypo
-            tmr:contribution  "negative" .
+    data:CBLabaIncPropRskHypo
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot
+data:RecCOPD-LabaLamaIncPropRskHypoShouldnot {
+    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LABA or LAMA when nephrotic or renal disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLamaCkd ;
-            tmr:basedOn           :CBLabaLamaIncPropRskHypo ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLamaCkd ;
+            tmr:basedOn           data:CBLabaLamaIncPropRskHypo ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBLabaLamaIncPropRskHypo
-            tmr:contribution  "negative" .
+    data:CBLabaLamaIncPropRskHypo
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-LamaIncPropRskHypoShouldnot {
-    :RecCOPD-LamaIncPropRskHypoShouldnot
+data:RecCOPD-LamaIncPropRskHypoShouldnot {
+    data:RecCOPD-LamaIncPropRskHypoShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend administering LAMA when nephrotic or renal disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLamaCkd ;
-            tmr:basedOn           :CBLamaIncPropRskHypo ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerLamaCkd ;
+            tmr:basedOn           data:CBLamaIncPropRskHypo ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBLamaIncPropRskHypo
-            tmr:contribution  "negative" .
+    data:CBLamaIncPropRskHypo
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-MrcDScaleIncPropServMrcDScaleShould {
-    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould
+data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould {
+    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
-            tmr:aboutExecutionOf  :ActAdministerMrcDScale ;
-            tmr:basedOn           :CBMrcDScaleIncPropServMrcDScale ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerMrcDScale ;
+            tmr:basedOn           data:CBMrcDScaleIncPropServMrcDScale ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBMrcDScaleIncPropServMrcDScale
-            tmr:contribution  "positive" .
+    data:CBMrcDScaleIncPropServMrcDScale
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-CatRsltIncPropServCatRsltShould {
-    :RecCOPD-CatRsltIncPropServCatRsltShould
+data:RecCOPD-CatRsltIncPropServCatRsltShould {
+    data:RecCOPD-CatRsltIncPropServCatRsltShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct mMRC Dyspnea questionnaire assesment"@en ;
-            tmr:aboutExecutionOf  :ActAdministerCatRslt ;
-            tmr:basedOn           :CBCatRsltIncPropServCatRslt ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerCatRslt ;
+            tmr:basedOn           data:CBCatRsltIncPropServCatRslt ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBCatRsltIncPropServCatRslt
-            tmr:contribution  "positive" .
+    data:CBCatRsltIncPropServCatRslt
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SmokeThrpyIncPropQolShould {
-    :RecCOPD-SmokeThrpyIncPropQolShould
+data:RecCOPD-SmokeThrpyIncPropQolShould {
+    data:RecCOPD-SmokeThrpyIncPropQolShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should encourage patient to quit smoking suggesting smoking cessation therapies"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSmokeThrpy ;
-            tmr:basedOn           :CBSmokeThrpyIncPropQol ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSmokeThrpy ;
+            tmr:basedOn           data:CBSmokeThrpyIncPropQol ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSmokeThrpyIncPropQol
-            tmr:contribution  "positive" .
+    data:CBSmokeThrpyIncPropQol
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-FluVacDecPropRskFluShould {
-    :RecCOPD-FluVacDecPropRskFluShould
+data:RecCOPD-FluVacDecPropRskFluShould {
+    data:RecCOPD-FluVacDecPropRskFluShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering annual influenza vaccine"@en ;
-            tmr:aboutExecutionOf  :ActAdministerFluVac ;
-            tmr:basedOn           :CBFluVacDecPropRskFlu ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerFluVac ;
+            tmr:basedOn           data:CBFluVacDecPropRskFlu ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBFluVacDecPropRskFlu
-            tmr:contribution  "positive" .
+    data:CBFluVacDecPropRskFlu
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-PneumnVacDecPropRskPneumocShould {
-    :RecCOPD-PneumnVacDecPropRskPneumocShould
+data:RecCOPD-PneumnVacDecPropRskPneumocShould {
+    data:RecCOPD-PneumnVacDecPropRskPneumocShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering pneumococcal vaccine"@en ;
-            tmr:aboutExecutionOf  :ActAdministerPneumnVac ;
-            tmr:basedOn           :CBPneumnVacDecPropRskPneumoc ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerPneumnVac ;
+            tmr:basedOn           data:CBPneumnVacDecPropRskPneumoc ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBPneumnVacDecPropRskPneumoc
-            tmr:contribution  "positive" .
+    data:CBPneumnVacDecPropRskPneumoc
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LngRehabIncPropLngHlthShould {
-    :RecCOPD-LngRehabIncPropLngHlthShould
+data:RecCOPD-LngRehabIncPropLngHlthShould {
+    data:RecCOPD-LngRehabIncPropLngHlthShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should promote performing pulmonary rehabilitation"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLngRehab ;
-            tmr:basedOn           :CBLngRehabIncPropLngHlth ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLngRehab ;
+            tmr:basedOn           data:CBLngRehabIncPropLngHlth ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLngRehabIncPropLngHlth
-            tmr:contribution  "positive" .
+    data:CBLngRehabIncPropLngHlth
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LngTstIncPropServLngTstShould {
-    :RecCOPD-LngTstIncPropServLngTstShould
+data:RecCOPD-LngTstIncPropServLngTstShould {
+    data:RecCOPD-LngTstIncPropServLngTstShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should conduct a cardiovascular health assesment if the patient has had a recent exacerbation"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLngTst ;
-            tmr:basedOn           :CBLngTstIncPropServLngTst ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLngTst ;
+            tmr:basedOn           data:CBLngTstIncPropServLngTst ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLngTstIncPropServLngTst
-            tmr:contribution  "positive" .
+    data:CBLngTstIncPropServLngTst
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-XraysScnIncPropServXrayScnShould {
-    :RecCOPD-XraysScnIncPropServXrayScnShould
+data:RecCOPD-XraysScnIncPropServXrayScnShould {
+    data:RecCOPD-XraysScnIncPropServXrayScnShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend a chest X-Ray scan"@en ;
-            tmr:aboutExecutionOf  :ActAdministerXraysScn ;
-            tmr:basedOn           :CBXraysScnIncPropServXrayScn ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerXraysScn ;
+            tmr:basedOn           data:CBXraysScnIncPropServXrayScn ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBXraysScnIncPropServXrayScn
-            tmr:contribution  "positive" .
+    data:CBXraysScnIncPropServXrayScn
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaIncPropRskCrdShouldnot {
-    :RecCOPD-SabaIncPropRskCrdShouldnot
+data:RecCOPD-SabaIncPropRskCrdShouldnot {
+    data:RecCOPD-SabaIncPropRskCrdShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering SABA when cardiovascular disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSabaCvd ;
-            tmr:basedOn           :CBSabaIncPropRskCrd ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerSabaCvd ;
+            tmr:basedOn           data:CBSabaIncPropRskCrd ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBSabaIncPropRskCrd
-            tmr:contribution  "negative" .
+    data:CBSabaIncPropRskCrd
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
+data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot {
+    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering any Beta Agonist when cardiovascular disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerBetaAgonist ;
-            tmr:basedOn           :CBBetaAgonistIncPropRskCrd ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerBetaAgonist ;
+            tmr:basedOn           data:CBBetaAgonistIncPropRskCrd ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBBetaAgonistIncPropRskCrd
-            tmr:contribution  "negative" .
+    data:CBBetaAgonistIncPropRskCrd
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-LabaIncPropRskCrdShouldnot {
-    :RecCOPD-LabaIncPropRskCrdShouldnot
+data:RecCOPD-LabaIncPropRskCrdShouldnot {
+    data:RecCOPD-LabaIncPropRskCrdShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should NOT recommend  administering any LABA when cardiovascular disease is present"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaCvd ;
-            tmr:basedOn           :CBLabaIncPropRskCrd ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaCvd ;
+            tmr:basedOn           data:CBLabaIncPropRskCrd ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBLabaIncPropRskCrd
-            tmr:contribution  "negative" .
+    data:CBLabaIncPropRskCrd
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-LamaDecSevPropAlsShould {
-    :RecCOPD-LamaDecSevPropAlsShould
+data:RecCOPD-LamaDecSevPropAlsShould {
+    data:RecCOPD-LamaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLama ;
-            tmr:basedOn           :CBLamaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLama ;
+            tmr:basedOn           data:CBLamaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLamaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBLamaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaDecSevPropAlsShould {
-    :RecCOPD-LabaLamaDecSevPropAlsShould
+data:RecCOPD-LabaLamaDecSevPropAlsShould {
+    data:RecCOPD-LabaLamaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
-            tmr:basedOn           :CBLabaLamaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLama ;
+            tmr:basedOn           data:CBLabaLamaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaIcsDecSevPropAlsShould {
-    :RecCOPD-LabaIcsDecSevPropAlsShould
+data:RecCOPD-LabaIcsDecSevPropAlsShould {
+    data:RecCOPD-LabaIcsDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
-            tmr:basedOn           :CBLabaIcsDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaIcs ;
+            tmr:basedOn           data:CBLabaIcsDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaIcsDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaIcsDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaDecSevPropAlsShould {
-    :RecCOPD-SabaDecSevPropAlsShould
+data:RecCOPD-SabaDecSevPropAlsShould {
+    data:RecCOPD-SabaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSaba ;
-            tmr:basedOn           :CBSabaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSaba ;
+            tmr:basedOn           data:CBSabaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SamaDecSevPropAlsShould {
-    :RecCOPD-SamaDecSevPropAlsShould
+data:RecCOPD-SamaDecSevPropAlsShould {
+    data:RecCOPD-SamaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSama ;
-            tmr:basedOn           :CBSamaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSama ;
+            tmr:basedOn           data:CBSamaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSamaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBSamaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaSamaDecSevPropAlsShould {
-    :RecCOPD-SabaSamaDecSevPropAlsShould
+data:RecCOPD-SabaSamaDecSevPropAlsShould {
+    data:RecCOPD-SabaSamaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA + SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
-            tmr:basedOn           :CBSabaSamaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSabaSama ;
+            tmr:basedOn           data:CBSabaSamaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaSamaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaSamaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaIcsDecSevPropAlsShould {
-    :RecCOPD-LabaLamaIcsDecSevPropAlsShould
+data:RecCOPD-LabaLamaIcsDecSevPropAlsShould {
+    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            tmr:basedOn           :CBLabaLamaIcsDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLamaIcs ;
+            tmr:basedOn           data:CBLabaLamaIcsDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaIcsDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaIcsDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LamaDecVerySevPropAlsShould {
-    :RecCOPD-LamaDecVerySevPropAlsShould
+data:RecCOPD-LamaDecVerySevPropAlsShould {
+    data:RecCOPD-LamaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLama ;
-            tmr:basedOn           :CBLamaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLama ;
+            tmr:basedOn           data:CBLamaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLamaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBLamaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaDecVerySevPropAlsShould {
-    :RecCOPD-LabaLamaDecVerySevPropAlsShould
+data:RecCOPD-LabaLamaDecVerySevPropAlsShould {
+    data:RecCOPD-LabaLamaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
-            tmr:basedOn           :CBLabaLamaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLama ;
+            tmr:basedOn           data:CBLabaLamaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaIcsDecVerySevPropAlsShould {
-    :RecCOPD-LabaIcsDecVerySevPropAlsShould
+data:RecCOPD-LabaIcsDecVerySevPropAlsShould {
+    data:RecCOPD-LabaIcsDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaIcs ;
-            tmr:basedOn           :CBLabaIcsDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaIcs ;
+            tmr:basedOn           data:CBLabaIcsDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaIcsDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaIcsDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould {
-    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
+data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould {
+    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            tmr:basedOn           :CBLabaLamaIcsDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLamaIcs ;
+            tmr:basedOn           data:CBLabaLamaIcsDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaIcsDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaIcsDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-IcsIncPropRskPneumnShouldnot {
-    :RecCOPD-IcsIncPropRskPneumnShouldnot
+data:RecCOPD-IcsIncPropRskPneumnShouldnot {
+    data:RecCOPD-IcsIncPropRskPneumnShouldnot
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should be aware that regular treatment with ICS increases the risk of pneumonia"@en ;
-            tmr:aboutExecutionOf  :ActAdministerIcs ;
-            tmr:basedOn           :CBIcsIncPropRskPneumn ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should-not" .
+            tmr:aboutExecutionOf  data:ActAdministerIcs ;
+            tmr:basedOn           data:CBIcsIncPropRskPneumn ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should_not .
     
-    :CBIcsIncPropRskPneumn
-            tmr:contribution  "negative" .
+    data:CBIcsIncPropRskPneumn
+            tmr:contribution  tmr:Negative .
 }
 
-:RecCOPD-LabaDecSevPropAlsShould {
-    :RecCOPD-LabaDecSevPropAlsShould
+data:RecCOPD-LabaDecSevPropAlsShould {
+    data:RecCOPD-LabaDecSevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLaba ;
-            tmr:basedOn           :CBLabaDecSevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLaba ;
+            tmr:basedOn           data:CBLabaDecSevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaDecSevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaDecSevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaDecVerySevPropAlsShould {
-    :RecCOPD-LabaDecVerySevPropAlsShould
+data:RecCOPD-LabaDecVerySevPropAlsShould {
+    data:RecCOPD-LabaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLaba ;
-            tmr:basedOn           :CBLabaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLaba ;
+            tmr:basedOn           data:CBLabaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaDecVerySevPropAlsShould {
-    :RecCOPD-SabaDecVerySevPropAlsShould
+data:RecCOPD-SabaDecVerySevPropAlsShould {
+    data:RecCOPD-SabaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSaba ;
-            tmr:basedOn           :CBSabaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSaba ;
+            tmr:basedOn           data:CBSabaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SamaDecVerySevPropAlsShould {
-    :RecCOPD-SamaDecVerySevPropAlsShould
+data:RecCOPD-SamaDecVerySevPropAlsShould {
+    data:RecCOPD-SamaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSama ;
-            tmr:basedOn           :CBSamaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSama ;
+            tmr:basedOn           data:CBSamaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSamaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBSamaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-SabaSamaDecVerySevPropAlsShould {
-    :RecCOPD-SabaSamaDecVerySevPropAlsShould
+data:RecCOPD-SabaSamaDecVerySevPropAlsShould {
+    data:RecCOPD-SabaSamaDecVerySevPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering SABA+SAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerSabaSama ;
-            tmr:basedOn           :CBSabaSamaDecVerySevPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerSabaSama ;
+            tmr:basedOn           data:CBSabaSamaDecVerySevPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBSabaSamaDecVerySevPropAls
-            tmr:contribution  "positive" .
+    data:CBSabaSamaDecVerySevPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaIncPropRskHypoShouldnot_head {
-    :RecCOPD-LabaIncPropRskHypoShouldnot_head
+data:RecCOPD-LabaIncPropRskHypoShouldnot_head {
+    data:RecCOPD-LabaIncPropRskHypoShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIncPropRskHypoShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-LabaIncPropRskHypoShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIncPropRskHypoShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIncPropRskHypoShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_head {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_head
+data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_head {
+    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo .
 }
 
-:RecCOPD-LamaIncPropRskHypoShouldnot_head {
-    :RecCOPD-LamaIncPropRskHypoShouldnot_head
+data:RecCOPD-LamaIncPropRskHypoShouldnot_head {
+    data:RecCOPD-LamaIncPropRskHypoShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LamaIncPropRskHypoShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-LamaIncPropRskHypoShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LamaIncPropRskHypoShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-LamaIncPropRskHypoShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo .
 }
 
-:RecCOPD-LabaIncPropRskHypoShouldnot_provenance {
-    :RecCOPD-LabaIncPropRskHypoShouldnot
+data:RecCOPD-LabaIncPropRskHypoShouldnot_provenance {
+    data:RecCOPD-LabaIncPropRskHypoShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIncPropRskHypoShouldnot_provenance
+    data:RecCOPD-LabaIncPropRskHypoShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIncPropRskHypoShouldnot ;
+            oa:hasBody    data:RecCOPD-LabaIncPropRskHypoShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot
+data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance {
+    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance
+    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
+            oa:hasBody    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LamaIncPropRskHypoShouldnot_provenance {
-    :RecCOPD-LamaIncPropRskHypoShouldnot
+data:RecCOPD-LamaIncPropRskHypoShouldnot_provenance {
+    data:RecCOPD-LamaIncPropRskHypoShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LamaIncPropRskHypoShouldnot_provenance
+    data:RecCOPD-LamaIncPropRskHypoShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LamaIncPropRskHypoShouldnot ;
+            oa:hasBody    data:RecCOPD-LamaIncPropRskHypoShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo {
-    :RecCOPD-LabaIncPropRskHypoShouldnot_nanopub
+data:RecCOPD-LabaIncPropRskHypoShouldnot_publicationinfo {
+    data:RecCOPD-LabaIncPropRskHypoShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo {
-    :RecCOPD-LabaLamaIncPropRskHypoShouldnot_nanopub
+data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_publicationinfo {
+    data:RecCOPD-LabaLamaIncPropRskHypoShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo {
-    :RecCOPD-LamaIncPropRskHypoShouldnot_nanopub
+data:RecCOPD-LamaIncPropRskHypoShouldnot_publicationinfo {
+    data:RecCOPD-LamaIncPropRskHypoShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head {
-    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head
+data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head {
+    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-MrcDScaleIncPropServMrcDScaleShould ;
-            nanopub:hasProvenance       :RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould ;
+            nanopub:hasProvenance       data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo .
 }
 
-:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance {
-    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould
+data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance {
+    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance
+    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould ;
+            oa:hasBody    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo {
-    :RecCOPD-MrcDScaleIncPropServMrcDScaleShould_nanopub
+data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_publicationinfo {
+    data:RecCOPD-MrcDScaleIncPropServMrcDScaleShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-CatRsltIncPropServCatRsltShould_head {
-    :RecCOPD-CatRsltIncPropServCatRsltShould_head
+data:RecCOPD-CatRsltIncPropServCatRsltShould_head {
+    data:RecCOPD-CatRsltIncPropServCatRsltShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-CatRsltIncPropServCatRsltShould ;
-            nanopub:hasProvenance       :RecCOPD-CatRsltIncPropServCatRsltShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-CatRsltIncPropServCatRsltShould ;
+            nanopub:hasProvenance       data:RecCOPD-CatRsltIncPropServCatRsltShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo .
 }
 
-:RecCOPD-CatRsltIncPropServCatRsltShould_provenance {
-    :RecCOPD-CatRsltIncPropServCatRsltShould
+data:RecCOPD-CatRsltIncPropServCatRsltShould_provenance {
+    data:RecCOPD-CatRsltIncPropServCatRsltShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-CatRsltIncPropServCatRsltShould_provenance
+    data:RecCOPD-CatRsltIncPropServCatRsltShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-CatRsltIncPropServCatRsltShould ;
+            oa:hasBody    data:RecCOPD-CatRsltIncPropServCatRsltShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo {
-    :RecCOPD-CatRsltIncPropServCatRsltShould_nanopub
+data:RecCOPD-CatRsltIncPropServCatRsltShould_publicationinfo {
+    data:RecCOPD-CatRsltIncPropServCatRsltShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SmokeThrpyIncPropQolShould_head {
-    :RecCOPD-SmokeThrpyIncPropQolShould_head
+data:RecCOPD-SmokeThrpyIncPropQolShould_head {
+    data:RecCOPD-SmokeThrpyIncPropQolShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SmokeThrpyIncPropQolShould ;
-            nanopub:hasProvenance       :RecCOPD-SmokeThrpyIncPropQolShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SmokeThrpyIncPropQolShould ;
+            nanopub:hasProvenance       data:RecCOPD-SmokeThrpyIncPropQolShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo .
 }
 
-:RecCOPD-SmokeThrpyIncPropQolShould_provenance {
-    :RecCOPD-SmokeThrpyIncPropQolShould
+data:RecCOPD-SmokeThrpyIncPropQolShould_provenance {
+    data:RecCOPD-SmokeThrpyIncPropQolShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SmokeThrpyIncPropQolShould_provenance
+    data:RecCOPD-SmokeThrpyIncPropQolShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SmokeThrpyIncPropQolShould ;
+            oa:hasBody    data:RecCOPD-SmokeThrpyIncPropQolShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo {
-    :RecCOPD-SmokeThrpyIncPropQolShould_nanopub
+data:RecCOPD-SmokeThrpyIncPropQolShould_publicationinfo {
+    data:RecCOPD-SmokeThrpyIncPropQolShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-FluVacDecPropRskFluShould_head {
-    :RecCOPD-FluVacDecPropRskFluShould_head
+data:RecCOPD-FluVacDecPropRskFluShould_head {
+    data:RecCOPD-FluVacDecPropRskFluShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-FluVacDecPropRskFluShould ;
-            nanopub:hasProvenance       :RecCOPD-FluVacDecPropRskFluShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-FluVacDecPropRskFluShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-FluVacDecPropRskFluShould ;
+            nanopub:hasProvenance       data:RecCOPD-FluVacDecPropRskFluShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-FluVacDecPropRskFluShould_publicationinfo .
 }
 
-:RecCOPD-FluVacDecPropRskFluShould_provenance {
-    :RecCOPD-FluVacDecPropRskFluShould
+data:RecCOPD-FluVacDecPropRskFluShould_provenance {
+    data:RecCOPD-FluVacDecPropRskFluShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-FluVacDecPropRskFluShould_provenance
+    data:RecCOPD-FluVacDecPropRskFluShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-FluVacDecPropRskFluShould ;
+            oa:hasBody    data:RecCOPD-FluVacDecPropRskFluShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-FluVacDecPropRskFluShould_publicationinfo {
-    :RecCOPD-FluVacDecPropRskFluShould_nanopub
+data:RecCOPD-FluVacDecPropRskFluShould_publicationinfo {
+    data:RecCOPD-FluVacDecPropRskFluShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-PneumnVacDecPropRskPneumocShould_head {
-    :RecCOPD-PneumnVacDecPropRskPneumocShould_head
+data:RecCOPD-PneumnVacDecPropRskPneumocShould_head {
+    data:RecCOPD-PneumnVacDecPropRskPneumocShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-PneumnVacDecPropRskPneumocShould ;
-            nanopub:hasProvenance       :RecCOPD-PneumnVacDecPropRskPneumocShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-PneumnVacDecPropRskPneumocShould ;
+            nanopub:hasProvenance       data:RecCOPD-PneumnVacDecPropRskPneumocShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo .
 }
 
-:RecCOPD-PneumnVacDecPropRskPneumocShould_provenance {
-    :RecCOPD-PneumnVacDecPropRskPneumocShould
+data:RecCOPD-PneumnVacDecPropRskPneumocShould_provenance {
+    data:RecCOPD-PneumnVacDecPropRskPneumocShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-PneumnVacDecPropRskPneumocShould_provenance
+    data:RecCOPD-PneumnVacDecPropRskPneumocShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-PneumnVacDecPropRskPneumocShould ;
+            oa:hasBody    data:RecCOPD-PneumnVacDecPropRskPneumocShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo {
-    :RecCOPD-PneumnVacDecPropRskPneumocShould_nanopub
+data:RecCOPD-PneumnVacDecPropRskPneumocShould_publicationinfo {
+    data:RecCOPD-PneumnVacDecPropRskPneumocShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LngRehabIncPropLngHlthShould_head {
-    :RecCOPD-LngRehabIncPropLngHlthShould_head
+data:RecCOPD-LngRehabIncPropLngHlthShould_head {
+    data:RecCOPD-LngRehabIncPropLngHlthShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LngRehabIncPropLngHlthShould ;
-            nanopub:hasProvenance       :RecCOPD-LngRehabIncPropLngHlthShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LngRehabIncPropLngHlthShould ;
+            nanopub:hasProvenance       data:RecCOPD-LngRehabIncPropLngHlthShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo .
 }
 
-:RecCOPD-LngRehabIncPropLngHlthShould_provenance {
-    :RecCOPD-LngRehabIncPropLngHlthShould
+data:RecCOPD-LngRehabIncPropLngHlthShould_provenance {
+    data:RecCOPD-LngRehabIncPropLngHlthShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LngRehabIncPropLngHlthShould_provenance
+    data:RecCOPD-LngRehabIncPropLngHlthShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LngRehabIncPropLngHlthShould ;
+            oa:hasBody    data:RecCOPD-LngRehabIncPropLngHlthShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo {
-    :RecCOPD-LngRehabIncPropLngHlthShould_nanopub
+data:RecCOPD-LngRehabIncPropLngHlthShould_publicationinfo {
+    data:RecCOPD-LngRehabIncPropLngHlthShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LngTstIncPropServLngTstShould_head {
-    :RecCOPD-LngTstIncPropServLngTstShould_head
+data:RecCOPD-LngTstIncPropServLngTstShould_head {
+    data:RecCOPD-LngTstIncPropServLngTstShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LngTstIncPropServLngTstShould ;
-            nanopub:hasProvenance       :RecCOPD-LngTstIncPropServLngTstShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LngTstIncPropServLngTstShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LngTstIncPropServLngTstShould ;
+            nanopub:hasProvenance       data:RecCOPD-LngTstIncPropServLngTstShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LngTstIncPropServLngTstShould_publicationinfo .
 }
 
-:RecCOPD-LngTstIncPropServLngTstShould_provenance {
-    :RecCOPD-LngTstIncPropServLngTstShould
+data:RecCOPD-LngTstIncPropServLngTstShould_provenance {
+    data:RecCOPD-LngTstIncPropServLngTstShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LngTstIncPropServLngTstShould_provenance
+    data:RecCOPD-LngTstIncPropServLngTstShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LngTstIncPropServLngTstShould ;
+            oa:hasBody    data:RecCOPD-LngTstIncPropServLngTstShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LngTstIncPropServLngTstShould_publicationinfo {
-    :RecCOPD-LngTstIncPropServLngTstShould_nanopub
+data:RecCOPD-LngTstIncPropServLngTstShould_publicationinfo {
+    data:RecCOPD-LngTstIncPropServLngTstShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :Jesus .
+            prov:wasAttributedTo  data:Jesus .
 }
 
-:RecCOPD-XraysScnIncPropServXrayScnShould_head {
-    :RecCOPD-XraysScnIncPropServXrayScnShould_head
+data:RecCOPD-XraysScnIncPropServXrayScnShould_head {
+    data:RecCOPD-XraysScnIncPropServXrayScnShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-XraysScnIncPropServXrayScnShould ;
-            nanopub:hasProvenance       :RecCOPD-XraysScnIncPropServXrayScnShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-XraysScnIncPropServXrayScnShould ;
+            nanopub:hasProvenance       data:RecCOPD-XraysScnIncPropServXrayScnShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo .
 }
 
-:RecCOPD-XraysScnIncPropServXrayScnShould_provenance {
-    :RecCOPD-XraysScnIncPropServXrayScnShould
+data:RecCOPD-XraysScnIncPropServXrayScnShould_provenance {
+    data:RecCOPD-XraysScnIncPropServXrayScnShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-XraysScnIncPropServXrayScnShould_provenance
+    data:RecCOPD-XraysScnIncPropServXrayScnShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-XraysScnIncPropServXrayScnShould ;
+            oa:hasBody    data:RecCOPD-XraysScnIncPropServXrayScnShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo {
-    :RecCOPD-XraysScnIncPropServXrayScnShould_nanopub
+data:RecCOPD-XraysScnIncPropServXrayScnShould_publicationinfo {
+    data:RecCOPD-XraysScnIncPropServXrayScnShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :Jesus .
+            prov:wasAttributedTo  data:Jesus .
 }
 
-:RecCOPD-SabaIncPropRskCrdShouldnot_head {
-    :RecCOPD-SabaIncPropRskCrdShouldnot_head
+data:RecCOPD-SabaIncPropRskCrdShouldnot_head {
+    data:RecCOPD-SabaIncPropRskCrdShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaIncPropRskCrdShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-SabaIncPropRskCrdShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaIncPropRskCrdShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-SabaIncPropRskCrdShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head
+data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head {
+    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo .
 }
 
-:RecCOPD-LabaIncPropRskCrdShouldnot_head {
-    :RecCOPD-LabaIncPropRskCrdShouldnot_head
+data:RecCOPD-LabaIncPropRskCrdShouldnot_head {
+    data:RecCOPD-LabaIncPropRskCrdShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIncPropRskCrdShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-LabaIncPropRskCrdShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIncPropRskCrdShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIncPropRskCrdShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot
+data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance {
+    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance
+    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
+            oa:hasBody    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIncPropRskCrdShouldnot_provenance {
-    :RecCOPD-LabaIncPropRskCrdShouldnot
+data:RecCOPD-LabaIncPropRskCrdShouldnot_provenance {
+    data:RecCOPD-LabaIncPropRskCrdShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIncPropRskCrdShouldnot_provenance
+    data:RecCOPD-LabaIncPropRskCrdShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIncPropRskCrdShouldnot ;
+            oa:hasBody    data:RecCOPD-LabaIncPropRskCrdShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaIncPropRskCrdShouldnot_provenance {
-    :RecCOPD-SabaIncPropRskCrdShouldnot
+data:RecCOPD-SabaIncPropRskCrdShouldnot_provenance {
+    data:RecCOPD-SabaIncPropRskCrdShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaIncPropRskCrdShouldnot_provenance
+    data:RecCOPD-SabaIncPropRskCrdShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaIncPropRskCrdShouldnot ;
+            oa:hasBody    data:RecCOPD-SabaIncPropRskCrdShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo {
-    :RecCOPD-BetaAgonistIncPropRskCrdShouldnot_nanopub
+data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_publicationinfo {
+    data:RecCOPD-BetaAgonistIncPropRskCrdShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo {
-    :RecCOPD-LabaIncPropRskCrdShouldnot_nanopub
+data:RecCOPD-LabaIncPropRskCrdShouldnot_publicationinfo {
+    data:RecCOPD-LabaIncPropRskCrdShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo {
-    :RecCOPD-SabaIncPropRskCrdShouldnot_nanopub
+data:RecCOPD-SabaIncPropRskCrdShouldnot_publicationinfo {
+    data:RecCOPD-SabaIncPropRskCrdShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SamaMainMildPropAlsShould_head {
-    :RecCOPD-SamaMainMildPropAlsShould_head
+data:RecCOPD-SamaMainMildPropAlsShould_head {
+    data:RecCOPD-SamaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SamaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SamaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SamaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SamaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SamaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SamaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SamaMainMildPropAlsShould_provenance {
-    :RecCOPD-SamaMainMildPropAlsShould
+data:RecCOPD-SamaMainMildPropAlsShould_provenance {
+    data:RecCOPD-SamaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SamaMainMildPropAlsShould_provenance
+    data:RecCOPD-SamaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SamaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SamaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SamaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-SamaMainMildPropAlsShould_nanopub
+data:RecCOPD-SamaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-SamaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaMainMildPropAlsShould_head {
-    :RecCOPD-SabaMainMildPropAlsShould_head
+data:RecCOPD-SabaMainMildPropAlsShould_head {
+    data:RecCOPD-SabaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaMainMildPropAlsShould_provenance {
-    :RecCOPD-SabaMainMildPropAlsShould
+data:RecCOPD-SabaMainMildPropAlsShould_provenance {
+    data:RecCOPD-SabaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaMainMildPropAlsShould_provenance
+    data:RecCOPD-SabaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-SabaMainMildPropAlsShould_nanopub
+data:RecCOPD-SabaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaSamaMainMildPropAlsShould_head {
-    :RecCOPD-SabaSamaMainMildPropAlsShould_head
+data:RecCOPD-SabaSamaMainMildPropAlsShould_head {
+    data:RecCOPD-SabaSamaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaSamaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaSamaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaSamaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaSamaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaSamaMainMildPropAlsShould_provenance {
-    :RecCOPD-SabaSamaMainMildPropAlsShould
+data:RecCOPD-SabaSamaMainMildPropAlsShould_provenance {
+    data:RecCOPD-SabaSamaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaSamaMainMildPropAlsShould_provenance
+    data:RecCOPD-SabaSamaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaSamaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaSamaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-SabaSamaMainMildPropAlsShould_nanopub
+data:RecCOPD-SabaSamaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaSamaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaMainMildPropAlsShould_head {
-    :RecCOPD-LabaLamaMainMildPropAlsShould_head
+data:RecCOPD-LabaLamaMainMildPropAlsShould_head {
+    data:RecCOPD-LabaLamaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaMainMildPropAlsShould {
-    :RecCOPD-LabaLamaMainMildPropAlsShould
+data:RecCOPD-LabaLamaMainMildPropAlsShould {
+    data:RecCOPD-LabaLamaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLama ;
-            tmr:basedOn           :CBLabaLamaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLama ;
+            tmr:basedOn           data:CBLabaLamaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaMainMildPropAlsShould_provenance {
-    :RecCOPD-LabaLamaMainMildPropAlsShould
+data:RecCOPD-LabaLamaMainMildPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaMainMildPropAlsShould_provenance
+    data:RecCOPD-LabaLamaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaMainMildPropAlsShould_nanopub
+data:RecCOPD-LabaLamaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaIcsMainMildPropAlsShould_head {
-    :RecCOPD-LabaIcsMainMildPropAlsShould_head
+data:RecCOPD-LabaIcsMainMildPropAlsShould_head {
+    data:RecCOPD-LabaIcsMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIcsMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaIcsMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIcsMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIcsMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaIcsMainMildPropAlsShould_provenance {
-    :RecCOPD-LabaIcsMainMildPropAlsShould
+data:RecCOPD-LabaIcsMainMildPropAlsShould_provenance {
+    data:RecCOPD-LabaIcsMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIcsMainMildPropAlsShould_provenance
+    data:RecCOPD-LabaIcsMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIcsMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaIcsMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-LabaIcsMainMildPropAlsShould_nanopub
+data:RecCOPD-LabaIcsMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaIcsMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaIcsMainMildPropAlsShould_head {
-    :RecCOPD-LabaLamaIcsMainMildPropAlsShould_head
+data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_head {
+    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIcsMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaIcsMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIcsMainMildPropAlsShould {
-    :RecCOPD-LabaLamaIcsMainMildPropAlsShould
+data:RecCOPD-LabaLamaIcsMainMildPropAlsShould {
+    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should recommend administering LABA + LAMA + ICS"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLabaLamaIcs ;
-            tmr:basedOn           :CBLabaLamaIcsMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLabaLamaIcs ;
+            tmr:basedOn           data:CBLabaLamaIcsMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaLamaIcsMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaLamaIcsMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance {
-    :RecCOPD-LabaLamaIcsMainMildPropAlsShould
+data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance
+    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIcsMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaIcsMainMildPropAlsShould_nanopub
+data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaIcsMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaDecModPropAlsShould_head {
-    :RecCOPD-LabaDecModPropAlsShould_head
+data:RecCOPD-LabaDecModPropAlsShould_head {
+    data:RecCOPD-LabaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaDecModPropAlsShould_provenance {
-    :RecCOPD-LabaDecModPropAlsShould
+data:RecCOPD-LabaDecModPropAlsShould_provenance {
+    data:RecCOPD-LabaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaDecModPropAlsShould_provenance
+    data:RecCOPD-LabaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-LabaDecModPropAlsShould_nanopub
+data:RecCOPD-LabaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LamaDecModPropAlsShould_head {
-    :RecCOPD-LamaDecModPropAlsShould_head
+data:RecCOPD-LamaDecModPropAlsShould_head {
+    data:RecCOPD-LamaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LamaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LamaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LamaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LamaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LamaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LamaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LamaDecModPropAlsShould_provenance {
-    :RecCOPD-LamaDecModPropAlsShould
+data:RecCOPD-LamaDecModPropAlsShould_provenance {
+    data:RecCOPD-LamaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LamaDecModPropAlsShould_provenance
+    data:RecCOPD-LamaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LamaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LamaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LamaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-LamaDecModPropAlsShould_nanopub
+data:RecCOPD-LamaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-LamaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaDecModPropAlsShould_head {
-    :RecCOPD-LabaLamaDecModPropAlsShould_head
+data:RecCOPD-LabaLamaDecModPropAlsShould_head {
+    data:RecCOPD-LabaLamaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaDecModPropAlsShould_provenance {
-    :RecCOPD-LabaLamaDecModPropAlsShould
+data:RecCOPD-LabaLamaDecModPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaDecModPropAlsShould_provenance
+    data:RecCOPD-LabaLamaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaDecModPropAlsShould_nanopub
+data:RecCOPD-LabaLamaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaDecModPropAlsShould_head {
-    :RecCOPD-SabaDecModPropAlsShould_head
+data:RecCOPD-SabaDecModPropAlsShould_head {
+    data:RecCOPD-SabaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaDecModPropAlsShould_provenance {
-    :RecCOPD-SabaDecModPropAlsShould
+data:RecCOPD-SabaDecModPropAlsShould_provenance {
+    data:RecCOPD-SabaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaDecModPropAlsShould_provenance
+    data:RecCOPD-SabaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-SabaDecModPropAlsShould_nanopub
+data:RecCOPD-SabaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SamaDecModPropAlsShould_head {
-    :RecCOPD-SamaDecModPropAlsShould_head
+data:RecCOPD-SamaDecModPropAlsShould_head {
+    data:RecCOPD-SamaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SamaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SamaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SamaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SamaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SamaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SamaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SamaDecModPropAlsShould_provenance {
-    :RecCOPD-SamaDecModPropAlsShould
+data:RecCOPD-SamaDecModPropAlsShould_provenance {
+    data:RecCOPD-SamaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SamaDecModPropAlsShould_provenance
+    data:RecCOPD-SamaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SamaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SamaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SamaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-SamaDecModPropAlsShould_nanopub
+data:RecCOPD-SamaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-SamaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaSamaDecModPropAlsShould_head {
-    :RecCOPD-SabaSamaDecModPropAlsShould_head
+data:RecCOPD-SabaSamaDecModPropAlsShould_head {
+    data:RecCOPD-SabaSamaDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaSamaDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaSamaDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaSamaDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaSamaDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaSamaDecModPropAlsShould_provenance {
-    :RecCOPD-SabaSamaDecModPropAlsShould
+data:RecCOPD-SabaSamaDecModPropAlsShould_provenance {
+    data:RecCOPD-SabaSamaDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaSamaDecModPropAlsShould_provenance
+    data:RecCOPD-SabaSamaDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaSamaDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaSamaDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo {
-    :RecCOPD-SabaSamaDecModPropAlsShould_nanopub
+data:RecCOPD-SabaSamaDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaSamaDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :Jesus .
+            prov:wasAttributedTo  data:Jesus .
 }
 
-:RecCOPD-LabaIcsDecModPropAlsShould_head {
-    :RecCOPD-LabaIcsDecModPropAlsShould_head
+data:RecCOPD-LabaIcsDecModPropAlsShould_head {
+    data:RecCOPD-LabaIcsDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIcsDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaIcsDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIcsDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIcsDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaIcsDecModPropAlsShould_provenance {
-    :RecCOPD-LabaIcsDecModPropAlsShould
+data:RecCOPD-LabaIcsDecModPropAlsShould_provenance {
+    data:RecCOPD-LabaIcsDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIcsDecModPropAlsShould_provenance
+    data:RecCOPD-LabaIcsDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIcsDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaIcsDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo {
-    :RecCOPD-LabaIcsDecModPropAlsShould_nanopub
+data:RecCOPD-LabaIcsDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaIcsDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaIcsDecModPropAlsShould_head {
-    :RecCOPD-LabaLamaIcsDecModPropAlsShould_head
+data:RecCOPD-LabaLamaIcsDecModPropAlsShould_head {
+    data:RecCOPD-LabaLamaIcsDecModPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIcsDecModPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaIcsDecModPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance {
-    :RecCOPD-LabaLamaIcsDecModPropAlsShould
+data:RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaIcsDecModPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance
+    data:RecCOPD-LabaLamaIcsDecModPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIcsDecModPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaIcsDecModPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaIcsDecModPropAlsShould_nanopub
+data:RecCOPD-LabaLamaIcsDecModPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaIcsDecModPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LamaDecSevPropAlsShould_head {
-    :RecCOPD-LamaDecSevPropAlsShould_head
+data:RecCOPD-LamaDecSevPropAlsShould_head {
+    data:RecCOPD-LamaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LamaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LamaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LamaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LamaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LamaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LamaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LamaDecSevPropAlsShould_provenance {
-    :RecCOPD-LamaDecSevPropAlsShould
+data:RecCOPD-LamaDecSevPropAlsShould_provenance {
+    data:RecCOPD-LamaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LamaDecSevPropAlsShould_provenance
+    data:RecCOPD-LamaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LamaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LamaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LamaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-LamaDecSevPropAlsShould_nanopub
+data:RecCOPD-LamaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-LamaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaDecSevPropAlsShould_head {
-    :RecCOPD-LabaLamaDecSevPropAlsShould_head
+data:RecCOPD-LabaLamaDecSevPropAlsShould_head {
+    data:RecCOPD-LabaLamaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaDecSevPropAlsShould_provenance {
-    :RecCOPD-LabaLamaDecSevPropAlsShould
+data:RecCOPD-LabaLamaDecSevPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaDecSevPropAlsShould_provenance
+    data:RecCOPD-LabaLamaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaDecSevPropAlsShould_nanopub
+data:RecCOPD-LabaLamaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaIcsDecSevPropAlsShould_head {
-    :RecCOPD-LabaIcsDecSevPropAlsShould_head
+data:RecCOPD-LabaIcsDecSevPropAlsShould_head {
+    data:RecCOPD-LabaIcsDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIcsDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaIcsDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIcsDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIcsDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaIcsDecSevPropAlsShould_provenance {
-    :RecCOPD-LabaIcsDecSevPropAlsShould
+data:RecCOPD-LabaIcsDecSevPropAlsShould_provenance {
+    data:RecCOPD-LabaIcsDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIcsDecSevPropAlsShould_provenance
+    data:RecCOPD-LabaIcsDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIcsDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaIcsDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaIcsDecSevPropAlsShould_nanopub
+data:RecCOPD-LabaIcsDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaIcsDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaDecSevPropAlsShould_head {
-    :RecCOPD-SabaDecSevPropAlsShould_head
+data:RecCOPD-SabaDecSevPropAlsShould_head {
+    data:RecCOPD-SabaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaDecSevPropAlsShould_provenance {
-    :RecCOPD-SabaDecSevPropAlsShould
+data:RecCOPD-SabaDecSevPropAlsShould_provenance {
+    data:RecCOPD-SabaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaDecSevPropAlsShould_provenance
+    data:RecCOPD-SabaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-SabaDecSevPropAlsShould_nanopub
+data:RecCOPD-SabaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SamaDecSevPropAlsShould_head {
-    :RecCOPD-SamaDecSevPropAlsShould_head
+data:RecCOPD-SamaDecSevPropAlsShould_head {
+    data:RecCOPD-SamaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SamaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SamaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SamaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SamaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SamaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SamaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SamaDecSevPropAlsShould_provenance {
-    :RecCOPD-SamaDecSevPropAlsShould
+data:RecCOPD-SamaDecSevPropAlsShould_provenance {
+    data:RecCOPD-SamaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SamaDecSevPropAlsShould_provenance
+    data:RecCOPD-SamaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SamaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SamaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SamaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-SamaDecSevPropAlsShould_nanopub
+data:RecCOPD-SamaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-SamaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaSamaDecSevPropAlsShould_head {
-    :RecCOPD-SabaSamaDecSevPropAlsShould_head
+data:RecCOPD-SabaSamaDecSevPropAlsShould_head {
+    data:RecCOPD-SabaSamaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaSamaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaSamaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaSamaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaSamaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaSamaDecSevPropAlsShould_provenance {
-    :RecCOPD-SabaSamaDecSevPropAlsShould
+data:RecCOPD-SabaSamaDecSevPropAlsShould_provenance {
+    data:RecCOPD-SabaSamaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaSamaDecSevPropAlsShould_provenance
+    data:RecCOPD-SabaSamaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaSamaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaSamaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-SabaSamaDecSevPropAlsShould_nanopub
+data:RecCOPD-SabaSamaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaSamaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaIcsDecSevPropAlsShould_head {
-    :RecCOPD-LabaLamaIcsDecSevPropAlsShould_head
+data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_head {
+    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIcsDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaIcsDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance {
-    :RecCOPD-LabaLamaIcsDecSevPropAlsShould
+data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance
+    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIcsDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaIcsDecSevPropAlsShould_nanopub
+data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaIcsDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LamaDecVerySevPropAlsShould_head {
-    :RecCOPD-LamaDecVerySevPropAlsShould_head
+data:RecCOPD-LamaDecVerySevPropAlsShould_head {
+    data:RecCOPD-LamaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LamaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LamaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LamaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LamaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LamaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-LamaDecVerySevPropAlsShould
+data:RecCOPD-LamaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-LamaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LamaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-LamaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LamaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LamaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-LamaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-LamaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-LamaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaLamaDecVerySevPropAlsShould_head {
-    :RecCOPD-LabaLamaDecVerySevPropAlsShould_head
+data:RecCOPD-LabaLamaDecVerySevPropAlsShould_head {
+    data:RecCOPD-LabaLamaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-LabaLamaDecVerySevPropAlsShould
+data:RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-LabaLamaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-LabaLamaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaIcsDecVerySevPropAlsShould_head {
-    :RecCOPD-LabaIcsDecVerySevPropAlsShould_head
+data:RecCOPD-LabaIcsDecVerySevPropAlsShould_head {
+    data:RecCOPD-LabaIcsDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaIcsDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaIcsDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance {
-    :RecCOPD-LabaIcsDecVerySevPropAlsShould
+data:RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-LabaIcsDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance
+    data:RecCOPD-LabaIcsDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaIcsDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaIcsDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaIcsDecVerySevPropAlsShould_nanopub
+data:RecCOPD-LabaIcsDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaIcsDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :Jesus .
+            prov:wasAttributedTo  data:Jesus .
 }
 
-:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head {
-    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head
+data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head {
+    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance {
-    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
+data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance
+    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_nanopub
+data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaLamaIcsDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-IcsIncPropRskPneumnShouldnot_head {
-    :RecCOPD-IcsIncPropRskPneumnShouldnot_head
+data:RecCOPD-IcsIncPropRskPneumnShouldnot_head {
+    data:RecCOPD-IcsIncPropRskPneumnShouldnot_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-IcsIncPropRskPneumnShouldnot ;
-            nanopub:hasProvenance       :RecCOPD-IcsIncPropRskPneumnShouldnot_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-IcsIncPropRskPneumnShouldnot ;
+            nanopub:hasProvenance       data:RecCOPD-IcsIncPropRskPneumnShouldnot_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo .
 }
 
-:RecCOPD-IcsIncPropRskPneumnShouldnot_provenance {
-    :RecCOPD-IcsIncPropRskPneumnShouldnot
+data:RecCOPD-IcsIncPropRskPneumnShouldnot_provenance {
+    data:RecCOPD-IcsIncPropRskPneumnShouldnot
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-IcsIncPropRskPneumnShouldnot_provenance
+    data:RecCOPD-IcsIncPropRskPneumnShouldnot_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-IcsIncPropRskPneumnShouldnot ;
+            oa:hasBody    data:RecCOPD-IcsIncPropRskPneumnShouldnot ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo {
-    :RecCOPD-IcsIncPropRskPneumnShouldnot_nanopub
+data:RecCOPD-IcsIncPropRskPneumnShouldnot_publicationinfo {
+    data:RecCOPD-IcsIncPropRskPneumnShouldnot_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaDecSevPropAlsShould_head {
-    :RecCOPD-LabaDecSevPropAlsShould_head
+data:RecCOPD-LabaDecSevPropAlsShould_head {
+    data:RecCOPD-LabaDecSevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaDecSevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaDecSevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaDecSevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaDecSevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaDecSevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaDecSevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaDecSevPropAlsShould_provenance {
-    :RecCOPD-LabaDecSevPropAlsShould
+data:RecCOPD-LabaDecSevPropAlsShould_provenance {
+    data:RecCOPD-LabaDecSevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaDecSevPropAlsShould_provenance
+    data:RecCOPD-LabaDecSevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaDecSevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaDecSevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaDecSevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaDecSevPropAlsShould_nanopub
+data:RecCOPD-LabaDecSevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaDecSevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaDecVerySevPropAlsShould_head {
-    :RecCOPD-LabaDecVerySevPropAlsShould_head
+data:RecCOPD-LabaDecVerySevPropAlsShould_head {
+    data:RecCOPD-LabaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-LabaDecVerySevPropAlsShould
+data:RecCOPD-LabaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-LabaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-LabaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-LabaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-LabaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaDecVerySevPropAlsShould_head {
-    :RecCOPD-SabaDecVerySevPropAlsShould_head
+data:RecCOPD-SabaDecVerySevPropAlsShould_head {
+    data:RecCOPD-SabaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-SabaDecVerySevPropAlsShould
+data:RecCOPD-SabaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-SabaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-SabaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-SabaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-SabaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SamaDecVerySevPropAlsShould_head {
-    :RecCOPD-SamaDecVerySevPropAlsShould_head
+data:RecCOPD-SamaDecVerySevPropAlsShould_head {
+    data:RecCOPD-SamaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SamaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SamaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SamaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SamaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SamaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-SamaDecVerySevPropAlsShould
+data:RecCOPD-SamaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-SamaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SamaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-SamaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SamaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SamaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-SamaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-SamaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-SamaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-SabaSamaDecVerySevPropAlsShould_head {
-    :RecCOPD-SabaSamaDecVerySevPropAlsShould_head
+data:RecCOPD-SabaSamaDecVerySevPropAlsShould_head {
+    data:RecCOPD-SabaSamaDecVerySevPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-SabaSamaDecVerySevPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-SabaSamaDecVerySevPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance {
-    :RecCOPD-SabaSamaDecVerySevPropAlsShould
+data:RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance {
+    data:RecCOPD-SabaSamaDecVerySevPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance
+    data:RecCOPD-SabaSamaDecVerySevPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-SabaSamaDecVerySevPropAlsShould ;
+            oa:hasBody    data:RecCOPD-SabaSamaDecVerySevPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo {
-    :RecCOPD-SabaSamaDecVerySevPropAlsShould_nanopub
+data:RecCOPD-SabaSamaDecVerySevPropAlsShould_publicationinfo {
+    data:RecCOPD-SabaSamaDecVerySevPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LabaMainMildPropAlsShould_head {
-    :RecCOPD-LabaMainMildPropAlsShould_head
+data:RecCOPD-LabaMainMildPropAlsShould_head {
+    data:RecCOPD-LabaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LabaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LabaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LabaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LabaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LabaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LabaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LabaMainMildPropAlsShould {
-    :RecCOPD-LabaMainMildPropAlsShould
+data:RecCOPD-LabaMainMildPropAlsShould {
+    data:RecCOPD-LabaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should continue to recommend administering Laba since treatment was effective to decrease COPD stage"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLaba ;
-            tmr:basedOn           :CBLabaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLaba ;
+            tmr:basedOn           data:CBLabaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLabaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBLabaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LabaMainMildPropAlsShould_provenance {
-    :RecCOPD-LabaMainMildPropAlsShould
+data:RecCOPD-LabaMainMildPropAlsShould_provenance {
+    data:RecCOPD-LabaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LabaMainMildPropAlsShould_provenance
+    data:RecCOPD-LabaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LabaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LabaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LabaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-LabaMainMildPropAlsShould_nanopub
+data:RecCOPD-LabaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-LabaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
 
-:RecCOPD-LamaMainMildPropAlsShould_head {
-    :RecCOPD-LamaMainMildPropAlsShould_head
+data:RecCOPD-LamaMainMildPropAlsShould_head {
+    data:RecCOPD-LamaMainMildPropAlsShould_head
             a                           nanopub:Nanopublication ;
-            nanopub:hasAssertion        :RecCOPD-LamaMainMildPropAlsShould ;
-            nanopub:hasProvenance       :RecCOPD-LamaMainMildPropAlsShould_provenance ;
-            nanopub:hasPublicationInfo  :RecCOPD-LamaMainMildPropAlsShould_publicationinfo .
+            nanopub:hasAssertion        data:RecCOPD-LamaMainMildPropAlsShould ;
+            nanopub:hasProvenance       data:RecCOPD-LamaMainMildPropAlsShould_provenance ;
+            nanopub:hasPublicationInfo  data:RecCOPD-LamaMainMildPropAlsShould_publicationinfo .
 }
 
-:RecCOPD-LamaMainMildPropAlsShould {
-    :RecCOPD-LamaMainMildPropAlsShould
+data:RecCOPD-LamaMainMildPropAlsShould {
+    data:RecCOPD-LamaMainMildPropAlsShould
             a                       tmr:ClinicalRecommendation ;
             rdfs:label              "Clinician should continue to recommend administering Lama since treatment was effective to decrease COPD stage"@en ;
-            tmr:aboutExecutionOf  :ActAdministerLama ;
-            tmr:basedOn           :CBLamaMainMildPropAls ;
-            tmr:partOf            :CIG-COPD ;
-            tmr:strength          "should" .
+            tmr:aboutExecutionOf  data:ActAdministerLama ;
+            tmr:basedOn           data:CBLamaMainMildPropAls ;
+            tmr:partOf            data:CIG-COPD ;
+          
+            tmr:strength          tmr:Should .
     
-    :CBLamaMainMildPropAls
-            tmr:contribution  "positive" .
+    data:CBLamaMainMildPropAls
+            tmr:contribution  tmr:Positive .
 }
 
-:RecCOPD-LamaMainMildPropAlsShould_provenance {
-    :RecCOPD-LamaMainMildPropAlsShould
+data:RecCOPD-LamaMainMildPropAlsShould_provenance {
+    data:RecCOPD-LamaMainMildPropAlsShould
             prov:wasDerivedFrom  <https://goldcopd.org/wp-content/uploads/2016/12/wms-GOLD-2017-Pocket-Guide.pdf> .
     
-    :RecCOPD-LamaMainMildPropAlsShould_provenance
+    data:RecCOPD-LamaMainMildPropAlsShould_provenance
             a             oa:Annotation ;
-            oa:hasBody    :RecCOPD-LamaMainMildPropAlsShould ;
+            oa:hasBody    data:RecCOPD-LamaMainMildPropAlsShould ;
             oa:hasTarget  [ oa:hasSource  <http://hdl.handle.net/10222/43703> ] .
 }
 
-:RecCOPD-LamaMainMildPropAlsShould_publicationinfo {
-    :RecCOPD-LamaMainMildPropAlsShould_nanopub
+data:RecCOPD-LamaMainMildPropAlsShould_publicationinfo {
+    data:RecCOPD-LamaMainMildPropAlsShould_nanopub
             prov:generatedAtTime  "2020-03-01"^^xsd:dateTime ;
-            prov:wasAttributedTo  :JDA .
+            prov:wasAttributedTo  data:JDA .
 }
